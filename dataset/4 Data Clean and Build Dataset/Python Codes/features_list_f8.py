@@ -19,6 +19,8 @@ data2 = [];
 data2 = numpy.array(data);
 data2.flatten();
 
+average = 1 - 3.75245/21;
+average = round(average, 8);
 # calculate and normalise
 for i in range(0, size):
     # except first line and null
@@ -29,9 +31,9 @@ for i in range(0, size):
         if decimal.Decimal(data[i][1]) == 5555 :
             data2[i][1] = decimal.Decimal(0);
         if decimal.Decimal(data[i][1]) == 7777:
-            data2[i][1] = decimal.Decimal(0.5);
+            data2[i][1] = decimal.Decimal(average);
         if decimal.Decimal(data[i][1]) == 9999 :
-            data2[i][1] = decimal.Decimal(0.5);
+            data2[i][1] = decimal.Decimal(average);
     else:
         # deal with first line and null
         data2[i][1] = decimal.Decimal(0);
@@ -40,7 +42,7 @@ for i in range(0, size):
 print(data2);
 
 # create new column in table
-sql = 'ALTER TABLE `features_list` ADD `F8` VARCHAR(6) NOT NULL;';
+sql = 'ALTER TABLE `features_list` ADD `F8` VARCHAR(10) NOT NULL;';
 cursor.execute(sql);
 
 # store into correct table in DB
