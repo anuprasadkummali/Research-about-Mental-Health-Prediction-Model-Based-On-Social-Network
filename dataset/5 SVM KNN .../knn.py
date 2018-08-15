@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.neighbors import KNeighborsClassifier
 
 # Read data from csv file
-data = pandas.read_csv("data.csv");
+data = pandas.read_csv("data6.csv");
 # print(data.head());
 
 # Divide data into training data and ground truth

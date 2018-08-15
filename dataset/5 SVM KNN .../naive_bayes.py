@@ -11,7 +11,7 @@ from sklearn.naive_bayes import GaussianNB
 
 
 # Read data from csv file
-data = pandas.read_csv("data.csv");
+data = pandas.read_csv("data6.csv");
 # print(data.head());
 
 # Divide data into training data and ground truth

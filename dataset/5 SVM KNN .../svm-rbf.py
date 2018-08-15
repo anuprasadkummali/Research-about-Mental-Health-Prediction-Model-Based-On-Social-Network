@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 
 # Read data from csv file
-data = pandas.read_csv("data.csv");
+data = pandas.read_csv("data6.csv"); # switch for data.csv or data6.csv
 # print(data.head());
 
 # Divide data into training data and ground truth
@@ -27,7 +27,8 @@ x_train2, x_test2, y_train2, y_test2 = train_test_split(X, Y2, test_size = 0.3);
 
 # SVM kernel
 # svm = SVC(kernel='linear', C=100);
-svm = SVC(kernel='rbf',gamma=0.05, C=1);
+#svm = SVC(kernel='rbf',gamma=0.05, C=1); # best for data.csv
+svm = SVC(kernel='rbf',gamma=10, C=1);
 # svm = SVC(kernel='poly', degree=6, C=80);
 svm.fit(x_train, y_train);
 
@@ -43,7 +44,8 @@ print(svm.score(x_test, y_test));# accuracy
 
 # SVM kernel multi-class
 # svm2 = SVC(kernel='linear', C=100);
-svm2 = SVC(kernel='rbf',gamma=0.05, C=1);
+#svm2 = SVC(kernel='rbf',gamma=0.05, C=1); # best for data.csv
+svm2 = SVC(kernel='rbf',gamma=10, C=1);
 # svm2 = SVC(kernel='poly', degree=6, C=80);
 svm2.fit(x_train2, y_train2);
 
