@@ -117,7 +117,7 @@ The abstract should briefly summarize the contents of the paper in
 %
 \paragraph{}
 .... The research objective is defined:\\
-\textbf{Definition 1} \textit{Let $\mathbb{S}$ be a set of user properties to present an effective user profile for depression, a user property s $\in$ $\mathbb{S}$ is a tuple s := $\langle$ p{\tiny{1}}, p{\tiny{2}}, p{\tiny{3}}, $\cdots$ p{\tiny{n}} $\rangle$, where
+\textbf{Definition 1} \textit{Let $\mathbb{S}$ be a set of user properties to present an effective user profile for depression, a user property s $\in$ $\mathbb{S}$ is a tuple $s := \langle p_{1}, p_{2}, p_{3}$, $\cdots p_{n} \rangle$, where
 \begin{itemize}
   \item p is a visualisation or instance of an user property;
   \item p is not a mental or depression close-related symptom;
@@ -140,17 +140,16 @@ With clear definition of research objective, the research target is defined:\\
 \paragraph{}
 From Definition 1, any given user property s $\in$ $\mathbb{S}$ is possibly overlapped with other user properties. The overlapped information in user profile apparently doesn't suit for classification. While learning from related psychological researches, a set of user personal functionings can present a perfect reflection of user mental profile. 
 It innovates a creative method that detecting user depression by analysis of a set of user functionings. Therefore, the research problem is defined:\\
-\textbf{Definition 3} \textit{Let $\mathbb{U}$ = $\langle$ u{\tiny{1}}, u{\tiny{2}}, u{\tiny{3}}, $\cdots$ u{\tiny{k}} $\rangle$ be a subset of $\mathbb{S}$, any element u $\in$ $\mathbb{U}$ is a tuple u := $\langle$ p'{\tiny{1}}, p'{\tiny{2}}, p'{\tiny{3}}, $\cdots$ p'{\tiny{n'}} $\rangle$,where
+\textbf{Definition 3} \textit{Let $\mathbb{U} = \langle u_{1}, u_{2}, u_{3}$, $\cdots u_{k} \rangle$ be a subset of $\mathbb{S}$, any element u $\in \mathbb{U}$ is a tuple $u := \langle p'_{1}, p'_{2}, p'_{3}$, $\cdots p'_{n'} \rangle$,where
 \begin{itemize}
   \item $\mathbb{U}$ is a machine-learning descriptive subset transferred from $\mathbb{S}$ in psychological domain descriptive;
   \item every p' $\in$ u is assigned from a instance p $\in$ s in Definition 1;
   \item $|\mathbb{D}^s|$ is limited due to the limited functionings defined in psychological domain.
 \end{itemize}
-This research aims to discover an effective classification model $\mathbb{M}$ which provides a reliable mapping of a well-defined $\mathbb{U}$ into $\mathbb{V}$: \\
+This research aims to discover an effective classification model $\mathbb{M}$ which provides a reliable mapping of a well-defined $\mathbb{U}$ into $\mathbb{V}$:} \\
 \begin{center}
-	$\mathbb{U}$ $\xRightarrow{\text{$\mathbb{M}$ } }$ $\mathbb{V}$  or  $\mathbb{M}$($\mathbb{U}$) = $\mathbb{V}$
+	$\mathbb{U}$ $\xRightarrow{\mathbb{M}}$ $\mathbb{V}$  or  $\mathbb{M}$($\mathbb{U}$) = $\mathbb{V}$
 \end{center}
-}
 %
 %
 \paragraph{}
@@ -228,14 +227,14 @@ Kroenke et, al. [PHQ-9] concluded that there was a strong association between in
 %
 \paragraph{4.2.2 Transfer Domain}
 We hence can transfer psychological domain knowledge to information domain. \textit{$|\mathbb{D}^s|$} can be narrowed down to 6. The dataset of user mental profile is redefined:\\
-\textbf{Definition 4} \textit{ Let new redesigned $\mathbb{U}$ = $\langle$ u{\tiny{mental}}, u{\tiny{social}}, u{\tiny{role}}, u{\tiny{pain}}, u{\tiny{physical}}, u{\tiny{overall}} $\rangle$, every u  $\in$ $\mathbb{U}$ is an independent function of user, where
+\textbf{Definition 4} \textit{ Let new redesigned $\mathbb{U}$ = $\langle u_{mental}, u_{social}, u_{role}, u_{pain}, u_{physical}, u_{overall} \rangle$, every u  $\in \mathbb{U}$ is an independent function of user, where
 \begin{itemize}
-  \item u{\tiny{mental}} presents mental function;
-  \item u{\tiny{social}} presents social function;
-  \item u{\tiny{role}} presents role function;
-  \item u{\tiny{pain}} presents pain function;
-  \item u{\tiny{physical}} presents physical function;
-  \item u{\tiny{overall}} presents the overall function.
+  \item $u_{mental}$ presents mental function;
+  \item $u_{social}$ presents social function;
+  \item $u_{role}$ presents role function;
+  \item $u_{pain}$ presents pain function;
+  \item $u_{physical}$ presents physical function;
+  \item $u_{overall}$ presents the overall function.
 \end{itemize}
 }
 %

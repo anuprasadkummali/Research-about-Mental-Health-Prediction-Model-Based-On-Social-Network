@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  25 OCT 2018 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  26 OCT 2018 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,7 +325,29 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box64
 \enitdp@description=\count138
 )
-(./paper.aux)
+(./paper.aux
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -340,8 +362,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
-
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen152
@@ -447,47 +468,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (5.37708pt too wide) in paragraph at lines 141--153
+Overfull \hbox (5.37708pt too wide) in paragraph at lines 141--149
 \OT1/cmr/m/n/10 doesn't suit for clas-si-fi-ca-tion. While learn-ing from re-la
 ted psy-cho-log-i-cal re-searches,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 [4]
-
-LaTeX Warning: Reference `fig1' on page 5 undefined on input line 208.
-
-<concepts.png, id=31, 7374.55125pt x 5368.055pt>
+<concepts.png, id=33, 7374.55125pt x 5368.055pt>
 File: concepts.png Graphic file (type png)
 <use concepts.png>
-Package pdftex.def Info: concepts.png  used on input line 210.
+Package pdftex.def Info: concepts.png  used on input line 209.
 (pdftex.def)             Requested size: 347.12354pt x 252.60988pt.
 
-Overfull \hbox (33.26605pt too wide) in paragraph at lines 227--229
+Overfull \hbox (33.26605pt too wide) in paragraph at lines 226--228
 \OT1/cmr/m/n/10 phys-i-cal and over-all func-tions. Other psy-cho-log-i-cal re-
 searchers [R^^Sesibois][Stegenga][Xiao,
  []
 
 [5 <./concepts.png>]
+Overfull \hbox (21.39828pt too wide) in paragraph at lines 229--239
+\OT1/cmr/bx/n/10 Definition 4  \OT1/cmr/m/it/10 Let new re-designed $\U/msb/m/n
+/10 U$ \OT1/cmr/m/it/10 = $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 u[]; u[]; u[]; u[
+]; u[]; u[]\OMS/cmsy/m/n/10 i$\OT1/cmr/m/it/10 ,
+ []
 
-LaTeX Warning: Reference `fig2' on page 6 undefined on input line 255.
-
-<restructure.png, id=37, 5392.145pt x 4645.355pt>
+<restructure.png, id=39, 5392.145pt x 4645.355pt>
 File: restructure.png Graphic file (type png)
 <use restructure.png>
-Package pdftex.def Info: restructure.png  used on input line 257.
+Package pdftex.def Info: restructure.png  used on input line 256.
 (pdftex.def)             Requested size: 208.27623pt x 179.40314pt.
 [6 <./restructure.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--334
+Underfull \hbox (badness 10000) in paragraph at lines 320--333
 
  []
 
@@ -495,27 +516,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--334
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
@@ -537,20 +558,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4456 strings out of 492649
- 65652 string characters out of 6129621
- 154882 words of memory out of 5000000
- 8248 multiletter control sequences out of 15000+600000
- 15517 words of font info for 58 fonts, out of 8000000 for 9000
+ 4453 strings out of 492649
+ 65619 string characters out of 6129621
+ 154957 words of memory out of 5000000
+ 8246 multiletter control sequences out of 15000+600000
+ 14819 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,25p,1067b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,25p,1067b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -566,15 +584,15 @@ xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2018/texmf
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on paper.pdf (15 pages, 2220120 bytes).
+Output written on paper.pdf (15 pages, 2216899 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
