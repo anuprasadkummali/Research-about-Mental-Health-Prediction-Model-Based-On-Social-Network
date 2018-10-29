@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  26 OCT 2018 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  30 OCT 2018 01:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,13 +468,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (5.37708pt too wide) in paragraph at lines 141--149
+Overfull \hbox (5.37708pt too wide) in paragraph at lines 142--150
 \OT1/cmr/m/n/10 doesn't suit for clas-si-fi-ca-tion. While learn-ing from re-la
 ted psy-cho-log-i-cal re-searches,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
@@ -482,28 +482,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 <concepts.png, id=33, 7374.55125pt x 5368.055pt>
 File: concepts.png Graphic file (type png)
 <use concepts.png>
-Package pdftex.def Info: concepts.png  used on input line 209.
+Package pdftex.def Info: concepts.png  used on input line 194.
 (pdftex.def)             Requested size: 347.12354pt x 252.60988pt.
+ [5 <./concepts.png>]
+<phq-9.png, id=39, 940.51375pt x 496.85625pt>
+File: phq-9.png Graphic file (type png)
+<use phq-9.png>
+Package pdftex.def Info: phq-9.png  used on input line 206.
+(pdftex.def)             Requested size: 347.12354pt x 183.37904pt.
+ [6 <./phq-9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 221--232
 
-Overfull \hbox (33.26605pt too wide) in paragraph at lines 226--228
-\OT1/cmr/m/n/10 phys-i-cal and over-all func-tions. Other psy-cho-log-i-cal re-
-searchers [R^^Sesibois][Stegenga][Xiao,
  []
 
-[5 <./concepts.png>]
-Overfull \hbox (21.39828pt too wide) in paragraph at lines 229--239
+
+Overfull \hbox (23.52031pt too wide) in paragraph at lines 221--232
 \OT1/cmr/bx/n/10 Definition 4  \OT1/cmr/m/it/10 Let new re-designed $\U/msb/m/n
 /10 U$ \OT1/cmr/m/it/10 = $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 u[]; u[]; u[]; u[
 ]; u[]; u[]\OMS/cmsy/m/n/10 i$\OT1/cmr/m/it/10 ,
  []
 
-<restructure.png, id=39, 5392.145pt x 4645.355pt>
+[7]
+<restructure.png, id=48, 5392.145pt x 4645.355pt>
 File: restructure.png Graphic file (type png)
 <use restructure.png>
-Package pdftex.def Info: restructure.png  used on input line 256.
-(pdftex.def)             Requested size: 208.27623pt x 179.40314pt.
-[6 <./restructure.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Package pdftex.def Info: restructure.png  used on input line 242.
+(pdftex.def)             Requested size: 347.12354pt x 298.98161pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+Underfull \vbox (badness 1888) has occurred while \output is active []
+
+ [9 <./restructure.png>] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
@@ -512,48 +529,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--333
 
  []
 
-[8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
-
+Overfull \hbox (48.17479pt too wide) in paragraph at lines 339--355
+ [] \OT1/cmr/m/n/10 Given a well-preprocessed dataset of m ex-am-ples and n fea
+-tures $\U/msb/m/n/10 D$ \OT1/cmr/m/n/10 = $[](\OML/cmm/m/it/10 x[]; x[]; :::; 
+x[]; y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
-
- []
-
-[10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1675) has occurred while \output is active []
 
  [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 382.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 389.
+
+Overfull \hbox (48.17479pt too wide) in paragraph at lines 394--426
+ [] \OT1/cmr/m/n/10 Given a well-preprocessed dataset of m ex-am-ples and n fea
+-tures $\U/msb/m/n/10 D$ \OT1/cmr/m/n/10 = $[](\OML/cmm/m/it/10 x[]; x[]; :::; 
+x[]; y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-[15] (./paper.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+[16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20] (./paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -563,39 +605,39 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  4453 strings out of 492649
- 65619 string characters out of 6129621
- 154957 words of memory out of 5000000
+ 65674 string characters out of 6129621
+ 159967 words of memory out of 5000000
  8246 multiletter control sequences out of 15000+600000
- 14819 words of font info for 56 fonts, out of 8000000 for 9000
+ 14474 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,25p,1067b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,29p,1995b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on paper.pdf (15 pages, 2216899 bytes).
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on paper.pdf (20 pages, 2449848 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 169 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
