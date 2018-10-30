@@ -10,6 +10,11 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \makeatletter
 \makeatother
 %
@@ -220,7 +225,7 @@ By analysis of the relationship between depression and variables of functional s
 
 Therefore, we can transfer psychological domain knowledge to information domain. \textit{$|\mathbb{D}^s|$} can be narrowed down to 6. The dataset of user mental profile need to be redefined:\\
 \\
-\textbf{Definition 4} \textit{ Let new redesigned $\mathbb{U}$ = $\langle u_{mental}, u_{social}, u_{role}, u_{pain}, u_{physical}, u_{general} \rangle$, every u  $\in \mathbb{U}$ is an independent function of user, where
+\textbf{Definition 4} Let new redesigned $\mathbb{U}$ = $\langle u_{mental}, u_{social}, u_{role}, u_{pain}, u_{physical}, u_{general} \rangle$, every u  $\in \mathbb{U}$ is an independent function of user, where
 \begin{itemize}
   \item $u_{mental}$ presents mental functional variables;
   \item $u_{social}$ presents social functional variables;
@@ -229,7 +234,6 @@ Therefore, we can transfer psychological domain knowledge to information domain.
   \item $u_{physical}$ presents physical functional variables;
   \item $u_{general}$ presents the overall functional variables.
 \end{itemize}
-}
 %
 %
 \subsection{Data Processing}
@@ -282,31 +286,26 @@ Our ensemble classification method involves several baseline supervised classifi
 We propose to involve one method of each type in order to present sufficient algorithms in the limited number of sub-models. We thereby select four techniques for baseline models: Decision Tree method, Artificial Neutral Network technique, k-Nearest Neighbour method and Support Vector Machine algorithm.
 %
 %
-\paragraph{Decision Tree (DT)}
-Decision trees are trees that classify instances by sorting them based on feature values. Each node in a decision tree represents a feature in an instance to be classified, and each branch represents a value that the node can assume. Instances are classified starting at the root node and sorted based on their feature values.
-One of the most useful characteristics of decision trees is their comprehensibility. People can easily understand why a decision tree classifies an instance as belonging to a specific class
+\paragraph{Decision Tree (DT)\\}
+Decision trees are logic trees that classify instances by evaluating them based on attributes. Each internal node in a decision tree represents evaluating an attribute in an instance, each branch represents the outcome of evaluation and each leaf node represents a class label. Instances are classified starting at the root node and stop at one leaf node after computing all attributes on the path. Decision tree algorithm is the easiest algorithm and capable of classifying huge datasets [Somevanshi].
+It is simple to understand and interpret. Kotsiantis et, al. [Kotsiantis] addressed that one of the most useful characteristics of decision trees is their comprehensibility, which makes users can easily understand why a decision tree classifies an instance as a specific class label. And decision tree method can make a decision even with little hard data. Somvanshi et, al. [Somvanshi] believed that decision tree algorithm can process the data which contains the missing values and errors. Their research showed that decision tree is able to work very good in the presence of redundant attributes. Likewise, a disadvantage of decision tree method is well-known. The algorithm is unstable that a small change in the data may change the overall look of decision tree. However, decision tree algorithm is still one of the most useful and powerful algorithm in supervised learning. 
+%
+\paragraph{Artificial Neutral Network (ANN)\\}
+Artificial neutral network is a biologically inspired algorithm to simulate the manner of nerve cells in the brain. According to the book of Kumar [Kumar], ANN is made up of elements named as artificial neurons; the neurons are organised in network to simulate the anatomy of brain by a standard processing whose output is calculated by multiplying its input by a weight vector; they are aggregated into layers and layers are aggregated into the network to form highly interconnected processing structures; whilst the input layer doesn't process information, it simply sends the inputs, modified by a weight, to each of the neurons in the next layer; and the next layer does the processing which can be a hidden layer or the output layer in a single layer design. ANNs are usually more able to easily provide incremental learning than decision trees as having a good multiple layers architecture. Fei and Li [Fei, Li] discovered that ANN are widely used in medical data mining methodology, and the combination of ANNs and some other algorithms will be able to achieve a better results in medical diagnosis and prediction. Likewise, ANN contains some weaknesses, including "poor general application of the architecture, inaccurate analysis for various indicators of the network and uncontrollable time of machine learning" [Fei, Li]. Kotsiantis et, al. [Kotsiantis] concluded that the most striking disadvantage of ANN is lack of ability to answer how the output in a specific way being effectively communicated. Generally, it is a problem to properly determining the size of the hidden layer. The underestimated neutrons in hidden layer can lead to poor approximation, while "excessive nodes can result in overfitting and eventually make the search for the global optimum more difficult" [Kotsiantis]. In spite of its several disadvantages,  ANN is still a good competitor for other learning algorithms, which has been used on a variety of intricate problems including computer vision, speech recognition, recommendation filtering even medical diagnosis [Somevanshi][Kumar].
+%
+\paragraph{K-Nearest Neighbour (KNN)\\}
+Conversely to intricate neutral networks, the K-Nearest Neighbor algorithm is a typical lazy learning algorithms. KNN is based on the principle that classifying instances is to find other similar instances that have proximate properties. "If the instances are tagged with a classification label, then the value of the label of an unclassified instance can be determined by observing the class of its nearest neighbours" [Kotsiantis].  In KNN assigning weight by the contributions of the neighbours, the nearer neighbours thereby contribute more to the average than other distant ones. This algorithm can be used for both classification and regression. And it is among the simplest machine learning algorithms, even no explicit training step is required. KNN has somewhat weaknesses in computational time and classification accuracy. Though KNN is very sensitive to the choice of the similarity function that is used to compare the contribution of neighbours [Kotsiantis], it is still a popular classification technique.
 
-\paragraph{Neutral Network (DT)}
-Perceptrons can only classify linearly separable sets of instances.
-their most striking disadvantage is their lack of ability to reason about their output in a way that can be effectively communicated.
-Neural networks are usually more able to easily provide incremental learning than decision trees
-Generally, properly determining the size of the hidden layer is a problem, because an underestimate of the number of neutrons can lead to poor approximation and generalisation capabilities, while excessive nodes can result in overfitting and eventually make the search for the global optimum more difficult.
-
-
-\paragraph{k-Nearest Neighbour (KNN)}
-Conversely to ANNs,
-
-
-\paragraph{Support Vector Machine (SVM)}
-he model complexity of an SVM is unaffected by the number of features encountered in the training data (the number of support vectors selected by the SVM learning algorithm is usually small). For this reason, SVMs are well suited to deal with learning tasks where the number of features is large with respect to the number of training instances.
+\paragraph{Support Vector Machine (SVM)\\}
+Support Vector Machine algorithm is the newest classification technique among the proposed methods. In classification, SVM constructs a hyperplane or set of hyperplanes in the dimensional space; the hyperplane separates the training data into diverse two classes; and a good classification is achieved by the hyperplane's capability to make a larger margin between two classes of training data. As the application environment is dimensional space, input data of SVM are paired into vectors and vectors are defined in terms of a kernel function. Selection of proper hyperplane and proper parameters for kernel function gives more accurate results as compared to neural networks [Somevanshi]. As the model complexity of an SVM is unaffected by the number of features encountered in the training data, SVM is well suited to deal with learning dataset with large number of features and training instances. Also, choice of an appropriate kernel leads to different SVM applications in linear, nonlinear and multiclass classification. The potential drawbacks of SVM are addressed including [Kotsiantis]: a) requiring full label of input data; b) being difficult to interpret parameters of the solved model; c) being unsuitable for non-binary multiple classification problems.
 %
 %
-%
-%
+\paragraph{}
+Meanwhile, Choudhary and Gianey [Choudhary, Gianey] stated that every learning algorithm differs according to area of application and no algorithm is more powerful than the other in all scenarios. They concluded that the choice of a suitable algorithm depends on the type of problem and the given data, and the accuracy can be improved by using two or more algorithms together. We therefore comprise above four algorithms into ensemble model for this study.
 %
 \subsubsection{Ensemble Model}
 %
-%
+\paragraph{}
 After a better understand of the strengths and limitations of each model, the ensemble of integrating four algorithms together is possible to maximum the predictive performance. "The objective is to utilise the strengths of one method to complement the weaknesses of another" [Kotsiantis]. While more specifically each independent sub-model is trained, more targeted concepts are covered by the ensemble classifier and more accuracy it becomes. 
 %
 %
@@ -318,7 +317,8 @@ In order to combine all baseline classifiers' outputs, our modelling procedure a
 where $E_{i} $ is a normalisation factor which is based on the predictive performance of classifier $i$ on the validation set. 
 
 In view of the fact that the ensemble classifier combines weighted outputs of all base classifiers, we can define the ensemble classifier as below: \\
-\textbf{Definition 5} \textit{ Let the ensemble model \\
+\\
+\textbf{Definition 6} Let the ensemble model \\
 \begin{equation}\label{reio}
 	\mathbb{M}_{e} = \sum_{k = 1}^{n} w_{i} M_{i} 
 \end{equation}
@@ -330,7 +330,6 @@ where
   \item $n$ is the total number of base models, and in our case $n = 4$;
   \item $i$ is the order number of specific base model.
 \end{itemize}
-}
 %
 %
 \subsubsection{Algorithm}
@@ -361,24 +360,30 @@ Obtain the ensemble model $\mathbb{M}_{e} = \sum_{g = 1}^{h} w_{i} M_{i} $\;
 %
 %
 %
-%
-%
-\pagebreak
 \section{Experiment}
-
-\subsection{Experiment Design}
-%
 %
 \paragraph{}
-In this study, we design a supervised learning classification experiment to classify depressive users from a rare health survey dataset $\mathbb{H}$: \\
+We employ an ensemble supervised learning experiment to classify depressive users from a rare health survey dataset $\mathbb{H}$. We follow psychological knowledge to reduce the dimension of dataset by split dataset into sub-sets. It will not only benefit the processing of classification but also provide a great opportunity to compare the performance of overall dataset and subsets for support of further solution on the real condition with less features.
+%
+\subsection{Experiment Design}
+%
+\paragraph{}
+In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocessing on survey data $\mathbb{H}$; next, we aggregate all features of $\mathbb{D}_{overall}$ into 6 health-related functional classes and follow the same procedure to divide $\mathbb{D}_{overall}$ into 6 sub-sets $\mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$ and $\mathbb{D}_{general}$; and we train dataset $\mathbb{D}_{overall}$ by four baseline models (DT, ANN, KNN, SVM) to obtain the relevant performances; then we build the ensemble model $\mathbb{M}_{e}$ by calculating the performance weight $w_{i}$ of each baseline model $M_{i} $; the final step is to train all 6 sub-datasets by the ensemble classifier $\mathbb{M}_{e}$ and to use k-fold cross validation algorithm to value the complete predictive performance. The overall look of all experiment proceedings is illustrated in Fig.~\ref{fig4}. 
+\begin{figure}[h]
+\includegraphics[width=1\textwidth]{experiment.png}
+\caption{The overall look of experiment proceedings} \label{fig4}
+\end{figure}
+%
+\paragraph{}
+From the proceeding details of classification, we can define the algorithm of whole experiment as below: \\
 \IncMargin{1em}
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
 \Input{a rare health survey dataset $\mathbb{H}$}
-\Output{Ensemble Classifier $\mathbb{F}_{e}$}
+\Output{Ensemble Classifier $\mathbb{F}_{e}$ and the complete prediction}
 \BlankLine
 Obtain dataset $\mathbb{D}_{overall}$ by data pre-processing on survey data $\mathbb{H}$\;
-Select features manually referred on 6 psychological functionalities \;
+Aggregate features manually referred on 6 psychological functionalities \;
 Divide $\mathbb{D}_{overall}$ into \{$\mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$, $\mathbb{D}_{general}$ \}\;
 Supervised learning on $\mathbb{D}_{overall}$ for ensemble model $\mathbb{M}_{e} = \sum_{g = 1}^{h} w_{i} M_{i} $\;
 \ForEach{sub-dataset $\mathbb{D}_{i}$ in \{$\mathbb{D}_{overall}, \mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$, $\mathbb{D}_{general}$ \}}{
@@ -391,7 +396,7 @@ Supervised learning on $\mathbb{D}_{overall}$ for ensemble model $\mathbb{M}_{e}
 %
 %
 \paragraph{}
-Given a well-preprocessed dataset of m examples and n features $\mathbb{D}$ = $\displaystyle \big\{ (x_{1}, x_{2}, ... , x_{n}, y ), x_{i} \in R^{m}, y \in {\{0, 1\}}^{m}  \big\}$, we can obtain the ensemble classifier $\mathbb{F}_{e}$ = $w_{svm} \cdot f_{svm}$ + $w_{nb} \cdot f_{nb}$ + $w_{knn} \cdot f_{knn}$ + $w_{dt} \cdot f_{dt}$ by applying supervised learning on dataset $\mathbb{D}$:\\
+The ensemble classification can be expressed in algorithm as well: Given a well-preprocessed dataset of m examples and n features $\mathbb{D}$ = $\displaystyle \big\{ (x_{1}, x_{2}, ... , x_{n}, y ), x_{i} \in R^{m}, y \in {\{0, 1\}}^{m}  \big\}$, we can obtain the ensemble classifier $\mathbb{F}_{e}$ = $w_{svm} \cdot f_{svm}$ + $w_{nb} \cdot f_{nb}$ + $w_{knn} \cdot f_{knn}$ + $w_{dt} \cdot f_{dt}$ by applying supervised learning on dataset $\mathbb{D}$:\\
 \IncMargin{1em}
 \begin{algorithm}[H]
 \SetKwFunction{Median}{Median}
@@ -404,7 +409,7 @@ Divide dataset $\mathbb{D}$ into k portions, each portion has $\frac{m}{k}$ exam
 	Select all portions except $k^{th}$ portion to form new dataset $\mathbb{D}^{'}$ \;
 	Use $\mathbb{D}^{'}$ to generate the training set $\mathbb{R} = \big\{ (x_{1}, x_{2}, ... , x_{n} ) \big\}$ and the testing set $\mathbb{S} = \big\{  y \big\}$, where $|\mathbb{D}^{'}| = |\mathbb{R}| = |\mathbb{S}| = \frac{4}{5}|\mathbb{D}| = \frac{4m}{5}$\;
 	\emph{/* baseline model */}\\
-	\ForEach{ one classification method of SVM, NB, KNN, DT}{ 
+	\ForEach{ one classification method of SVM, ANN, KNN, DT}{ 
 		Training on the training set $\mathbb{R}$ and obtain classifier $f$\;
 		 Obtain predictive value $y^{p} = f(\sum_{i=1}^{n} (x_{i}))$ \;
 	}
@@ -427,14 +432,49 @@ Generate the optimised ensemble classifier $\mathbb{F}_{e}$ = Median($\mathbb{F}
 %
 %
 \subsection{Dataset}
-In this study, we use dataset of National Health and Nutrition Examination Survey (NHANES 2013 - 2014).
+\subsubsection{NHANES Survey Data}
+\paragraph{}
+In this study, we use dataset of National Health and Nutrition Examination Survey (NHANES). NHANES is a population-based survey designed to collect health-related information of the U.S. household population. It is a very rich resource for health professionals and researchers to expand our knowledges of various modern health problems. It is conducted by the National Center for Health Statistics (NCHS), which is part of the Centers for Disease Control and Prevention (CDC). All information in NHANES are gathered and protected with the requirement of Federal Law of U.S. and for health research purposes only. Collections of NHANES in last decade are all free for researchers and published on the website of NCHS.
 
-Part of data have to be excluded due to ethical risks.
+We employ the questionnaire data in NHANES 2013 - 2014 collection as input data $\mathbb{H}$ of experiment. We also limit the age of participants to 18+ because data of teenage and children are only partially published. As our objective is to classify general person into healthy and depressive groups, the features only involved with single gender are excluded.  
+%
+\subsubsection{Build Ground Truth}
+\paragraph{}
+NHANES integrates health tools for measuring health status like Patient Health Questionnaire ( PHQ-9 ) depression screen tool. PHQ-9 tool is a 9-item screening instrument to measure depressive severity from no depression to major depressive disorder. In NHANES, PHQ-9 measure is the only integrated measurement for depression because it is a simple, reliable and valid measure of depression severity [PHQ-9]. And it has been a useful clinical and research tool in years. There are plenty of health researches assigning with NHANES data and integrated PHQ-9 tool to study depression related health issues. For instance, Stuart et, al. [Stuart] in 2011 researched the relationship between depression and low cholesterol among household population using NHANES data; Alison et, al. [Alison] in 2012 proposed a association between major depressive disorder and obesity by assessing 2001-2004 NHANES collections; Ubani and Zhang [Ubani] in 2015 published a research of NHANES data to study the role of adiposity in the relationship between serum leptin and severe major depressive episode; and Andrea et, al. [Andrea] in 2016 explored depressed adults information in social support and health service use of NHANES data; Nguyen et, al. [Nguyen] in 2017 research the association between blood folate concentrations and depression in reproductive aged U.S. women in NHANES 2011 - 2012 collection.
 
+%
+%
+%
+%
+%
+\subsubsection{Overall Dataset}
+\paragraph{}
+%
+%
+%
+%
+%
+%
 \subsection{Baseline Models}
-
+%
+%
+\subsubsection{Decision Tree}
+%
+%
+\subsubsection{Artificial Neutral Network}
+%
+%
+\subsubsection{K-Nearest Neighbour}
+%
+%
+\subsubsection{Support Vector Machine}
+%
+%
+%
+%
+%
 \subsection{Performance Measure}
-\paragraph{5.4.1 Predictive Performance of Base Classifier}
+\paragraph{}
 The predictive performance of each base classifier in our model is evaluated by F1 score which is generated on confusion matrix of validation. In confusion matrix, we simply let the number of real mental healthy cases in the training set as \textbf{condition positive (P)} and let the number of real depressive cases in the training set as  \textbf{condition negative (N)}. And four derivations are defined to make it clear if the classifier is confusing binary classes (P and N):  \\
 \begin{enumerate}[label=(\roman*)]
 \item let the number of cases where the classifier correctly predicts P as \textbf{ true positive (TP)}
@@ -453,26 +493,11 @@ And four following terminologies are hence defined as below:
 \item \textbf{Accuracy (ACC)}: \\ 
 		\begin{center} $\displaystyle ACC = \frac{TP + TN}{TP + TN + FP + FN} $ \end{center}
 \end{enumerate}
-F1 score is a balanced measure of both the precision (PPV) and the recall (TPR) of the validation: 
+Based on these terminologies, F1 score is a balanced measure of both the precision (PPV) and the recall (TPR) of the validation: 
 \begin{equation}\label{reio}
 	F1 = \frac{2 }{\frac{1}{TPR} + \frac{1}{PPV}} = \frac{2TP}{2TP + FP + FN}
 \end{equation}
 Referred to normalisation factor $E$ in equation (1), F1 score need to be normalised first and then is applied to equation (1) to calculate the weight fo each base classifier. 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
 %
 %
 %
@@ -486,6 +511,153 @@ Referred to normalisation factor $E$ in equation (1), F1 score need to be normal
 $\mathbb{D}$ = $\mathbb{D}_{mental} + \mathbb{D}_{social} + \mathbb{D}_{role} + \mathbb{D}_{pain} + \mathbb{D}_{physical} + \mathbb{D}_{general}$
 %
 \subsection{Experimental Results}
+%
+%
+%
+\paragraph{Sub-Model Performance}
+%
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Accuracy (mean)}} & {\color[HTML]{333333} \textbf{Precision (mean)}} & {\color[HTML]{333333} \textbf{Recall (mean)}} & {\color[HTML]{333333} \textbf{F1 score (mean)}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{SVM}                                    & 0.921                                    & 0.927                                     & 0.990                                  & 0.958                                    \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{ANN}                                    & 0.905                                    & 0.941                                     & 0.955                                  & 0.948                                    \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{KNN}                                    & 0.908                                    & 0.913                                     & 0.993                                  & 0.951                                    \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{DT}                                     & 0.925                                    & 0.938                                     & 0.981                                  & 0.959                                    \\ \hline
+\end{tabular}
+\end{table}
+\end{center}
+%
+%
+\paragraph{Ensemble Classifier}
+%
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{F1 score (mean)}} & {\color[HTML]{333333} \textbf{1 - F1}} & {\color[HTML]{333333} \textbf{Weight}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{SVM}                                    & 0.958                                    & 0.042                                  & 0.228                                  \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{ANN}                                    & 0.948                                    & 0.052                                  & 0.283                                  \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{KNN}                                    & 0.951                                    & 0.049                                  & 0.266                                  \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{DT}                                     & 0.959                                    & 0.041                                  & 0.223                                  \\ \hline
+\end{tabular}
+\end{table}
+\end{center}
+%
+%
+\paragraph{Predictive Performance}
+%
+%
+\begin{table}[h]
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{SVM}                           & 0                                       & 0.9498                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{ANN}                           & 0                                       & 0.9437                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{KNN}                           & 0                                       & 0.9468                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{DT}                            & 0                                       & 0.9496                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{9AFF99} 
+\textbf{Ensemble}                      & 0                                       & 0.9658                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\end{tabular}
+\caption{F1 Measure}
+\label{F1}
+\end{table}
+%
+%
+\begin{table}[h]
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{SVM}                           & 0                                       & 0.9044                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{ANN}                           & 0                                       & 0.8954                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{KNN}                           & 0                                       & 0.9002                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{DT}                            & 0                                       & 0.9047                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{9AFF99} 
+\textbf{Ensemble}                      & 0                                       & 0.9343                                       & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\end{tabular}
+\caption{Accuracy}
+\label{Accuracy}
+\end{table}
+%
+%
+%
+%
+%
+\begin{table}[h]
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{SVM}                           & 0                                       & 0.9044                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{ANN}                           & 0                                       & 0.9187                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{KNN}                           & 0                                       & 0.9147                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{DT}                            & 0                                       & 0.9100                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{9AFF99} 
+\textbf{Ensemble}                      & 0                                       & 0.9348                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\end{tabular}
+\caption{Precision}
+\label{Precision}
+\end{table}
+%
+%
+%
+%
+%
+\begin{table}[h]
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{SVM}                           & 0                                       & 1.0000                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{ANN}                           & 0                                       & 0.9703                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{KNN}                           & 0                                       & 0.9812                                      & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{DT}                            & 0                                       & 0.9928                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\rowcolor[HTML]{9AFF99} 
+\textbf{Ensemble}                      & 0                                       & 1.0000                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\end{tabular}
+\caption{Recall}
+\label{Recall}
+\end{table}
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
 \subsection{Discussions}
 %
 %

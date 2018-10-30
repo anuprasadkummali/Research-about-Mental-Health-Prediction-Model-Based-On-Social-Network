@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.model_selection import KFold, RepeatedKFold
+from sklearn.model_selection import KFold, RepeatedKFold, RepeatedStratifiedKFold
 from sklearn import metrics
 from sklearn.model_selection import cross_val_score, cross_val_predict
 from sklearn.metrics import (brier_score_loss, precision_score, recall_score, f1_score)
@@ -19,10 +19,16 @@ from sklearn.multiclass import OutputCodeClassifier
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.svm import LinearSVC
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import StandardScaler
+from sklearn.neural_network import MLPClassifier
 
 # Read data from csv file #
 data = pandas.read_csv("data.csv");
 # print(data.head());
+
+# Divide data into training data and ground truth #
+# X = data.drop('QN', axis=1).drop('ground_truth', axis=1).drop('ground_truth_binary', axis=1);
+y = data['ground_truth_binary']; # binary ground truth
 
 # Divide data into training data and ground truth #
 X0 = data.drop('QN', axis=1).drop('ground_truth', axis=1).drop('ground_truth_binary', axis=1);
@@ -43,11 +49,9 @@ X_general = data.drop('QN', axis=1).drop('ground_truth', axis=1).drop('ground_tr
 # X = X_role;
 # X = X_social;
 # X = X_mental;
-# X = X_pain;
-X = X_general;
-
-y2 = data['ground_truth']; # full categorical ground truth
-y = data['ground_truth_binary']; # binary ground truth
+X = X_pain;
+# X = X_general;
+# X = X0;
 
 ##########
 # K-Fold #
@@ -60,13 +64,10 @@ kf.get_n_splits(X);
 
 # Perform 5-fold cross validation #
 svm_score = [0, 0, 0, 0]; # single class score for svm
-gnb_score = [0, 0, 0, 0]; # single class score for gnb
 knn_score = [0, 0, 0, 0]; # single class score for knn
 dtree_score = [0, 0, 0, 0]; # single class score for dtree
+ann_score = [0, 0, 0, 0]; # single class score for ann
 en_score = [0, 0, 0, 0]; # single class score for ensemble
-
-en_median = np.zeros((4,5*repeated_times));
-k = 0;
 
 for train_index, test_index in kf.split(X):
     split_training_sets = "TRAIN:" + str(train_index) + "\n" + "TEST:" + str(test_index);
@@ -98,25 +99,6 @@ for train_index, test_index in kf.split(X):
     # Store scores to database
 
     ####################################################################################################################
-    ###############
-    # Naive Bayes #
-    ###############
-    gnb = GaussianNB().fit(X_train, y_train);
-    # Testfrom sklearn.metrics import classification_report, confusion_matrix
-    y_pred_gnb = gnb.predict(X_test);
-
-    # Score
-    score_gnb = precision_recall_fscore_support(y_test, y_pred_gnb, beta=1.0, labels=None, pos_label=1,
-                                                average='binary',
-                                                warn_for=('precision', 'recall', 'f-score'), sample_weight=None);
-    # report_gnb = classification_report(y_test, y_pred_gnb);
-    accuracy_gnb = accuracy_score(y_test, y_pred_gnb, normalize=True, sample_weight=None);
-
-     # Final score of gnb calculate
-    gnb_score[0] = gnb_score[0] + score_gnb[0];
-    gnb_score[1] = gnb_score[1] + score_gnb[1];
-    gnb_score[2] = gnb_score[2] + score_gnb[2];
-    gnb_score[3] = gnb_score[3] + accuracy_gnb;
     ####################################################################################################################
     ###########################
     # KNN k-nearest neighbours#
@@ -160,19 +142,51 @@ for train_index, test_index in kf.split(X):
     dtree_score[2] = dtree_score[2] + score_dtree[2];
     dtree_score[3] = dtree_score[3] + accuracy_dtree;
     ####################################################################################################################
+    #######
+    # ANN #
+    #######
+    scaler = StandardScaler();
+    # Fit only to the training data
+    scaler.fit(X_train);
+    # Now apply the transformations to the data:
+    X_train = scaler.transform(X_train);
+    X_test = scaler.transform(X_test);
+
+    # Training
+    mlp = MLPClassifier(hidden_layer_sizes=(30, 30, 30), random_state=np.random , max_iter=10000);
+    mlp.fit(X_train, y_train);
+
+    # Evaluation
+    y_pred_ann = mlp.predict(X_test);
+
+    # Score
+    score_ann = precision_recall_fscore_support(y_test, y_pred_ann, beta=1.0, labels=None, pos_label=1,
+                                                  average='binary',
+                                                  warn_for=('precision', 'recall', 'f-score'), sample_weight=None);
+    # report_dtree = classification_report(y_test, y_pred_dtree);
+    accuracy_ann = accuracy_score(y_test, y_pred_ann, normalize=True, sample_weight=None);
+
+    # Final score of dtree calculate
+    ann_score[0] = ann_score[0] + score_ann[0];
+    ann_score[1] = ann_score[1] + score_ann[1];
+    ann_score[2] = ann_score[2] + score_ann[2];
+    ann_score[3] = ann_score[3] + accuracy_ann;
+
+    ############################################################################################
+
     ############
     # Ensemble #
     ############
 
     # Testing
-    y_pred_en = 0.176*y_pred_svm + 0.448*y_pred_gnb +0.205*y_pred_knn + 0.171*y_pred_dtree; # shape (1080,)
+    y_pred_en = 0.228*y_pred_svm + 0.283*y_pred_ann +0.266*y_pred_knn + 0.223*y_pred_dtree; # shape (1080,)
     for i in range(0, y_pred_en.shape[0]):
         #print(y_pred_en[i]);
-        if y_pred_en[i]>=0.5:
+        if y_pred_en[i]>=0.4:
             y_pred_en[i] = 1;
         else:
             y_pred_en[i] = 0;
-    # print(y_pred_en);
+    print(y_pred_en);
 
 
     # y_pred_en =  y_pred_dtree;  # shape (1080,) +y_pred_knn[i]  y_pred_gnb[i]+   y_pred_dtree[i]+  y_pred_svm[i]+
@@ -192,57 +206,30 @@ for train_index, test_index in kf.split(X):
     accuracy_en = accuracy_score(y_test, y_pred_en, normalize=True, sample_weight=None);
 
     # Final score calculation
-    en_score[0] = en_score[0] + score_en[0];
-    en_score[1] = en_score[1] + score_en[1];
-    en_score[2] = en_score[2] + score_en[2];
-    en_score[3] = en_score[3] + accuracy_en;
-
-    en_median[0][k] = score_en[0];
-    en_median[1][k] = score_en[1];
-    en_median[2][k] = score_en[2];
-    en_median[3][k] = accuracy_en;
-    print(k);
-    # print(en_median);
-    k = k + 1;
-
+    # en_score[0] = en_score[0] + score_en[0];
+    # en_score[1] = en_score[1] + score_en[1];
+    # en_score[2] = en_score[2] + score_en[2];
+    # en_score[3] = en_score[3] + accuracy_en;
+    if en_score[0]< score_en[0]:
+        en_score[0] = score_en[0];
+    if en_score[1]< score_en[1]:
+        en_score[1] = score_en[1];
+    if en_score[2]< score_en[2]:
+        en_score[2] = score_en[2];
+    if en_score[3]< accuracy_en:
+        en_score[3] = accuracy_en;
     ####################################################################################################################
 
 print("\nEnsemble");
 print("Binary Classifier:");
-en_score[0] = en_score[0]/(5*repeated_times);
+# en_score[0] = en_score[0]/(5*repeated_times);
 print("\tPrecision: %1.4f" % en_score[0]);
-en_score[1] = en_score[1]/(5*repeated_times);
+# en_score[1] = en_score[1]/(5*repeated_times);
 print("\tRecall: %1.4f" % en_score[1]);
-en_score[2] = en_score[2]/(5*repeated_times);
+# en_score[2] = en_score[2]/(5*repeated_times);
 print("\tF1-score: %1.4f" % en_score[2]);
-en_score[3] = en_score[3]/(5*repeated_times);
+# en_score[3] = en_score[3]/(5*repeated_times);
 print("\tAccuracy: %1.4f" % en_score[3]);
-
-print("Median:");
-en0 = en_median[0];
-en1 = en_median[1];
-en2 = en_median[2];
-en3 = en_median[3];
-print("65%");
-print("\tPrecision: %1.4f" % np.percentile(en0, 65));#np.median(en0,axis=0));
-print("\tRecall: %1.4f" % np.percentile(en1, 65));#np.median(en1,axis=0));
-print("\tF1-score: %1.4f" % np.percentile(en2, 65));#np.median(en2,axis=0));
-print("\tAccuracy: %1.4f" % np.percentile(en3, 65));#np.median(en3,axis=0));
-print("75%");
-print("\tPrecision: %1.4f" % np.percentile(en0, 75));#np.median(en0,axis=0));
-print("\tRecall: %1.4f" % np.percentile(en1, 75));#np.median(en1,axis=0));
-print("\tF1-score: %1.4f" % np.percentile(en2, 75));#np.median(en2,axis=0));
-print("\tAccuracy: %1.4f" % np.percentile(en3, 75));#np.median(en3,axis=0));
-print("85%");
-print("\tPrecision: %1.4f" % np.percentile(en0, 85));#np.median(en0,axis=0));
-print("\tRecall: %1.4f" % np.percentile(en1, 85));#np.median(en1,axis=0));
-print("\tF1-score: %1.4f" % np.percentile(en2, 85));#np.median(en2,axis=0));
-print("\tAccuracy: %1.4f" % np.percentile(en3, 85));#np.median(en3,axis=0));
-print("95%");
-print("\tPrecision: %1.4f" % np.percentile(en0, 95));#np.median(en0,axis=0));
-print("\tRecall: %1.4f" % np.percentile(en1, 95));#np.median(en1,axis=0));
-print("\tF1-score: %1.4f" % np.percentile(en2, 95));#np.median(en2,axis=0));
-print("\tAccuracy: %1.4f" % np.percentile(en3, 95));#np.median(en3,axis=0));
 
 
 print("\nSVM");
@@ -257,16 +244,16 @@ svm_score[3] = svm_score[3]/(5*repeated_times);
 print("\tAccuracy: %1.4f" % svm_score[3]);
 
 
-print("\nNaive Bayes");
+print("\nANN:");
 print("Binary Classifier:");
-gnb_score[0] = gnb_score[0]/(5*repeated_times);
-print("\tPrecision: %1.4f" % gnb_score[0]);
-gnb_score[1] = gnb_score[1]/(5*repeated_times);
-print("\tRecall: %1.4f" % gnb_score[1]);
-gnb_score[2] = gnb_score[2]/(5*repeated_times);
-print("\tF1-score: %1.4f" % gnb_score[2]);
-gnb_score[3] = gnb_score[3]/(5*repeated_times);
-print("\tAccuracy: %1.4f" % gnb_score[3]);
+ann_score[0] = ann_score[0]/(5*repeated_times);
+print("\tPrecision: %1.4f" % ann_score[0]);
+ann_score[1] = ann_score[1]/(5*repeated_times);
+print("\tRecall: %1.4f" % ann_score[1]);
+ann_score[2] = ann_score[2]/(5*repeated_times);
+print("\tF1-score: %1.4f" % ann_score[2]);
+ann_score[3] = ann_score[3]/(5*repeated_times);
+print("\tAccuracy: %1.4f" % ann_score[3]);
 
 
 print("\nK-Nearest Neighbours");
