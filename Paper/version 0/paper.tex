@@ -119,10 +119,10 @@ The abstract should briefly summarize the contents of the paper in
 \pagebreak
 \section{Definitions/Research Problem}
 %
-The research aims to design an effective classification method for automatically detecting depressive risk of users which has a potential to implement in the real environment of social network. 
+The research aims to design an effective classification method for automatically detecting depressive risk of users which is also able to expend a potential to implement in the real environment of social network. 
 %
 \paragraph{}
-.... The research objective is defined:\\
+The research objective is defined:\\
 \textbf{Definition 1} \textit{Let $\mathbb{S}$ be a set of user properties to present an effective user profile for depression, a user property s $\in$ $\mathbb{S}$ is a tuple $s := \langle p_{1}, p_{2}, p_{3}$, $\cdots p_{n} \rangle$, where
 \begin{itemize}
   \item p is a visualisation or instance of an user property;
@@ -160,20 +160,7 @@ This research aims to discover an effective classification model $\mathbb{M}$ wh
 %
 \paragraph{}
 %
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
+Generally, we can label the users into two classes: depression users and group away of depression. We naturally employ machine learning technique for classification to seek an effective solution. And the binary classification is seen as a supervised learning because the objective is to use machine learning to automatically classify participants into two labelled categories of depression and depression-less.
 %
 %
 %
@@ -331,6 +318,7 @@ where
   \item $i$ is the order number of specific base model.
 \end{itemize}
 %
+In this ensemble method, the driving principle is to build a couple of estimators independently and then to average their predictions. The combined estimator is usually better than any of the single base estimator because instances' variance is moderated.
 %
 \subsubsection{Algorithm}
 %
@@ -442,35 +430,71 @@ We employ the questionnaire data in NHANES 2013 - 2014 collection as input data 
 \paragraph{}
 NHANES integrates health tools for measuring health status like Patient Health Questionnaire ( PHQ-9 ) depression screen tool. PHQ-9 tool is a 9-item screening instrument to measure depressive severity from no depression to major depressive disorder. In NHANES, PHQ-9 measure is the only integrated measurement for depression because it is a simple, reliable and valid measure of depression severity [PHQ-9]. And it has been a useful clinical and research tool in years. There are plenty of health researches assigning with NHANES data and integrated PHQ-9 tool to study depression related health issues. For instance, Stuart et, al. [Stuart] in 2011 researched the relationship between depression and low cholesterol among household population using NHANES data; Alison et, al. [Alison] in 2012 proposed a association between major depressive disorder and obesity by assessing 2001-2004 NHANES collections; Ubani and Zhang [Ubani] in 2015 published a research of NHANES data to study the role of adiposity in the relationship between serum leptin and severe major depressive episode; and Andrea et, al. [Andrea] in 2016 explored depressed adults information in social support and health service use of NHANES data; Nguyen et, al. [Nguyen] in 2017 research the association between blood folate concentrations and depression in reproductive aged U.S. women in NHANES 2011 - 2012 collection.
 
+Based on the integrated PHQ-9 screen measurement, we can establish ground-truth label information (on whether or not participant has depression) for whole dataset. In scales of PHQ-9 measurement, there are five level of depression severity from minimal level to severe level. In the research of Kroenke et, al. [PHQ-9], they found that patients who were identified at least on the moderate level (score $\geq$ 10) of depression in PHQ-9 measurement had a sensitivity of 88\% and a specificity of 88\% for major depression. We thereby choose the separation at PHQ-9 score 10. Participant who has a PHQ-9 score less than 10 is considered as a healthy person of depression or vice versa. We label these depression-less people as the logical truth or "1"; reversely those depressive people as the logical false or  "0".
 %
 %
 %
-%
-%
-\subsubsection{Overall Dataset}
+\subsubsection{Principles Of Data Preprocessing}
 \paragraph{}
+In spite of the fact that NHANES questionnaire collection was very organised and carefully preserved, it still existed some errors and missing values. And naturally part of participants did not complete all questions in the questionnaire. Furthermore,  the questionnaire involves "Refuse" option and "Don't Know" option for nearly every question, because the design of it toke a very cautious consideration of personal privacy and individual interests. It is hence essential to fill, correct and normalise those meaningless inputs. In order to uniform all actions taken in data cleaning, we design a couple of presumption and principles to manage the proceeding:
+\begin{enumerate}[label=\alph*)]
+	\item	  we assume that missing inputs belong to the persons who have on depressive risk;
+	\item   the choice of "Refuse" option or "Don't Know" option is presumed normal which can be corrected by the statistical mean of inputs;
+	\item	  all inputs of survey questions should be converted into binary, range and numbers due to the design of answer options;
+	\item	  the final value of each input should be normalised and have a limited byte size.
+\end{enumerate}
 %
 %
-%
-%
+\subsubsection{The Overall Dataset}
+\paragraph{}
+After data preprocessing, we has an overall dataset that involves 5398 participants with 516 ( 9.56\% ) depressive persons and 4882 ( 90.44\% ) depression-less people among. The features are directly converted from the original major questions in the health survey, which means a major question of NHANES simply presents one feature in our dataset. After rejecting several irrelevant questions that limited by the age or gender, we get a total of 98 features. Among them, inputs in 49 feature are binary, 36 features are range data and the rest 14 features are float numbers. 
 %
 %
 \subsection{Baseline Models}
 %
+Many machine learning packages and tools are accessible to implement common classification algorithms. Scikit-learn library from Python is one of the most well-designed machine learning package. It provides simple and efficient tools for data mining and data analysis. And it nearly contains all supervised learning methods for both binary and multi-class classification. We thereby choose scikit-learn Python package to implement four baseline models.
 %
-\subsubsection{Decision Tree}
+\subsubsection{Kernel and Parameters}
+%
+How to select suitable kernel and parameters is common task for classification but it is also complex for specific examples. We only balance the settings of baseline models instead searching a perfect for the parameter because it is uncertain if the settings could maximum the performance in utter instances. And the predictive performance is expected being improved by ensemble classification. Therefore, we employ common values for kernel and parameters in four sub-models:
+
+\begin{enumerate}[label=\Roman*)]
+	\item	  Decision Tree:
+	\begin{enumerate}[label=\arabic*)]
+		\item scikit-learn uses an optimised version of the CART decision tree algorithm;
+		\item the depth of the tree is limited at maximum of 3 in order to prevent overfitting;
+		\item \"min\_samples\_leaf=1\" is often the best choice due to few classes in classification;
+		\item the criteria of the quality of split is default as the Gini impurity;
+		\item sample weight is preferred by normalising the sum of the sample weights to prevent the tree from being biased toward the dominant class.\\
+	\end{enumerate}
+	\item   Artificial Neutral Network:
+	\begin{enumerate}[label=\arabic*)]
+		\item ANN model implements a multi-layer perception algorithm within back-propagation training method;
+		\item there are three hidden layers in the proposed network and each of them exists 30 neutrons;
+		\item Activation function for the hidden layer is the rectified linear unit function;
+		\item Adam stochastic gradient-based optimiser is preferred due to relatively large amount of training samples;
+		\item the learning is initialised from a small step-size 0.001 for a reasonably big learning rate;
+		\item	maximum number of iterations is set as 10000 to prevent run out of memory while doing convergence;
+		\item the seed is randomly generated by random state computer generator to achieve the maximum of variability.\\
+	\end{enumerate}
+	\item	  K-Nearest Neighbour: 
+	\begin{enumerate}[label=\arabic*)]
+		\item we use the basic nearest neighbours classifier with k is an integer 5;
+		\item the contribution of neighbours is treated equal so the weights between neighbours is set as "uniform";
+		\item the algorithm used to compute the nearest neighbours is set as \"auto\" because the number of features is varied in overall dataset and sub-datasets.
+		\item the size of leaf is default as 30 which may affect the speed of construction and query;
+		\item the default metric is Euclidean due to standard metric configuration.\\
+	\end{enumerate}
+	\item	  Support Vector Machine: 
+	\begin{enumerate}[label=\arabic*)]
+		\item a popular Radial Basis Function (RBF) kernel is used in SVM sets;
+		\item the parameter \"C\" that trades off misclassification of training examples against simplicity of the decision surface is set as 1;
+		\item the parameter \"gamma\" defines how much influence a single training example has is set as "0.1". 
+	\end{enumerate}
+\end{enumerate}
 %
 %
-\subsubsection{Artificial Neutral Network}
-%
-%
-\subsubsection{K-Nearest Neighbour}
-%
-%
-\subsubsection{Support Vector Machine}
-%
-%
-%
+Moreover, all four base models are configured for binary classification and their predictive performances are weighted in both labelled classes. 
 %
 %
 \subsection{Performance Measure}
@@ -502,13 +526,8 @@ Referred to normalisation factor $E$ in equation (1), F1 score need to be normal
 %
 %
 %
-%
-%
-%
-\pagebreak
 \section{Results and Discussions}
 %
-$\mathbb{D}$ = $\mathbb{D}_{mental} + \mathbb{D}_{social} + \mathbb{D}_{role} + \mathbb{D}_{pain} + \mathbb{D}_{physical} + \mathbb{D}_{general}$
 %
 \subsection{Experimental Results}
 %
@@ -516,140 +535,175 @@ $\mathbb{D}$ = $\mathbb{D}_{mental} + \mathbb{D}_{social} + \mathbb{D}_{role} + 
 %
 \paragraph{Sub-Model Performance}
 %
-\begin{center}
+By comparing the performances of four base models, Decision tree algorithm has the highest accuracy and F1 measure. SVM technique has a similar performance as decision tree algorithm but only a bit lagging in precision. ANN method performs more advantageous in precision score and KNN method operates more fitting in recall measurement. 
 \begin{table}[h]
 \begin{tabular}{|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Accuracy (mean)}} & {\color[HTML]{333333} \textbf{Precision (mean)}} & {\color[HTML]{333333} \textbf{Recall (mean)}} & {\color[HTML]{333333} \textbf{F1 score (mean)}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{SVM}                                    & 0.921                                    & 0.927                                     & 0.990                                  & 0.958                                    \\ \hline
+\textbf{SVM}  & 0.921  & 0.927 & 0.990  & 0.958  \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{ANN}                                    & 0.905                                    & 0.941                                     & 0.955                                  & 0.948                                    \\ \hline
+\textbf{ANN} & 0.905 & 0.941 & 0.955 & 0.948 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{KNN}                                    & 0.908                                    & 0.913                                     & 0.993                                  & 0.951                                    \\ \hline
+\textbf{KNN}  & 0.908   & 0.913  & 0.993  & 0.951  \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{DT}                                     & 0.925                                    & 0.938                                     & 0.981                                  & 0.959                                    \\ \hline
+\textbf{DT} & 0.925  & 0.938 & 0.981  & 0.959  \\ \hline
 \end{tabular}
+\caption{Performances of sub-models in the overall dataset}
+\label{submodels}
 \end{table}
-\end{center}
 %
 %
 \paragraph{Ensemble Classifier}
 %
-\begin{center}
+We use F1 measure for the main indicator of model's performance. According to equation (1) and (2), we can calculate the weight for each base model (see at table 2.) and further generate the complete form of ensemble classifier:
+\begin{equation}
+\mathbb{F}_{k} = 0.228 \cdot f_{svm} + 0.283 \cdot f_{nb} + 0.266 \cdot f_{knn} + 0.223 \cdot f_{dt}
+\end{equation}
 \begin{table}[h]
 \begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{F1 score (mean)}} & {\color[HTML]{333333} \textbf{1 - F1}} & {\color[HTML]{333333} \textbf{Weight}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{SVM}                                    & 0.958                                    & 0.042                                  & 0.228                                  \\ \hline
+\textbf{SVM}& 0.958  & 0.042  & 0.228 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{ANN}                                    & 0.948                                    & 0.052                                  & 0.283                                  \\ \hline
+\textbf{ANN} & 0.948  & 0.052   & 0.283    \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{KNN}                                    & 0.951                                    & 0.049                                  & 0.266                                  \\ \hline
+\textbf{KNN} & 0.951   & 0.049  & 0.266 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{DT}                                     & 0.959                                    & 0.041                                  & 0.223                                  \\ \hline
+\textbf{DT}  & 0.959  & 0.041  & 0.223  \\ \hline
 \end{tabular}
+\caption{Calculation of weights for sub-models}
+\label{weight}
 \end{table}
-\end{center}
+%
+%
+\begin{table}[h]
+\begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+{\color[HTML]{333333} \textbf{Dataset}} & {\color[HTML]{333333} \textbf{Features}} & {\color[HTML]{333333} \textbf{F1 score}} & {\color[HTML]{333333} \textbf{Accuracy}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{overall}$}& 98  & 0.976  & 0.954 \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{physical}$}& 7  & 0.964  & 0.931 \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{role}$} & 9  & 0.963   & 0.929    \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{social}$} & 6   & 0.964  & 0.931 \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{mental}$ }  & 4  & 0.975  & 0.953  \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{pain} $ }  & 2  & 0.961  & 0.925  \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{$\mathbb{D}_{general}$ }  & 70  & 0.964  & 0.931  \\ \hline
+\end{tabular}
+\caption{Features and performances of ensemble classifier}
+\label{subsets}
+\end{table}
 %
 %
 \paragraph{Predictive Performance}
 %
 %
+\paragraph{}
+The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0. F1 measure equally considers both precision and recall in the performance measurement.
 \begin{table}[h]
 \begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{SVM}                           & 0                                       & 0.9498                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{SVM} & 0.9577  & 0.9498 & 0.9498  & 0.9498  & 0.9570  & 0.9498 & 0.9508 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{ANN}                           & 0                                       & 0.9437                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{ANN} & 0.9480  & 0.9435  & 0.9350  & 0.9421 & 0.9613 & 0.9498 & 0.9302 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{KNN}                           & 0                                       & 0.9468                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{KNN} & 0.9513  & 0.9468 & 0.9449 & 0.9438 & 0.9582 & 0.9382 & 0.9491 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{DT}                            & 0                                       & 0.9496                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{DT} & 0.9591 & 0.9495  & 0.9492 & 0.9498  & 0.9601  & 0.9498 & 0.9501  \\ \hline
 \rowcolor[HTML]{9AFF99} 
-\textbf{Ensemble}                      & 0                                       & 0.9658                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{Ensemble}  & 0.9757  & 0.9637  & 0.9630  & 0.9639 & 0.9750 & 0.9610 & 0.9638  \\ \hline
 \end{tabular}
-\caption{F1 Measure}
+\caption{Performance in F1 score}
 \label{F1}
 \end{table}
 %
 %
+\paragraph{}
+Accuracy is the fraction of predictions our model got right. It indicates the number of correct predictions made in all occurrences of both labels. 
 \begin{table}[h]
 \begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{SVM}                           & 0                                       & 0.9044                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{SVM} & 0.9209  &0.9044 & 0.9044 & 0.9044 & 0.9192 & 0.9044  & 0.9065  \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{ANN}                           & 0                                       & 0.8954                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{ANN} & 0.9053 & 0.8950 & 0.8793 & 0.8924 & 0.9283 & 0.9044 & 0.8729 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{KNN}                           & 0                                       & 0.9002                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{KNN} & 0.9080  & 0.9003 & 0.8960 & 0.8949 & 0.9228 & 0.8862 & 0.9036 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{DT}                            & 0                                       & 0.9047                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{DT} & 0.9244 & 0.9046 & 0.9035  & 0.9051 & 0.9262 & 0.9044 & 0.9059 \\ \hline
 \rowcolor[HTML]{9AFF99} 
-\textbf{Ensemble}                      & 0                                       & 0.9343                                       & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{Ensemble} & 0.9537 & 0.9306 & 0.9287  & 0.9306  & 0.9527 & 0.9249 & 0.9305  \\ \hline
 \end{tabular}
-\caption{Accuracy}
+\caption{Performances of Accuracy}
 \label{Accuracy}
 \end{table}
 %
 %
-%
-%
-%
+\paragraph{}
+Precision is the ability of a classifier not to label an instance positive that is actually negative. It measures how effective to diagnose person's psychological health.
 \begin{table}[h]
 \begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{SVM}                           & 0                                       & 0.9044                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{SVM} & 0.9272 & 0.9044 & 0.9044  & 0.9044  & 0.9214  & 0.9044  & 0.9071  \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{ANN}                           & 0                                       & 0.9187                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{ANN}   & 0.9413   & 0.9186   & 0.9107  & 0.9168   & 0.9385 & 0.9044 & 0.9239 \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{KNN}                           & 0                                       & 0.9147                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{KNN} & 0.9127 & 0.9148 & 0.9071  & 0.9129 & 0.9379 & 0.9127  & 0.9083  \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{DT}                            & 0                                       & 0.9100                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{DT} & 0.9380  & 0.9103  & 0.9057  & 0.9104  & 0.9392 & 0.9044  & 0.9121   \\ \hline
 \rowcolor[HTML]{9AFF99} 
-\textbf{Ensemble}                      & 0                                       & 0.9348                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{Ensemble} & 0.9562  & 0.9335  & 0.9286 & 0.9306  & 0.9595  & 0.9249 & 0.9302 \\ \hline
 \end{tabular}
-\caption{Precision}
+\caption{Performances of Precision}
 \label{Precision}
 \end{table}
 %
 %
-%
-%
-%
+\paragraph{}
+Recall is the ability of a classifier to find all positive instances. It measures how many healthy people are correctly identified. For ensemble classifier, nearly no person with depression is diagnosed into the health group.
 \begin{table}[h]
 \begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{SVM}                           & 0                                       & 1.0000                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{SVM} & 0.9904 & 1.0000  & 1.0000  & 1.0000  & 0.9956   & 1.0000   & 0.9989    \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{ANN}                           & 0                                       & 0.9703                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{ANN}   & 0.9549 & 0.9700  & 0.9607  & 0.9690  & 0.9853  & 1.0000  & 0.9367     \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{KNN}                           & 0                                       & 0.9812                                      & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{KNN}  & 0.9934 & 0.9811  & 0.9860  & 0.9769 & 0.9795 & 0.9676  & 0.9937       \\ \hline
 \rowcolor[HTML]{ECF4FF} 
-\textbf{DT}                            & 0                                       & 0.9928                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{DT}  & 0.9814  & 0.9923  & 0.9972  & 0.9928 & 0.9821  & 1.0000  & 0.9916     \\ \hline
 \rowcolor[HTML]{9AFF99} 
-\textbf{Ensemble}                      & 0                                       & 1.0000                                        & 0                                                          & 0                                                            & 0                                                            & 0                                                          & 0                                      \\ \hline
+\textbf{Ensemble}   & 1.0000 & 1.0000 & 1.0000  & 1.0000  & 0.9990  & 1.0000 & 1.0000   \\ \hline
 \end{tabular}
-\caption{Recall}
+\caption{Performances of Recall}
 \label{Recall}
 \end{table}
 %
 %
 %
+\paragraph{}
+Ensemble classifier is obviously superior than baseline models as performing advantageous at all measures
+in all datasets. 
 %
 %
 %
@@ -681,17 +735,22 @@ $\mathbb{D}$ = $\mathbb{D}_{mental} + \mathbb{D}_{social} + \mathbb{D}_{role} + 
 %
 %
 \pagebreak
-\section{Analysis}
-\subsection{Sensitivity Study}
+\section{Sensitivity Study}
 %
 %
 %
-%
-%
-%
-%
-%
-%
+SVM: 
+A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly.
+The larger gamma is, the closer other examples must be to be affected.
+Proper choice of C and gamma is critical to the SVM’s performance. One is advised to use C and gamma spaced exponentially far apart to choose good values.
+
+The behaviour of the model is very sensitive to the gamma parameter. If gamma is too large, the radius of the area of influence of the support vectors only includes the support vector itself and no amount of regularisation with C will be able to prevent overfitting.
+
+When gamma is very small, the model is too constrained and cannot capture the complexity or “shape” of the data. The region of influence of any selected support vector would include the whole training set. The resulting model will behave similarly to a linear model with a set of hyperplanes that separate the centres of high density of any pair of two classes.
+
+KNN: 
+The optimal choice of the value  is highly data-dependent: in general a larger  suppresses the effects of noise, but makes the classification boundaries less distinct.
+The basic nearest neighbours classification uses uniform weights: that is, the value assigned to a query point is computed from a simple majority vote of the nearest neighbours. Under some circumstances, it is better to weight the neighbours such that nearer neighbours contribute more to the fit. This can be accomplished through the weights keyword. The default value, weights = 'uniform', assigns uniform weights to each neighbour. weights = 'distance' assigns weights proportional to the inverse of the distance from the query point. Alternatively, a user-defined function of the distance can be supplied to compute the weights.
 %
 %
 %
@@ -711,34 +770,27 @@ $\mathbb{D}$ = $\mathbb{D}_{mental} + \mathbb{D}_{social} + \mathbb{D}_{role} + 
 % ---- Bibliography ----
 %
 \pagebreak
-\begin{thebibliography}{8}
-%\bibitem{ref_article1}		
-%
-\bibitem{ref_article}	R. L. Spitzer, K. Kroenke, and J. B. Williams, "Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. Primary Care Evaluation of Mental Disorders. Patient Health Questionnaire," JAMA, vol. 282, no. 18, pp. 1737-44, Nov 10 1999.
-%
-\bibitem{ref_article}	K. Kroenke, R. L. Spitzer, and J. B. Williams, "The PHQ-9: validity of a brief depression severity measure," J Gen Intern Med, vol. 16, no. 9, pp. 606-13, Sep 2001.
-%
-\bibitem{ref_article}	M. Résibois, P. Kuppens, I. Van Mechelen, P. Fossati, and P. Verduyn, "Depression severity moderates the relation between self-distancing and features of emotion unfolding," Personality and Individual Differences, vol. 123, pp. 119-124, 2018.
-%
-\bibitem{ref_article}	B. T. Stegenga et al., "Depression, anxiety and physical function: exploring the strength of causality," Journal of Epidemiology and Community Health, vol. 66, no. 7, pp. e25-e25, 2012.
-%
-\bibitem{ref_article}	H. Xiao, J. Y. Yoon, and B. Bowers, "Living Arrangements and Quality of Life," Western Journal of Nursing Research, vol. 38, no. 6, pp. 738-752, 2015.
-%
-%
-\bibitem{ref_article} Rokach, L.: ‘Ensemble-based classifiers’, Artificial Intelligence Review, 2010, 33, (1), pp. 1-39.
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
+\begin{thebibliography}{8}	
+%	
+\bibitem{ref_article}Andrea, S.B., Siegel, S.A.R., and Teo, A.R.: ‘Social Support and Health Service Use in Depressed Adults: Findings From the National Health and Nutrition Examination Survey’, General Hospital Psychiatry, 2016, 39, pp. 73-79
+\bibitem{ref_article}Choudhary, R., and Gianey, H.K.: ‘Comprehensive Review On Supervised Machine Learning Algorithms’, in Editor (Ed.)\^(Eds.): ‘Book Comprehensive Review On Supervised Machine Learning Algorithms’ (2017, edn.), pp. 37-43
+\bibitem{ref_article}Clark, M.M., Bradley, K.L., Jenkins, S.M., Mettler, E.A., Larson, B.G., Preston, H.R., Liesinger, J.T., Werneburg, B.L., Hagen, P.T., Harris, A.M., Riley, B.A., Olsen, K.D., and Vickers Douglas, K.S.: ‘The Effectiveness of Wellness Coaching for Improving Quality of Life’, Mayo Clinic Proceedings, 2014, 89, (11), pp. 1537-1544
+\bibitem{ref_article}Fei, Y., and Li, W.-q.: ‘Improve artificial neural network for medical analysis, diagnosis and prediction’, Journal of Critical Care, 2017, 40, pp. 293
+\bibitem{ref_article}Gonzalez-Saenz de Tejada, M., Bilbao, A., Baré, M., Briones, E., Sarasqueta, C., Quintana, J.M., Escobar, A., and Baré, M.: ‘Association of social support, functional status, and psychological variables with changes in health-related quality of life outcomes in patients with colorectal cancer’, Psycho-Oncology, 2016, 25, (8), pp. 891-897
+\bibitem{ref_article}Kotsiantis, S.B., Zaharakis, I.D., and Pintelas, P.E.: ‘Machine learning: a review of classification and combining techniques’, Artificial Intelligence Review, 2006, 26, (3), pp. 159-190
+\bibitem{ref_article}Kroenke, K., Spitzer, R.L., and Williams, J.B.: ‘The PHQ-9: validity of a brief depression severity measure’, J Gen Intern Med, 2001, 16, (9), pp. 606-613
+\bibitem{ref_article}Kumar, R.: ‘Fundamental of artificial neural network and fuzzy logic’ (University Science Press, An Imprint of Laxmi Publications Pvt. Ltd., 2010. 2010)
+\bibitem{ref_article}Limsetto, N., and Waiyamai, K.: ‘Handling Concept Drift via Ensemble and Class Distribution Estimation Technique’, in Editor (Ed.)\^(Eds.): ‘Book Handling Concept Drift via Ensemble and Class Distribution Estimation Technique’ (Springer Berlin Heidelberg, 2011, edn.), pp. 13-26
+\bibitem{ref_article}Lu, Y., Cheung, Y.M., and Tang, Y.Y.: ‘Hybrid sampling with bagging for class imbalance learning’, in Editor (Ed.)\^(Eds.): ‘Book Hybrid sampling with bagging for class imbalance learning’ (Springer Verlag, 2016, edn.), pp. 14-26
+\bibitem{ref_article}Merikangas, A., Mendola, P., Pastor, P., Reuben, C., and Cleary, S.: ‘The association between major depressive disorder and obesity in US adolescents: results from the 2001–2004 National Health and Nutrition Examination Survey’, Journal of Behavioral Medicine, 2012, 35, (2), pp. 149-154
+\bibitem{ref_article}Nguyen, B., Weiss, P., Beydoun, H., and Kancherla, V.: ‘Association between blood folate concentrations and depression in reproductive aged U.S. women, NHANES (2011–2012)’, Journal of Affective Disorders, 2017, 223, pp. 209-217
+\bibitem{ref_article}Ostir, G.V., Berges, I.M., Ottenbacher, A., and Ottenbacher, K.J.: ‘Patterns of change in depression after stroke’, J Am Geriatr Soc, 2011, 59, (2), pp. 314-320
+\bibitem{ref_article}Rokach, L.: ‘Ensemble-based classifiers’, Artificial Intelligence Review, 2010, 33, (1), pp. 1-39
+\bibitem{ref_article}Sagi, O., and Rokach, L.: ‘Ensemble learning: A survey’, Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 2018, 8, (4), pp. e1249
+\bibitem{ref_article}Serpen, G., and Pathical, S.: ‘Classification in High-Dimensional Feature Spaces: Random Subsample Ensemble’, in Editor (Ed.)\^(Eds.): ‘Book Classification in High-Dimensional Feature Spaces: Random Subsample Ensemble’ (2009, edn.), pp. 740-745
+\bibitem{ref_article}Somvanshi, M., and Chavan, P.: ‘A review of machine learning techniques using decision tree and support vector machine’, in Editor (Ed.)\^(Eds.): ‘Book A review of machine learning techniques using decision tree and support vector machine’ (2016, edn.), pp. 1-7
+\bibitem{ref_article}Tedders, S.H., Fokong, K.D., McKenzie, L.E., Wesley, C., Yu, L., and Zhang, J.: ‘Low cholesterol is associated with depression among US household population’, Journal of Affective Disorders, 2011, 135, (1-3), pp. 115-121
+\bibitem{ref_article}Ubani, C.C., and Zhang, J.: ‘The role of adiposity in the relationship between serum leptin and severe major depressive episode’, Psychiatry Research, 2015, 228, (3), pp. 866-870
 %
 %
 %
