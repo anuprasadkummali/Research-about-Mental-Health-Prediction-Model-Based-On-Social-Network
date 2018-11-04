@@ -39,18 +39,8 @@ Xiaohui Tao\inst{1} }
 The abstract should briefly summarize the contents of the paper in
 150--250 words.
 %
-\keywords{psychological knowledge base \and ensemble classification technique \and supervised learning \and depression.}
+\keywords{ major depressive disorder \and ensemble classification technique \and supervised learning \and psychological knowledge base.}
 \end{abstract}
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
 %
 %
 %
@@ -67,59 +57,82 @@ The abstract should briefly summarize the contents of the paper in
 \section{Introduction}
 %
 %
+Major depressive disorder also known simply as depression,  is a global challenge for healthcare. In psychological domain, it is defined as a mental disorder consistent with at least two weeks of developing low mood across most situations [Zimmerman]. Major depressive disorder can be successfully diagnosed by interviewers normally psychologists, applying operational diagnostic criteria of depression. However, a wide range of depressive patients did not seek clinic advices or professional care at all [Huerta-Ramírez]. Health professionals hence often fail to approach a proper depressive patient at an early stage. 
+
+Early diagnosis of depression are among the priority actions for reducing the burden of depressive disorders [Huerta-Ramírez]. With the growing popularity of artificial intelligence, one of methods in early diagnosis is to apply machine learning technique in the processing of exploring depressive patients from wide range of the potential persons. Using algorithms to learn from individual health history and previous behaviours, machine learning enable computers to automatically distinguish person with depression from persons without depression. It is apparently quick comparing to traditional interview method. And it has a great potential to apply similar algorithms to crowdsource depression on online social networks which is able to approach millions of users without a significant cost of healthcare. However, there is a lack of research into an efficient machine learning classifier for detecting depression based on a large data.
+
+Therefore, the objective of the present paper is to propose a suitable effective machine learning method in discriminating depression from collected health data for further interview diagnosis. 
 %
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
+%         
 %
 %
 %
 \pagebreak
 \section{Related Work}
+\subsection{Psychological Studies Of Clarifying Depression}
+% 
 %
-%
-\subsection{Psychological Studies}
-%
-%
-\subsection{Classification Research on Depression}
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
+\paragraph{}
+In the domain of psychology, researchers created questionnaire-based scale instruments for roughly screening the mental status of patients. Several measures among them have been widely accepted as good and reliable tools, such as BDI [Huerta-Ramírez][Tsugawa], CES-D [Choudhury][Tsugawa], SCL-20 and PHQ-9 [PHQ-9]. 
+
+Zimmerman et, al. [Zimmerman] compared a preferred scale measure "IDD" of depression to psychiatric interview and found that it had good reliability and was significantly associated with the result of clinician's diagnosis. The proposed method had a 97.2 \% [Zimmerman] overall accuracy on the criterion of clinic diagnosis. And new method is suggested to be an inexpensive way to collect large homogeneous cases to screen depression. However, the research also appointed three apparent reasons why self-report depression scales generally performed poorer than psychiatric interview: first, scale measure covered less diagnostic criteria for major depressive disorder than interviews; second, non-criteria items in depression scale inventory decreased specificity of performance; and self-report scales did not assess symptom duration and exclusion criteria which may reverse the previous judgement [[Zimmerman]]. The classification via scale measure and clinical interview implied contrasting algorithms [Zimmerman] to screen depression but all based on the depression diagnostic criteria. 
+
+Sakado et, al. [Sakado] designed a 22-item inventory "IDL" to diagnose depression based clinical criteria of major depressive disorder. The proposed inventory had a sufficient discriminant validity in identifying a depressive disorder with or without previous medical record of depression. It had a couple of advantages comparing to traditional interview. For instance, it is inexpensive and speedy in examining a lifetime prevalence of major depression [Sakado]. And it avoided past history of depression distorting the current action of identifying depressive patient [Sakado]. In the experiment, 22-item inventory reached a higher sensitivity of 83 \%.The method is thought to be a both inexpensive and quick instrument for preliminary screening of major depressive disorder. 
+
+Kroenke et, al [PHQ-9] examined the performance of Patient Health Questionnaire (PHQ-9) self-administrated diagnostic instrument by companion to 20-item Short-Form General Health Survey (SF-20) and an independent structured mental health professional interview. Using the psychological interview as the criterion standard, main score of PHQ-9 had a sensitivity of 88 \% and a specificity of 88 \% for major depression [PHQ-9]. The study assessed depression severity in PHQ-9 measure to improve the detection.  PHQ-9 scores of 5, 10, 15, 20 represented valid thresholds of limits in mild, moderate, moderately severe and severe depression [PHQ-9]. For instance, persons with scores less than 10 were seldom diagnosed major depressive disorder in clinical interview. A very close association between PHQ-9 and SF-20 mental health inventory was observed. PHQ-9 scores were almost perfectly correlated with SF-20 scores in all five subjects [PHQ-9]. Moreover, the research highlighted one of PHQ-9 advantages that was "its exclusive focus on the 9 diagnostic criteria for DSM-IV depressive disorder" [PHQ-9]. PHQ-9 method hence excluded the non-criteria symptoms for measure specifically for major depression. It was able to discriminate accurately major depression from other psychological disorders such as anxiety, hopelessness and distress.
+
+In summary, there appears to be many comparable scale measures for major depressive disorder. Most of them are in the form of questionnaire such as IDD, IDL, SF-20 and PHQ-9. Their performance are strongly correlated with mental health interview. Some measures like PHQ-9 also demonstrated a high sensitivity in screening depression over time change [PHQ-9]. However, there are still inconvenience occurred during managing questionnaire for a large cases. Therefore, researchers recommended those measures being useful tools for monitoring outcomes of depression therapy [PHQ-9] and preliminary screening before formal mental health inventory [Sakado]. Those measures demonstrated successful instances that using mental health diagnostic criteria to establish a quick and inexpensive measurement for the detection of depression.
 %
 %
 %
 %
+\subsection{Complexity In Dataset From Social Media For Detecting Depression}
+%
+%
+\paragraph{}
+The classification of depression-indicative actions on social media is an exciting direction for detecting major depression. Mining and analysis of social media activities in order to distinguish depressive people from a wide online community has a great momentum recently among researchers. One portion of those researches is to identify the diagnostic features which indicated depressive symptoms from online media.
+
+Ophir et, al. [Ophir] collected 190 adolescents who received depression treatment and researched their Facebook status to look for depression indicators among their online social network activities. The research used a multiple regression analysis to reveal features that estimated depression scores [Ophir]. They extracted 13 status update features that discriminated mental status update in both depressive direction and non-depressive path. Four significant features among them enabled to predict the worse status in depression [Ophir]: 
+\begin{enumerate}[label=\alph*)]
+	\item depressive symptoms according to diagnostic criteria, 
+	\item cognitive distortions,
+	\item poetic-dramatic verbal function,
+	\item attitudes towards others.
+\end{enumerate}
+By the judgement of ten psychological experts, three features had the higher depression correlation scores as depressive symptoms (0.839), cognitive distortions (0.748) and content valence (0.698) [Ophir]. Although there was a lack of predictive validity in the study, it still laid the ground for research aimed at detecting depression online [Ophir]. It made contribution to extract features from online activities for identifying depressive status.
+
+Mowery et, al. [Mowery] developed an annotated corpus of 9300 tweets from Twitter APIs using depression-related keywords. The study also used nature language processing to detect both depression symptoms and psychological stressors in tweet corpus and investigated the correlations between them. The analyses of depressive tweets suggested that only searching keywords is insufficient to predict depressive tweets because context can change the meaning of keywords in the tweet [Mowery]. In fact, depression symptoms and psychosocial stressors were observed in the tweets without depression-related keyword [Mowery]. The association between several depression symptoms and psychosocial stressors were observed as well, such as disturbed sleep correlated with educational problem. One advantage of this methodology was that it could capture relevant depressive symptoms without a formal diagnosis [Mowery]. However, there was a limitation of the proposed dataset that no more than one depression symptom or psychosocial stressor were observed in each tweet [Mowery].
+
+From these two studies on extracting depressive features, the task that aims at establishing a suitable dataset from online social media to predict depression based on extracted features is actually intricate. And there is a lack of machine learning methodology in these researches to automate the proceeding of classifying depression from non-depression.
+%
+%
+%
+\subsection{Research Of Classifying Depression On Social Media}
+%
+%
+\paragraph{}
+From various online contents of depressive symptoms and non-depression indicators, it is possible to use machine learning techniques to develop automatic detection systems for major depressive disorders. Unusual actions and uncommon patterns of interaction [Wongkoblap] in social networks can be classified into cases or non-cases of depression through existing learning algorithms,  such as Support Vector Machine algorithm, Naive Bayes method and Random Forest technique.
+
+Choudhury et, al. [Choudhury] developed a probabilistic model to train crowdsourcing Twitter posts to determine if depression-related by support vector machine algorithm. Using the model, a social media depression index was created to characterise the levels of depression in population. It confirmed that the depression index from the proposed model had a strong correlation with national depression statistics [Choudhury]. It also provided solid evidence that understanding peoples' social environment was useful for detecting depression severity. The study used a Support Vector Machine classifier with RBF kernel for identifying depressive instances. Five-fold cross validation was used to validate the performance of classifier. The results indicated that the best model yielded an average accuracy of 73 \% and high precision of 82 \% [Choudhury].   
+
+Tsugawa et, al. [Tsugawa] also build a SVM supervised learning model to use features from online tweet activities for predict users' current depression status. The study showed that an accuracy of 69 \% can be reached through the prediction of depressive users by the proposed classifier [Tsugawa]. The trusted status (critical standard) of users were generated by CES-D and BDI screening scales of all participants. Features used for predicting depression were extracted from the activity history of users, not like other researches from depressive symptoms. It pointed that long observation periods for collecting data may decrease accuracy [Tsugawa].  
+
+Moreover, researchers compared several supervised learning techniques to achieve the best performance of predicting depression. For instance, Hassan et, al. [Hassan] used majority vote for classification and regression of depression on top of predictions of three single classifiers, Support Vector Machine (SVM) classifier, Naive Bayes (NB) classifier, and Maximum Entropy (ME) classifier. The study illustrated how to find individual depression scale by observing and extracting emotions from the text, using machine learning techniques and natural language processing techniques on different social media platforms [Hassan]. The performance was observed that the accuracy of SVM is 91 \%,  83 \% and 80 \% respectively for NB and ME classifiers.
+
+Fatima et, al. [Fatima] applied Random Forest (RF) algorithm and SVM technique to discriminate the depressive posts and communities from non-depressive ones based on online social contents. The research extracted features from an online communication platform "LiveJournal" as the input of the classification algorithm. LiveJournal provided pre-defined mood tags which enabled to indicate the level of depression in each community and post. Researchers implemented Random Forest algorithm with SVM classifier for text classification to find the maximum margin between severe depressed, moderate depressive and non-depressed classes [Fatima]. They recommended that RF is a very powerful classifier in algorithm for establishing an accurate model for multi-class classification [Fatima]. In the experiment, RF performed better in comparison with SVM method [Fatima]. The proposed model achieved about 90 \% and 95 \% accuracy in classifying the depressive posts and depressed communities, respectively.
+
+Peng, Hu and Dang [Peng] proposed a multi-kernel SVM based model to recognise the depressed people based on Chinese social media Weibo. Three categories of features, user microblog text, user profile and user behaviours, are extracted from Weibo for classification [Peng]. Compared with Naive Bayes, Decision Trees, KNN and single-kernel SVM techniques, multi-kernel SVM method had a lowest error rate 16.5\% for identifying the depressed people [Peng]. The research also compared with the latest ensemble method which can obtain better predictive performance using multiple learning algorithms than the traditional learning algorithms alone [Peng].
+
+Expect these studies relied on text analysis, Reece and Danforth discovered a 100-tree Random Forests methodology for analysing photographic data from Instagram to predictively screen for depression. They employed a couple of machine learning algorithms but 100-tree Random Forests algorithm had the best performance of 70 \% accuracy with a reasonably low number of mis-identities [Reece]. However, the results showed that their predictive method for pre-diagnosis was rather conservative and tended to detect no depression in all instances [Reece]. 
+
+Despite an increasing number of studies investigating depression using social media data, some common problems persist [Wongkoblap]. Successfully distinguishing depressive users from rich­ data source like social media is problematic, "not only due to biases associated with the collection methods, but also with regard to managing consent and selecting appropriate analytics techniques" [Wongkoblap]. In order to improve the performance of preliminary screening major depressive disorders in a relatively large samples, we need to explore a more suitable and high-quality classification technique for detecting depression.
 %
 %
 %
 %
-%
-%
-%
-\pagebreak
 \section{Definitions/Research Problem}
 %
-The research aims to design an effective classification method for automatically detecting depressive risk of users which is also able to expend a potential to implement in the real environment of social network. 
+This research aims to design an effective classification method for automatically detecting depressive risk of users in health data and is also able to potentially expend the model to be implemented in the real environment of social networks. 
 %
 \paragraph{}
 The research objective is defined:\\
@@ -165,8 +178,6 @@ Generally, we can label the users into two classes: depression users and group a
 %
 %
 %
-%
-\pagebreak
 \section{Framework}
 %
 \paragraph{}
@@ -356,7 +367,7 @@ We employ an ensemble supervised learning experiment to classify depressive user
 \subsection{Experiment Design}
 %
 \paragraph{}
-In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocessing on survey data $\mathbb{H}$; next, we aggregate all features of $\mathbb{D}_{overall}$ into 6 health-related functional classes and follow the same procedure to divide $\mathbb{D}_{overall}$ into 6 sub-sets $\mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$ and $\mathbb{D}_{general}$; and we train dataset $\mathbb{D}_{overall}$ by four baseline models (DT, ANN, KNN, SVM) to obtain the relevant performances; then we build the ensemble model $\mathbb{M}_{e}$ by calculating the performance weight $w_{i}$ of each baseline model $M_{i} $; the final step is to train all 6 sub-datasets by the ensemble classifier $\mathbb{M}_{e}$ and to use k-fold cross validation algorithm to value the complete predictive performance. The overall look of all experiment proceedings is illustrated in Fig.~\ref{fig4}. 
+In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocessing on survey data $\mathbb{H}$; next, we aggregate all features of $\mathbb{D}_{overall}$ into 6 health-related functional classes and follow the same procedure to divide $\mathbb{D}_{overall}$ into 6 sub-sets $\mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$ and $\mathbb{D}_{general}$; and we train dataset $\mathbb{D}_{overall}$ by four baseline models (DT, ANN, KNN, SVM) to obtain the relevant performances; then we build the ensemble model $\mathbb{M}_{e}$ by calculating the performance weight $w_{i}$ of each baseline model $M_{i} $; furthermore, we train all 6 sub-datasets by the ensemble classifier $\mathbb{M}_{e}$; and the final step is to use k-fold cross validation algorithm to value the complete predictive performance. The overall look of all experiment proceedings is illustrated in Fig.~\ref{fig4}. 
 \begin{figure}[h]
 \includegraphics[width=1\textwidth]{experiment.png}
 \caption{The overall look of experiment proceedings} \label{fig4}

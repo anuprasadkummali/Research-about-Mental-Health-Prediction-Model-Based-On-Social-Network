@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  1 NOV 2018 02:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  4 NOV 2018 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -379,8 +379,68 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (./paper.aux
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
+
+LaTeX Warning: Label `ref_article' multiply defined.
+
 )
-No file paper.aux.
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -395,7 +455,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count144
 \scratchdimen=\dimen167
@@ -498,142 +558,133 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[3] [4] [5]
+Underfull \vbox (badness 1102) has occurred while \output is active []
 
- [3]
-Overfull \hbox (5.37708pt too wide) in paragraph at lines 147--155
+ [6]
+Overfull \hbox (5.37708pt too wide) in paragraph at lines 160--168
 \OT1/cmr/m/n/10 doesn't suit for clas-si-fi-ca-tion. While learn-ing from re-la
 ted psy-cho-log-i-cal re-searches,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-[4]
-
-LaTeX Warning: Reference `fig1' on page 5 undefined on input line 184.
-
-<concepts.png, id=33, 591.20876pt x 497.86pt>
+[7]
+<concepts.png, id=43, 591.20876pt x 497.86pt>
 File: concepts.png Graphic file (type png)
 <use concepts.png>
-Package pdftex.def Info: concepts.png  used on input line 186.
+Package pdftex.def Info: concepts.png  used on input line 197.
 (pdftex.def)             Requested size: 347.12354pt x 292.32185pt.
-[5 <./concepts.png>]
 
-LaTeX Warning: Reference `fig2' on page 6 undefined on input line 196.
 
-<phq-9.png, id=39, 940.51375pt x 496.85625pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<phq-9.png, id=45, 940.51375pt x 496.85625pt>
 File: phq-9.png Graphic file (type png)
 <use phq-9.png>
-Package pdftex.def Info: phq-9.png  used on input line 198.
+Package pdftex.def Info: phq-9.png  used on input line 209.
 (pdftex.def)             Requested size: 347.12354pt x 183.37904pt.
-[6 <./phq-9.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 213--217
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./concepts.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Overfull \hbox (21.93227pt too wide) in paragraph at lines 213--217
+Overfull \hbox (21.93227pt too wide) in paragraph at lines 224--228
 \OT1/cmr/bx/n/10 Definition 4 \OT1/cmr/m/n/10 Let new re-designed $\U/msb/m/n/1
 0 U$ \OT1/cmr/m/n/10 = $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 u[]; u[]; u[]; u[]; 
 u[]; u[]\OMS/cmsy/m/n/10 i$\OT1/cmr/m/n/10 ,
  []
 
-[7]
-
-LaTeX Warning: Reference `fig3' on page 8 undefined on input line 231.
-
-<restructure.png, id=48, 5392.145pt x 4645.355pt>
+[10 <./phq-9.png>]
+<restructure.png, id=57, 5392.145pt x 4645.355pt>
 File: restructure.png Graphic file (type png)
 <use restructure.png>
-Package pdftex.def Info: restructure.png  used on input line 233.
+Package pdftex.def Info: restructure.png  used on input line 244.
 (pdftex.def)             Requested size: 347.12354pt x 298.98161pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--240
+Underfull \hbox (badness 10000) in paragraph at lines 242--251
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9 <./restructure.png>] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+[11]
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+ [12 <./restructure.png>] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
-[13]
-Overfull \hbox (48.17479pt too wide) in paragraph at lines 326--342
+[16]
+Overfull \hbox (48.17479pt too wide) in paragraph at lines 337--353
  [] \OT1/cmr/m/n/10 Given a well-preprocessed dataset of m ex-am-ples and n fea
 -tures $\U/msb/m/n/10 D$ \OT1/cmr/m/n/10 = $[](\OML/cmm/m/it/10 x[]; x[]; :::; 
 x[]; y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2
  []
 
-
-LaTeX Warning: Reference `fig4' on page 14 undefined on input line 359.
-
-<experiment.png, id=70, 843.15pt x 516.93124pt>
+<experiment.png, id=79, 843.15pt x 516.93124pt>
 File: experiment.png Graphic file (type png)
 <use experiment.png>
-Package pdftex.def Info: experiment.png  used on input line 361.
+Package pdftex.def Info: experiment.png  used on input line 372.
 (pdftex.def)             Requested size: 347.12354pt x 212.81871pt.
-[14]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 375.
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 382.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./experiment.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
 [17]
-Overfull \hbox (0.48807pt too wide) in paragraph at lines 433--437
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 386.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 393.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./experiment.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20]
+Overfull \hbox (0.48807pt too wide) in paragraph at lines 444--448
 []\OT1/cmr/m/n/10 Based on the in-te-grated PHQ-9 screen mea-sure-ment, we can 
 es-tab-lish ground-
  []
 
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 468--469
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 
-Overfull \hbox (6.23808pt too wide) in paragraph at lines 484--485
+Overfull \hbox (6.23808pt too wide) in paragraph at lines 495--496
 []\OT1/cmr/m/n/10 the al-go-rithm used to com-pute the near-est neigh-bours is 
 set as ^^?auto[]because
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
@@ -642,86 +693,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
 
-[21]
-Overfull \hbox (7.50943pt too wide) in paragraph at lines 565--578
-[][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
  []
 
-
-Overfull \hbox (7.50943pt too wide) in paragraph at lines 584--603
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (34.53568pt too wide) in paragraph at lines 614--629
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (34.53568pt too wide) in paragraph at lines 637--652
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (34.53568pt too wide) in paragraph at lines 660--675
-[][] 
- []
-
-[22]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (34.53568pt too wide) in paragraph at lines 683--698
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
 [24]
+Overfull \hbox (7.50943pt too wide) in paragraph at lines 576--589
+[][] 
+ []
+
+
+Overfull \hbox (7.50943pt too wide) in paragraph at lines 595--614
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 625--640
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 648--663
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 671--686
+[][] 
+ []
+
+[25]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 694--709
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-[26] [27] (./paper.aux)
+ [26]
+[27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+[29] [30] (./paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5103 strings out of 492649
- 73283 string characters out of 6129621
- 206603 words of memory out of 5000000
- 8881 multiletter control sequences out of 15000+600000
+ 5106 strings out of 492649
+ 73312 string characters out of 6129621
+ 206744 words of memory out of 5000000
+ 8882 multiletter control sequences out of 15000+600000
  14474 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,35p,2102b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -748,10 +806,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on paper.pdf (27 pages, 1753223 bytes).
+Output written on paper.pdf (30 pages, 1765789 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
