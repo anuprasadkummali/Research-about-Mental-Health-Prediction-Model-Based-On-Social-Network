@@ -1,0 +1,1383 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  7 NOV 2018 03:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Thesis.tex
+(./Thesis.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count88
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip43
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count89
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip44
+\skiplinenumber=\skip45
+\skiprule=\skip46
+\skiphlne=\skip47
+\skiptext=\skip48
+\skiplength=\skip49
+\algomargin=\skip50
+\skipalgocfslide=\skip51
+\algowidth=\dimen105
+\inoutsize=\dimen106
+\inoutindent=\dimen107
+\interspacetitleruled=\dimen108
+\interspacealgoruled=\dimen109
+\interspacetitleboxruled=\dimen110
+\algocf@ruledwidth=\skip52
+\algocf@inoutbox=\box26
+\algocf@inputbox=\box27
+\AlCapSkip=\skip53
+\AlCapHSkip=\skip54
+\algoskipindent=\skip55
+\algocf@nlbox=\box28
+\algocf@hangingbox=\box29
+\algocf@untilbox=\box30
+\algocf@skipuntil=\skip56
+\algocf@capbox=\box31
+\algocf@lcaptionbox=\skip57
+\algoheightruledefault=\skip58
+\algoheightrule=\skip59
+\algotitleheightruledefault=\skip60
+\algotitleheightrule=\skip61
+\c@algocfline=\count90
+\c@algocfproc=\count91
+\c@algocf=\count92
+\algocf@algoframe=\box32
+\algocf@algobox=\box33
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip62
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen111
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks19
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks20
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks21
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count105
+\calc@Bcount=\count106
+\calc@Adimen=\dimen120
+\calc@Bdimen=\dimen121
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count107
+\calc@Cskip=\skip67
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count108
+\l_MT_multwidth_dim=\dimen122
+\origjot=\skip68
+\l_MT_shortvdotswithinadjustabove_dim=\dimen123
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen124
+\l_MT_above_intertext_sep=\dimen125
+\l_MT_below_intertext_sep=\dimen126
+\l_MT_above_shortintertext_sep=\dimen127
+\l_MT_below_shortintertext_sep=\dimen128
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip69
+\enit@outerparindent=\dimen129
+\enit@toks=\toks23
+\enit@inbox=\box36
+\enitdp@description=\count109
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen130
+\lightrulewidth=\dimen131
+\cmidrulewidth=\dimen132
+\belowrulesep=\dimen133
+\belowbottomsep=\dimen134
+\aboverulesep=\dimen135
+\abovetopsep=\dimen136
+\cmidrulesep=\dimen137
+\cmidrulekern=\dimen138
+\defaultaddspace=\dimen139
+\@cmidla=\count110
+\@cmidlb=\count111
+\@aboverulesep=\dimen140
+\@belowrulesep=\dimen141
+\@thisruleclass=\count112
+\@lastruleclass=\count113
+\@thisrulewidth=\dimen142
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+\col@sep=\dimen143
+\ar@mcellbox=\box37
+\extrarowheight=\dimen144
+\NC@list=\toks24
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box38
+)
+\everycr=\toks25
+\minrowclearance=\skip72
+)
+\rownum=\count114
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count115
+\cp@tempcnt=\count116
+LaTeX Info: Redefining \checkoddpage on input line 59.
+)
+\defbaselineskip=\skip73
+
+(./Thesis.aux
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+)
+\openout1 = `Thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen145
+\scratchbox=\box39
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen146
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
+ [1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (40.14125pt too wide) detected at line 90
+\OT1/cmr/m/n/12 Author:
+ []
+
+
+Overfull \hbox (28.06915pt too wide) detected at line 91
+\OT1/cmr/m/n/12 Title:
+ []
+
+
+Overfull \hbox (64.78545pt too wide) detected at line 92
+\OT1/cmr/m/n/12 Department:
+ []
+
+
+Overfull \hbox (39.9415pt too wide) in paragraph at lines 100--105
+[]\OT1/cmr/m/n/10.95 Permission is here-with granted to Uni-ver-sity Of South-e
+rn Queens-landto
+ []
+
+
+Overfull \hbox (17.6594pt too wide) in paragraph at lines 100--105
+\OT1/cmr/m/n/10.95 cir-cu-late and to have copied for non-commercial pur-poses,
+ at its dis-cre-tion,
+ []
+
+
+Overfull \hbox (4.4767pt too wide) in paragraph at lines 107--108
+ []   \OT1/cmr/m/n/10.95 Sig-na-ture of Au-thor 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--123
+[]\OT1/cmr/m/n/10 THE AU-THOR AT-TESTS THAT PER-MIS-SION HAS
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 119--123
+\OT1/cmr/m/n/10 BEEN OB-TAINED FOR THE USE OF ANY COPY-RIGHTED
+ []
+
+[1] (./Thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `Thesis.toc'.
+
+ [2] [3]
+Overfull \hbox (7.7292pt too wide) in paragraph at lines 161--163
+\OT1/cmr/m/n/12 Major de-pres-sive dis-or-der also known sim-ply as de-pres-sio
+n, is a global chal-lenge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
+
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
+
+ []
+
+
+Overfull \hbox (10.88011pt too wide) in paragraph at lines 177--179
+[]\OT1/cmr/m/n/12 Zimmerman et, al. [[]] com-pared a pre-ferred scale mea-sure 
+"IDD" of de-pres-sion
+ []
+
+
+Overfull \hbox (2.65935pt too wide) in paragraph at lines 177--179
+\OT1/cmr/m/n/12 ho-mo-ge-neous cases to screen de-pres-sion. How-ever, the re-s
+earch also ap-pointed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
+
+ []
+
+
+Overfull \hbox (5.90561pt too wide) in paragraph at lines 180--182
+\OT1/cmr/m/n/12 in-ex-pen-sive and quick in-stru-ment for pre-lim-i-nary screen
+-ing of ma-jor de-pres-sive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+
+ []
+
+[3]
+Overfull \hbox (5.057pt too wide) in paragraph at lines 189--191
+[]\OT1/cmr/m/n/12 The clas-si-fi-ca-tion of depression-indicative ac-tions on s
+o-cial me-dia is an ex-cit-ing
+ []
+
+
+Overfull \hbox (13.08609pt too wide) in paragraph at lines 189--191
+\OT1/cmr/m/n/12 ac-tiv-i-ties in or-der to dis-tin-guish de-pres-sive peo-ple f
+rom a wide on-line com-mu-nity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+
+Overfull \hbox (9.58289pt too wide) in paragraph at lines 192--193
+\OT1/cmr/m/n/12 anal-y-sis to re-veal fea-tures that es-ti-mated de-pres-sion s
+cores [[]]. They ex-tracted
+ []
+
+[4]
+Overfull \hbox (22.55127pt too wide) in paragraph at lines 199--201
+\OT1/cmr/m/n/12 de-pres-sion cor-re-la-tion scores as de-pres-sive symp-toms (0
+.839), cog-ni-tive dis-tor-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+
+Overfull \hbox (5.38339pt too wide) in paragraph at lines 205--208
+\OT1/cmr/m/n/12 at es-tab-lish-ing a suit-able dataset from on-line so-cial me-
+dia to pre-dict de-pres-sion
+ []
+
+[5]
+Overfull \hbox (9.69131pt too wide) in paragraph at lines 208--208
+[]\OT1/cmr/bx/n/14.4 Research Of Clas-si-fy-ing De-pres-sion On So-cial Me-dia 
+
+ []
+
+
+Overfull \hbox (12.7597pt too wide) in paragraph at lines 209--211
+\OT1/cmr/m/n/12 in-di-ca-tors, it is pos-si-ble to use ma-chine learn-ing tech-
+niques to de-velop au-to-matic
+ []
+
+
+Overfull \hbox (20.41472pt too wide) in paragraph at lines 209--211
+\OT1/cmr/m/n/12 de-tec-tion sys-tems for ma-jor de-pres-sive dis-or-ders. Un-us
+ual ac-tions and un-com-mon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+
+ []
+
+
+Overfull \hbox (28.50908pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/12 na-tional de-pres-sion statis-tics [[]]. It also pro-vided soli
+d ev-i-dence that un-der-stand-ing
+ []
+
+
+Overfull \hbox (3.70297pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/12 study used a Sup-port Vec-tor Ma-chine clas-si-fier with RBF ke
+r-nel for iden-ti-fy-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+
+Overfull \hbox (2.69197pt too wide) in paragraph at lines 215--217
+\OT1/cmr/m/n/12 sta-tus (crit-i-cal stan-dard) of users were gen-er-ated by CES
+-D and BDI screen-ing
+ []
+
+
+Overfull \hbox (9.35234pt too wide) in paragraph at lines 215--217
+\OT1/cmr/m/n/12 scales of all par-tic-i-pants. Fea-tures used for pre-dict-ing 
+de-pres-sion were ex-tracted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+[6]
+Overfull \hbox (8.59956pt too wide) in paragraph at lines 218--220
+\OT1/cmr/m/n/12 et, al. [Has-san] used ma-jor-ity vote for clas-si-fi-ca-tion a
+nd re-gres-sion of de-pres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Overfull \hbox (3.15982pt too wide) in paragraph at lines 221--223
+\OT1/cmr/m/n/12 on-line com-mu-ni-ca-tion plat-form "Live-Jour-nal" as the in-p
+ut of the clas-si-fi-ca-tion
+ []
+
+
+Overfull \hbox (15.03062pt too wide) in paragraph at lines 221--223
+\OT1/cmr/m/n/12 im-ple-mented Ran-dom For-est al-go-rithm with SVM clas-si-fier
+ for text clas-si-fi-ca-tion
+ []
+
+
+Overfull \hbox (32.86505pt too wide) in paragraph at lines 221--223
+\OT1/cmr/m/n/12 clas-si-fier in al-go-rithm for es-tab-lish-ing an ac-cu-rate m
+odel for multi-class clas-si-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
+
+ []
+
+[7]
+Overfull \hbox (6.3446pt too wide) in paragraph at lines 224--226
+[]\OT1/cmr/m/n/12 Peng, Hu and Dang [[]] pro-posed a multi-kernel SVM based mod
+el to recog-nise
+ []
+
+
+Overfull \hbox (2.44592pt too wide) in paragraph at lines 224--226
+\OT1/cmr/m/n/12 of fea-tures, user mi-croblog text, user pro-file and user be-h
+aviours, are ex-tracted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+
+ []
+
+[8]
+Overfull \hbox (8.25558pt too wide) in paragraph at lines 236--238
+\OT1/cmr/m/n/12 This re-search aims to de-sign an ef-fec-tive clas-si-fi-ca-tio
+n method for au-to-mat-i-cally
+ []
+
+
+Overfull \hbox (8.64725pt too wide) in paragraph at lines 236--238
+\OT1/cmr/m/n/12 ex-pend the model to be im-ple-mented in the real en-vi-ron-men
+t of so-cial net-works. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--247
+
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--255
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--265
+
+ []
+
+
+Overfull \hbox (25.51157pt too wide) in paragraph at lines 265--265
+[]$\U/msb/m/n/12 U$ \OT1/cmr/m/it/12 is a machine-learning de-scrip-tive sub-se
+t trans-ferred from $\U/msb/m/n/12 S$ \OT1/cmr/m/it/12 in psy-cho-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+<concepts.png, id=59, 591.20876pt x 497.86pt>
+File: concepts.png Graphic file (type png)
+<use concepts.png>
+Package pdftex.def Info: concepts.png  used on input line 289.
+(pdftex.def)             Requested size: 390.0pt x 328.42908pt.
+
+Overfull \hbox (4.55238pt too wide) in paragraph at lines 287--296
+\OT1/cmr/m/n/12 dataset. It builds an ef-fec-tive en-sem-ble clas-si-fier and p
+er-forms the com-par-a-tive
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12 <./concepts.png>]
+<phq-9.png, id=68, 940.51375pt x 496.85625pt>
+File: phq-9.png Graphic file (type png)
+<use phq-9.png>
+Package pdftex.def Info: phq-9.png  used on input line 300.
+(pdftex.def)             Requested size: 390.0pt x 206.03229pt.
+
+Overfull \hbox (11.65pt too wide) in paragraph at lines 298--303
+\OT1/cmr/m/n/12 be-tween in-creas-ing de-pres-sion sever-ity screen scores and 
+wors-en-ing func-tion-al-ity
+ []
+
+
+Overfull \hbox (4.86118pt too wide) in paragraph at lines 298--303
+\OT1/cmr/m/n/12 These 6 cat-e-gories were di-rectly in-ter-preted 5 items of me
+n-tal health di-ag-nos-tic
+ []
+
+
+Overfull \hbox (25.7716pt too wide) in paragraph at lines 298--303
+\OT1/cmr/m/n/12 symp-toms as men-tal cat-e-gory. The re-search il-lus-trated gr
+aph-i-cally the re-la-tion-ship
+ []
+
+
+Overfull \hbox (3.42091pt too wide) in paragraph at lines 304--306
+[]\OT1/cmr/m/n/12 Associations of health re-lated func-tion-ings with de-pres-s
+ion have been ob-served
+ []
+
+
+Overfull \hbox (9.77455pt too wide) in paragraph at lines 304--306
+\OT1/cmr/m/n/12 and neg-a-tive health be-haviours. It also ad-dressed that par-
+tic-i-pants sig-nif-i-cantly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+
+ []
+
+[13 <./phq-9.png>]
+Overfull \hbox (26.27206pt too wide) in paragraph at lines 307--308
+\OT1/cmr/m/n/12 pre-dict-ing users' de-pres-sion by sam-pling var-i-ous di-ag-n
+os-tic cri-te-ria of func-tion-al-ity.
+ []
+
+[14]
+Overfull \hbox (14.45691pt too wide) in paragraph at lines 312--313
+\OT1/cmr/m/n/12 func-tional sta-tus group than in only one col-lec-tion of de-p
+res-sive symp-toms; 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--320
+
+ []
+
+
+Overfull \hbox (24.84126pt too wide) in paragraph at lines 316--320
+\OT1/cmr/bx/n/12 Definition 4 \OT1/cmr/m/n/12 Let new re-designed $\U/msb/m/n/1
+2 U$ \OT1/cmr/m/n/12 = $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 u[]; u[]; u[]; u[]; 
+u[]; u[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 ,
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
+
+ []
+
+<restructure.png, id=80, 5392.145pt x 4645.355pt>
+File: restructure.png Graphic file (type png)
+<use restructure.png>
+Package pdftex.def Info: restructure.png  used on input line 336.
+(pdftex.def)             Requested size: 390.0pt x 335.9822pt.
+
+Overfull \hbox (26.22438pt too wide) in paragraph at lines 334--343
+\OT1/cmr/m/n/12 the scale con-di-tion in var-i-ous ques-tions. Whilst data pre-
+pro-cess-ing is im-ple-mented,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--343
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
+Overfull \hbox (2.81209pt too wide) in paragraph at lines 343--344
+[]$\OMS/cmsy/m/n/12 j\U/msb/m/n/12 D[]\OMS/cmsy/m/n/12 j$ \OT1/cmr/m/n/12 = $\O
+MS/cmsy/m/n/12 j\U/msb/m/n/12 D[]\OMS/cmsy/m/n/12 j$ \OT1/cmr/m/n/12 = $\OMS/cm
+sy/m/n/12 j\U/msb/m/n/12 D[]\OMS/cmsy/m/n/12 j$ \OT1/cmr/m/n/12 = $\OMS/cmsy/m/
+n/12 j\U/msb/m/n/12 D[]\OMS/cmsy/m/n/12 j$ \OT1/cmr/m/n/12 = $\OMS/cmsy/m/n/12 
+j\U/msb/m/n/12 D[]\OMS/cmsy/m/n/12 j$ \OT1/cmr/m/n/12 = $\OMS/cmsy/m/n/12 j\U/m
+sb/m/n/12 D[]\OMS/cmsy/m/n/12 j$ \OT1/cmr/m/n/12 = $\OMS/cmsy/m/n/12 j\U/msb/m/
+n/12 D[]\OMS/cmsy/m/n/12 j$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+[17 <./restructure.png>]
+Overfull \hbox (8.66484pt too wide) in paragraph at lines 350--352
+\OT1/cmr/m/n/12 for de-tect-ing de-pres-sion. It im-ple-ments the in-de-pen-den
+t en-sem-ble method-ol-ogy
+ []
+
+
+Overfull \hbox (8.08078pt too wide) in paragraph at lines 350--352
+\OT1/cmr/m/n/12 Vec-tor Ma-chine (SVM) tech-nique, Ar-ti-fi-cial Neu-tral Net-w
+ork(ANN) al-go-rithm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--352
+
+ []
+
+
+Overfull \hbox (14.51802pt too wide) in paragraph at lines 353--355
+[]\OT1/cmr/m/n/12 In gen-eral, the en-sem-ble method pro-vides higher ac-cu-ra-
+cies and bet-ter pre-dic-tive
+ []
+
+
+Overfull \hbox (18.89575pt too wide) in paragraph at lines 357--358
+[]\OT1/cmr/m/n/12 Computational ad-van-tage: en-sem-ble meth-ods de-crease the 
+risk of ob-tain-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+[18]
+Overfull \hbox (30.05814pt too wide) in paragraph at lines 361--363
+\OT1/cmr/m/n/12 pro-posed a new en-sem-ble al-go-rithm to utilise both un-der-s
+am-pling and over-sam-pling
+ []
+
+
+Overfull \hbox (9.10419pt too wide) in paragraph at lines 361--363
+\OT1/cmr/m/n/12 solved in mul-ti-ple ways such as ro-bust clas-si-fier, data sa
+m-pling, semi-supervised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+
+Overfull \hbox (5.52946pt too wide) in paragraph at lines 375--377
+\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 is a nor-mal-i-sa-
+tion fac-tor which is based on the pre-dic-tive per-for-mance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--381
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+
+Overfull \hbox (4.53062pt too wide) in paragraph at lines 393--396
+[]\OT1/cmr/m/n/12 In this en-sem-ble method, the driv-ing prin-ci-ple is to bui
+ld a cou-ple of es-ti-ma-tors
+ []
+
+
+Overfull \hbox (67.96814pt too wide) in paragraph at lines 398--414
+\OT1/cmr/m/n/12 Given a well-preprocessed dataset of m ex-am-ples and n fea-tur
+es $\U/msb/m/n/12 D$ \OT1/cmr/m/n/12 = $[](\OML/cmm/m/it/12 x[]; x[]; :::; x[];
+ y\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; x[] \OMS/cmsy/m/n/12 2
+ []
+
+[21]
+Overfull \hbox (34.62753pt too wide) in paragraph at lines 418--419
+\OT1/cmr/m/n/12 Our en-sem-ble clas-si-fi-ca-tion method in-volves sev-eral bas
+e-line su-per-vised clas-si-fi-ca-tion
+ []
+
+
+Overfull \hbox (5.00932pt too wide) in paragraph at lines 418--419
+\OT1/cmr/m/n/12 pre-dic-tive data min-ing. We have con-cen-trated on se-lect-in
+g in-tri-cate su-per-vised
+ []
+
+
+Overfull \hbox (12.51619pt too wide) in paragraph at lines 418--419
+\OT1/cmr/m/n/12 ac-cu-racy. How-ever, each clas-si-fi-ca-tion method has di-ver
+se com-put-ing al-go-rithm.
+ []
+
+
+Overfull \hbox (7.01532pt too wide) in paragraph at lines 422--423
+[]\OT1/cmr/m/n/12 Statistical learn-ing al-go-rithms: The al-go-rithm uses sta-
+tis-ti-cal ap-proaches
+ []
+
+[22]
+Overfull \hbox (17.64716pt too wide) in paragraph at lines 423--424
+[]\OT1/cmr/m/n/12 Support vec-tor ma-chines: Sup-port Vec-tor Ma-chine is the n
+ewest su-per-vised
+ []
+
+
+Overfull \hbox (4.25285pt too wide) in paragraph at lines 425--427
+\OT1/cmr/m/n/12 Net-work tech-nique, k-Nearest Neigh-bour method and Sup-port V
+ec-tor Ma-chine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+
+ []
+
+[23]
+Overfull \hbox (10.99722pt too wide) in paragraph at lines 433--436
+\OT1/cmr/m/n/12 gen-eral ap-pli-ca-tion of the ar-chi-tec-ture, in-ac-cu-rate a
+nal-y-sis for var-i-ous in-di-ca-tors
+ []
+
+
+Overfull \hbox (11.72871pt too wide) in paragraph at lines 433--436
+\OT1/cmr/m/n/12 of the net-work and un-con-trol-lable time of ma-chine learn-in
+g" [Fei, Li]. Kot-siantis
+ []
+
+
+Overfull \hbox (2.50703pt too wide) in paragraph at lines 433--436
+\OT1/cmr/m/n/12 even-tu-ally make the search for the global op-ti-mum more dif-
+fi-cult" [Kot-siantis].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--436
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 437--440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
+
+ []
+
+[26]
+<experiment.png, id=121, 843.15pt x 516.93124pt>
+File: experiment.png Graphic file (type png)
+<use experiment.png>
+Package pdftex.def Info: experiment.png  used on input line 459.
+(pdftex.def)             Requested size: 390.0pt x 239.1085pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--463
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27]
+Overfull \hbox (26.763pt too wide) in paragraph at lines 483--515
+\OT1/cmr/m/n/12 well-preprocessed dataset of m ex-am-ples and n fea-tures $\U/m
+sb/m/n/12 D$ \OT1/cmr/m/n/12 = $[](\OML/cmm/m/it/12 x[]; x[]; :::; x[]; y\OT1/c
+mr/m/n/12 )\OML/cmm/m/it/12 ; x[] \OMS/cmsy/m/n/12 2
+ []
+
+[28 <./experiment.png>]
+Overfull \hbox (10.60985pt too wide) in paragraph at lines 521--523
+\OT1/cmr/m/n/12 and Pre-ven-tion (CDC). All in-for-ma-tion in NHANES are gath-e
+red and pro-tected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--523
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 529--531
+
+ []
+
+[30]
+Overfull \hbox (13.99997pt too wide) in paragraph at lines 537--538
+\OT1/cmr/m/n/12 nat-u-rally part of par-tic-i-pants did not com-plete all ques-
+tions in the ques-tion-naire.
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+
+Overfull \hbox (20.91518pt too wide) in paragraph at lines 547--550
+\OT1/cmr/m/n/12 After data pre-pro-cess-ing, we has an over-all dataset that in
+-volves 5398 par-tic-i-pants
+ []
+
+[32]
+Overfull \hbox (8.44725pt too wide) in paragraph at lines 552--555
+\OT1/cmr/m/n/12 Many ma-chine learn-ing pack-ages and tools are ac-ces-si-ble t
+o im-ple-ment com-mon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+
+Overfull \hbox (8.53775pt too wide) in paragraph at lines 561--566
+[]  \OT1/cmr/m/n/12 Scikit-learn uses an op-ti-mised ver-sion of the CART de-ci
+-sion tree al-go-rithm;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--566
+
+ []
+
+[33]
+Overfull \hbox (13.65182pt too wide) in paragraph at lines 570--577
+\OT1/cmr/m/n/12 propagation train-ing method; there are three hid-den lay-ers i
+n the pro-posed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--586
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 590--593
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--607
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--652
+
+ []
+
+[36]
+Overfull \hbox (1.43301pt too wide) in paragraph at lines 659--672
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--676
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.7778pt too wide) in paragraph at lines 677--678
+\OT1/cmr/m/n/12 this ex-per-i-ment but is still com-pa-ra-ble to other ma-chine
+ learn-ing method-olo-gies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
+
+ []
+
+[37]
+Overfull \hbox (13.9347pt too wide) in paragraph at lines 680--682
+\OT1/cmr/m/n/12 Therefore, the pro-posed en-sem-ble ap-proach in-creases the pr
+e-dic-tive per-for-mance
+ []
+
+
+Overfull \hbox (1.43301pt too wide) in paragraph at lines 684--703
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (6.18062pt too wide) in paragraph at lines 716--716
+ []\OT1/cmr/bx/n/12 Phys-i-cal 
+ []
+
+
+Overfull \hbox (3.5778pt too wide) in paragraph at lines 716--716
+ []\OT1/cmr/bx/n/12 Gen-eral 
+ []
+
+
+Overfull \hbox (36.80656pt too wide) in paragraph at lines 713--728
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--733
+
+ []
+
+[38]
+Overfull \hbox (6.18062pt too wide) in paragraph at lines 740--740
+ []\OT1/cmr/bx/n/12 Phys-i-cal 
+ []
+
+
+Overfull \hbox (3.5778pt too wide) in paragraph at lines 740--740
+ []\OT1/cmr/bx/n/12 Gen-eral 
+ []
+
+
+Overfull \hbox (36.80656pt too wide) in paragraph at lines 737--752
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--757
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (6.18062pt too wide) in paragraph at lines 764--764
+ []\OT1/cmr/bx/n/12 Phys-i-cal 
+ []
+
+
+Overfull \hbox (3.5778pt too wide) in paragraph at lines 764--764
+ []\OT1/cmr/bx/n/12 Gen-eral 
+ []
+
+
+Overfull \hbox (36.80656pt too wide) in paragraph at lines 761--776
+[][] 
+ []
+
+
+Overfull \hbox (2.59407pt too wide) in paragraph at lines 758--781
+\OT1/cmr/m/n/12 ac-tu-ally neg-a-tive. It mea-sures how ef-fec-tive to di-ag-no
+se per-son's psy-cho-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--781
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 782--784
+
+ []
+
+
+Overfull \hbox (6.18062pt too wide) in paragraph at lines 791--791
+ []\OT1/cmr/bx/n/12 Phys-i-cal 
+ []
+
+
+Overfull \hbox (3.5778pt too wide) in paragraph at lines 791--791
+ []\OT1/cmr/bx/n/12 Gen-eral 
+ []
+
+
+Overfull \hbox (36.80656pt too wide) in paragraph at lines 788--803
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 785--808
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--810
+
+ []
+
+[40]
+<coverage.png, id=168, 696.6025pt x 351.3125pt>
+File: coverage.png Graphic file (type png)
+<use coverage.png>
+Package pdftex.def Info: coverage.png  used on input line 815.
+(pdftex.def)             Requested size: 390.0pt x 196.68541pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (10.7492pt too wide) in paragraph at lines 822--824
+ \OT1/cmr/bx/n/12 per-for-mance of en-sem-ble is great[] \OT1/cmr/m/n/12 En-sem
+-ble clas-si-fier is ob-vi-ously su-pe-rior
+ []
+
+[41] [42 <./coverage.png>] [43] (./Thesis.bbl
+Underfull \hbox (badness 1642) in paragraph at lines 15--16
+[]\OT1/cmr/m/n/12 Choudhary, R., and Gi-aney, H.K.: `Com-pre-hen-sive Re-view O
+n
+ []
+
+[44]
+Underfull \hbox (badness 1210) in paragraph at lines 39--40
+\OT1/cmr/m/n/12 learn-ing ap-proach for the mea-sure-ment of de-pres-sion', in 
+Ed-i-tor
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 39--40
+\OT1/cmr/m/n/12 (Ed.)[](Eds.): `Book Sen-ti-ment anal-y-sis of so-cial net-work
+-ing sites
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 47--48
+[]\OT1/cmr/m/n/12 Kotsiantis, S.B., Za-harakis, I.D., and Pin-te-las, P.E.: `Ma
+-chine
+ []
+
+[45] [46] [47]
+Underfull \hbox (badness 1253) in paragraph at lines 103--104
+[]\OT1/cmr/m/n/12 Sakado, K., Sato, T., Ue-hara, T., Sato, S., and Kameda, K.:
+ []
+
+[48]
+Underfull \hbox (badness 1231) in paragraph at lines 131--132
+[]\OT1/cmr/m/n/12 Zimmerman, M., and Coryell, W.: `The In-ven-tory to Di-ag-nos
+e
+ []
+
+) [49] (./Thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4759 strings out of 492649
+ 69422 string characters out of 6129621
+ 183562 words of memory out of 5000000
+ 8546 multiletter control sequences out of 15000+600000
+ 10759 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,15n,35p,2087b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Thesis.pdf (53 pages, 1827310 bytes).
+PDF statistics:
+ 255 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

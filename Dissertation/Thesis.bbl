@@ -1,0 +1,134 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{Andrea}
+Andrea, S.B., Siegel, S.A.R., and Teo, A.R.: ‘Social Support and Health Service Use in Depressed Adults: Findings From the National Health and Nutrition Examination Survey’, General Hospital Psychiatry, 2016, 39, pp. 73-79
+
+
+\bibitem{Choudhary}
+Choudhary, R., and Gianey, H.K.: ‘Comprehensive Review On Supervised Machine Learning Algorithms’, in Editor (Ed.)\^(Eds.): ‘Book Comprehensive Review On Supervised Machine Learning Algorithms’ (2017, edn.), pp. 37-43
+
+
+\bibitem{Clark}
+Clark, M.M., Bradley, K.L., Jenkins, S.M., Mettler, E.A., Larson, B.G., Preston, H.R., Liesinger, J.T., Werneburg, B.L., Hagen, P.T., Harris, A.M., Riley, B.A., Olsen, K.D., and Vickers Douglas, K.S.: ‘The Effectiveness of Wellness Coaching for Improving Quality of Life’, Mayo Clinic Proceedings, 2014, 89, (11), pp. 1537-1544
+
+
+\bibitem{De Choudhury}
+De Choudhury, M., Counts, S., and Horvitz, E.: ‘Social media as a measurement tool of depression in populations’, 2013, pp. 47-56
+
+
+\bibitem{Fatima}
+Fatima, I., Mukhtar, H., Ahmad, H.F., and Rajpoot, K.: ‘Analysis of user-generated content from online social communities to characterise and predict depression degree’, Journal of Information Science, 2018, 44, (5), pp. 683-695
+
+
+\bibitem{Fei}
+Fei, Y., and Li, W.-q.: ‘Improve artificial neural network for medical analysis, diagnosis and prediction’, Journal of Critical Care, 2017, 40, pp. 293
+
+
+\bibitem{Gonzalez-Saenz}
+Gonzalez-Saenz de Tejada, M., Bilbao, A., Baré, M., Briones, E., Sarasqueta, C., Quintana, J.M., Escobar, A., and Baré, M.: ‘Association of social support, functional status, and psychological variables with changes in health-related quality of life outcomes in patients with colorectal cancer’, Psycho-Oncology, 2016, 25, (8), pp. 891-897
+
+
+\bibitem{Hassan}
+Hassan, A.U., Hussain, J., Hussain, M., Sadiq, M., and Lee, S.: ‘Sentiment analysis of social networking sites (SNS) data using machine learning approach for the measurement of depression’, in Editor (Ed.)\^(Eds.): ‘Book Sentiment analysis of social networking sites (SNS) data using machine learning approach for the measurement of depression’ (IEEE, 2017, edn.), pp. 138-140
+
+
+\bibitem{Huerta-Ramirez}
+Huerta-Ramirez, R., Bertsch, J., Cabello, M., Roca, M., Haro, J.M., and Ayuso-Mateos, J.L.: ‘Diagnosis delay in first episodes of major depression: A study of primary care patients in Spain’, Journal of Affective Disorders, 2013, 150, (3), pp. 1247-1250
+
+
+\bibitem{Kotsiantis}
+Kotsiantis, S.B., Zaharakis, I.D., and Pintelas, P.E.: ‘Machine learning: a review of classification and combining techniques’, Artificial Intelligence Review, 2006, 26, (3), pp. 159-190
+
+
+\bibitem{Kroenke}
+Kroenke, K., Spitzer, R.L., and Williams, J.B.: ‘The PHQ-9: validity of a brief depression severity measure’, J Gen Intern Med, 2001, 16, (9), pp. 606-613
+
+
+\bibitem{Kumar}
+Kumar, R.: ‘Fundamental of artificial neural network and fuzzy logic’ (University Science Press, An Imprint of Laxmi Publications Pvt. Ltd., 2010. 2010)
+
+
+\bibitem{Limsetto}
+Limsetto, N., and Waiyamai, K.: ‘Handling Concept Drift via Ensemble and Class Distribution Estimation Technique’, in Editor (Ed.)\^(Eds.): ‘Book Handling Concept Drift via Ensemble and Class Distribution Estimation Technique’ (Springer Berlin Heidelberg, 2011, edn.), pp. 13-26
+
+
+\bibitem{Lu}
+Lu, Y., Cheung, Y.M., and Tang, Y.Y.: ‘Hybrid sampling with bagging for class imbalance learning’, in Editor (Ed.)\^(Eds.): ‘Book Hybrid sampling with bagging for class imbalance learning’ (Springer Verlag, 2016, edn.), pp. 14-26
+
+
+\bibitem{Merikangas}
+Merikangas, A., Mendola, P., Pastor, P., Reuben, C., and Cleary, S.: ‘The association between major depressive disorder and obesity in US adolescents: results from the 2001–2004 National Health and Nutrition Examination Survey’, Journal of Behavioral Medicine, 2012, 35, (2), pp. 149-154
+
+
+\bibitem{Mowery}
+Mowery, D., Smith, H., Cheney, T., Stoddard, G., Coppersmith, G., Bryan, C., and Conway, M.: ‘Understanding Depressive Symptoms and Psychosocial Stressors on Twitter: A Corpus-Based Study’, Journal of Medical Internet Research, 2017, 19, (2)
+
+
+\bibitem{Nguyen}
+Nguyen, B., Weiss, P., Beydoun, H., and Kancherla, V.: ‘Association between blood folate concentrations and depression in reproductive aged U.S. women, NHANES (2011–2012)’, Journal of Affective Disorders, 2017, 223, pp. 209-217
+
+
+\bibitem{Ophir}
+Ophir, Y., Asterhan, C.S.C., and Schwarz, B.B.: ‘Unfolding the notes from the walls: Adolescents’ depression manifestations on Facebook’, Computers in Human Behavior, 2017, 72, pp. 96-107
+
+
+\bibitem{Ostir}
+Ostir, G.V., Berges, I.M., Ottenbacher, A., and Ottenbacher, K.J.: ‘Patterns of change in depression after stroke’, J Am Geriatr Soc, 2011, 59, (2), pp. 314-320
+
+
+\bibitem{Peng}
+Peng, Z., Hu, Q., and Dang, J.: ‘Multi-kernel SVM based depression recognition using social media data’, International Journal of Machine Learning and Cybernetics, 2017
+
+
+\bibitem{Reece}
+Reece, A.G., and Danforth, C.M.: ‘Instagram photos reveal predictive markers of depression’, EPJ Data Science, 2017, 6, (1), pp. 15
+
+
+\bibitem{Rokach}
+Rokach, L.: ‘Ensemble-based classifiers’, Artificial Intelligence Review, 2010, 33, (1), pp. 1-39
+
+
+\bibitem{Sagi}
+Sagi, O., and Rokach, L.: ‘Ensemble learning: A survey’, Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 2018, 8, (4), pp. e1249
+
+
+\bibitem{Sakado}
+Sakado, K., Sato, T., Uehara, T., Sato, S., and Kameda, K.: ‘Discriminant validity of the inventory to diagnose depression, lifetime version’, Acta Psychiatrica Scandinavica, 1996, 93, (4), pp. 257-260
+
+
+\bibitem{Serpen}
+Serpen, G., and Pathical, S.: ‘Classification in High-Dimensional Feature Spaces: Random Subsample Ensemble’, in Editor (Ed.)\^(Eds.): ‘Book Classification in High-Dimensional Feature Spaces: Random Subsample Ensemble’ (2009, edn.), pp. 740-745
+
+
+\bibitem{Somvanshi}
+Somvanshi, M., and Chavan, P.: ‘A review of machine learning techniques using decision tree and support vector machine’, in Editor (Ed.)\^(Eds.): ‘Book A review of machine learning techniques using decision tree and support vector machine’ (2016, edn.), pp. 1-7
+
+
+\bibitem{Tedders}
+Tedders, S.H., Fokong, K.D., McKenzie, L.E., Wesley, C., Yu, L., and Zhang, J.: ‘Low cholesterol is associated with depression among US household population’, Journal of Affective Disorders, 2011, 135, (1-3), pp. 115-121
+
+
+\bibitem{Tsugawa}
+Tsugawa, S., Kikuchi, Y., Kishino, F., Nakajima, K., Itoh, Y., and Ohsaki, H.: ‘Recognizing Depression from Twitter Activity’, 2015, pp. 3187-3196
+
+
+\bibitem{Ubani}
+Ubani, C.C., and Zhang, J.: ‘The role of adiposity in the relationship between serum leptin and severe major depressive episode’, Psychiatry Research, 2015, 228, (3), pp. 866-870
+
+
+\bibitem{Wongkoblap}
+Wongkoblap, A., Vadillo, M.A., and Curcin, V.: ‘Researching Mental Health Disorders in the Era of Social Media: Systematic Review’, J Med Internet Res, 2017, 19, (6), pp. e228
+
+
+\bibitem{Zimmerman}
+Zimmerman, M., and Coryell, W.: ‘The Inventory to Diagnose Depression (IDD): A self-report scale to diagnose major depressive disorder’, Journal of Consulting and Clinical Psychology, 1987, 55, (1), pp. 55-59
+
+
+\end{thebibliography}

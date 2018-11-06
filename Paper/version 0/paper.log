@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  5 NOV 2018 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  7 NOV 2018 01:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,9 +710,6 @@ File: coverage.png Graphic file (type png)
 <use coverage.png>
 Package pdftex.def Info: coverage.png  used on input line 732.
 (pdftex.def)             Requested size: 347.12354pt x 175.06078pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [28 <./coverage.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -720,200 +717,203 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 868.
+ [31]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 870.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 803--868
+Underfull \hbox (badness 1515) in paragraph at lines 805--870
 \OT1/cmr/m/n/9 Ma-chine Learn-ing Al-go-rithms', in Ed-i-tor (Ed.)[](Eds.): `Bo
 ok Com-pre-hen-sive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 803--868
+Underfull \hbox (badness 1337) in paragraph at lines 805--870
 \OT1/cmr/m/n/9 3 Clark, M.M., Bradley, K.L., Jenk-ins, S.M., Met-tler, E.A., La
 r-son, B.G.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 803--868
+Underfull \hbox (badness 1931) in paragraph at lines 805--870
 \OT1/cmr/m/n/9 12 Ku-mar, R.: `Fun-da-men-tal of ar-ti-fi-cial neu-ral net-work
  and fuzzy logic'
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 803--868
+Underfull \hbox (badness 1924) in paragraph at lines 805--870
 \OT1/cmr/m/n/9 18 Ophir, Y., Aster-han, C.S.C., and Schwarz, B.B.: `Un-fold-ing
  the notes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 803--868
+Underfull \hbox (badness 2334) in paragraph at lines 805--870
 \OT1/cmr/m/n/9 21 Reece, A.G., and Dan-forth, C.M.: `In-sta-gram pho-tos re-vea
 l pre-dic-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 803--868
+Underfull \hbox (badness 1383) in paragraph at lines 805--870
 \OT1/cmr/m/n/9 27 Ted-ders, S.H., Fokong, K.D., McKen-zie, L.E., Wes-ley, C., Y
 u, L., and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--868
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
 
  []
 
-[31]
+[32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
-[33] (./paper.aux)
+ [33]
+[34] (./paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -952,10 +952,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on paper.pdf (33 pages, 1885664 bytes).
+Output written on paper.pdf (34 pages, 1887521 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
+ 217 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -723,7 +723,7 @@ Recall is the ability of a classifier to find all positive instances. It measure
 %
 %
 %
-The recall performances of ensemble classifier is about 1 in the overall dataset and all sub-datasets. According to the definition of recall measure  $ Recall = \frac{TP}{TP + FN} $, it means that only when false negative measurement (FN) is 0, recall measure is equal to 1. In our experiment, FN presents the number of depressed users who were incorrectly identified as non-depressed. As FN is zero, it indicates that no depressed instances in the experiment has been mistakenly classified. The coverage in correct classification of depressed participants is perfect, only slightly larger than the results of psychological screening ( illustrated in Fig.~\ref{fig5} ). Let the predicted precision as $Precision_{p}$ and percentage of non-depressed instances as $N_{1}$, the overall prediction $p_{overall}$of depressed instances is calculated as below:\\
+The recall performances of ensemble classifier is about 1 in the overall dataset and all sub-datasets. According to the definition of recall measure  $ Recall = \frac{TP}{TP + FN} $, it means that only when false negative measurement (FN) is 0, recall measure is equal to 1. In our experiment, FN presents the number of depressed users who were incorrectly identified as non-depressed. As FN is zero, it indicates that no depressed instances in the experiment has been mistakenly classified. The coverage in correct classification of depressed participants is perfect, only slightly larger than the results of psychological screening ( illustrated in Fig.~\ref{fig5} ). Let the predicted precision as $Precision_{p}$ and percentage of non-depressed instances as $N_{1}$, the overall prediction $p_{overall}$ of depressed instances is calculated as below:\\
 \begin{equation}\label{reio}
 	p_{overall} = 1 - (Precision_{p} \cdot N_{1})= (1 -  0.956 \cdot 90.44\%) \cdot 100\% = 13.54\%
 \end{equation}
@@ -740,10 +740,10 @@ The recall performances of ensemble classifier is about 1 in the overall dataset
 %
 \subsection{Discussions}
 \paragraph{performance of ensemble is great}
-Ensemble classifier is obviously superior than baseline models as performing advantageous at both all measures and experiment. 
-%
+Ensemble classifier is obviously superior than baseline models as performing advantageous at F1 measure, Accuracy, Precision and Recall (see table. 4. 5. 6. 7.). It leads not only in the test of overall dataset but also all experiment in sub-datasets. It triumphantly gathers different predictions of baseline models and combine them into a better prediction. It is more stable and robust than any involved baseline algorithm. And this experiment uses random under-sampling technique with ensemble method to leverage the class imbalance problem where non-depression instances is about 10 times large as depressed instances. The propose ensemble method has significantly improve predictive performance by 30.3\% with class imbalance. It enables to promote diversity among baseline models and convert that specificity into the performance. The ensemble method is very simple, closing to bagging and major voting ensemble methods. Other boost ensemble methods are also suggested to improve the prediction performance further like the EUSBoost method [Sagi]. 
 %
 \paragraph{the coverage of depression is greate}
+By analysis of the performance in Recall measure (see table. 7), the preferred ensemble method covers all depressed cases in PHQ-9 screening measurement where no depressed instance has been mistakenly labelled as non-depression. The coverage (see fig. 5) of depression cases is slightly larger than the real situation of mental health inventory. However, it is absolutely acceptable for large sampling that there is no missing of depression case and only about 4\% of total cases have been incorrectly labelled as depression in the prediction. The proposed ensemble method is perfect for preliminary screening of major depressive disorder in order to provide limited cases for further clinical diagnosis while without missing any potential depression case. 
 %
 %
 %
