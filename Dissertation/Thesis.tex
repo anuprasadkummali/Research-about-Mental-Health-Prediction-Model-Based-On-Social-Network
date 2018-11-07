@@ -138,16 +138,15 @@
 \newpage
 
 % =================================================================Abstract
-\setlinespacing{2}
+\setlinespacing{1.3}
 \addcontentsline{toc}{section}{Abstract}
 \section*{Abstract}
-The abstract should briefly summarize the contents of the paper in
-150--250 words.
+Major depressive disorder is a serious worldwide issue for healthcare. This study was to transfer current psychological knowledge on depression diagnosis into an analysis technique of health survey data. It aimed to provide psychologists a proper algorithm for automate screening a large number of samples to identify depressed cases among. The research proposed an effective ensemble binary classifier for distinguishing depressive instances from a wide range of healthcare data. On the experimental evaluation on the NCHS health dataset, it has a significant measure \textbf{0.976} of F1 score in the prediction, without \textbf{any} incorrectly identified depression instance. Only about \textbf{4\%} instances had been mistakenly classified into depressed cases with a significant Accuracy \textbf{95.4\%} comparing to the result from PHQ-9 mental screen inventory. The presented ensemble binary classifier performed comparably better than each baseline algorithms in all measures and all experiment. It approved that the ensemble system is stable and robust to preliminary screening of depressive instances from a large number of health data. In this research, we introduced how to transfer the psychological knowledge into the classification methodology on health dataset. Meanwhile, we analysed the ensemble technique and several supervised learning classification algorithms for building a solid classification method. Finally, we trained the ensemble model on processed dataset, tested and evaluated with the result of mental screen inventory, discussed the comparable predictions, and pointed out the future research directions. 
 %
-\vspace{5cm}
+\vspace{1cm}
 \\
 \textbf{keywords}:  
-	major depressive disorder, ensemble classification technique, supervised learning, psychological knowledge base.
+	major depressive disorder, ensemble classification technique, binary classifier, supervised learning, mental screen inventory, mental diagnostic criteria, psychological knowledge.
 
 
 % =================================================================Introduction
@@ -158,7 +157,7 @@ The abstract should briefly summarize the contents of the paper in
 \pagenumbering{arabic}
 \section{Introduction}
 
-Major depressive disorder also known simply as depression,  is a global challenge for healthcare. In psychological domain, it is defined as a mental disorder consistent with at least two weeks of developing low mood across most situations \cite{Zimmerman}. Major depressive disorder can be successfully diagnosed by interviewers normally psychologists, applying operational diagnostic criteria of depression. However, a wide range of depressive patients did not seek clinic advices or professional care at all \cite{Huerta-Ramirez}. Health professionals hence often fail to approach a proper depressive patient at an early stage. 
+Mental disorder is one of the most serious and prevalent healthcare issues worldwide \cite{Wongkoblap}. According to 2012 world health journal by the World Health Organisation (WHO), more than 350 million people have major depressive disorder which can leads to suicide in the worst circumstance. Major depressive disorder also known simply as depression, has been a global challenge for healthcare over years. In psychological domain, it is defined as a mental disorder consistent with at least two weeks of developing low mood across most situations \cite{Zimmerman}. Major depressive disorder can be successfully diagnosed by interviewers normally psychologists, applying operational diagnostic criteria of depression. However, a wide range of depressive patients did not seek clinic advices or professional care at all \cite{Huerta-Ramirez}. Health professionals hence often fail to approach a proper depressive patient at an early stage. 
 \\
 
 Early diagnosis of depression are among the priority actions for reducing the burden of depressive disorders \cite{Huerta-Ramirez}. With the growing popularity of artificial intelligence, one of methods in early diagnosis is to apply machine learning technique in the processing of exploring depressive patients from wide range of the potential persons. Using algorithms to learn from individual health history and previous behaviours, machine learning enable computers to automatically distinguish person with depression from persons without depression. It is apparently quick comparing to traditional interview method. And it has a great potential to apply similar algorithms to crowdsource depression on online social networks which is able to approach millions of users without a significant cost of healthcare. However, there is a lack of research into an efficient machine learning classifier for detecting depression based on a large data.
@@ -170,7 +169,7 @@ Therefore, the objective of the present paper is to propose a suitable effective
 \goodbreak
 % =================================================================Related-work
 \section{Related Work}
-\subsection{Psychological Studies Of Clarifying Depression}
+\subsection{Psychological Studies Of Screening Depression}
 In the domain of psychology, researchers created questionnaire-based scale instruments for roughly screening the mental status of patients. Several measures among them have been widely accepted as good and reliable tools, such as BDI \cite{Huerta-Ramirez}\cite{Tsugawa}, CES-D \cite{De Choudhury}\cite{Tsugawa}, SCL-20 and PHQ-9 \cite{Kroenke}. 
 \\
 
@@ -205,7 +204,7 @@ Mowery et, al. \cite{Mowery} developed an annotated corpus of 9300 tweets from T
 From these two studies on extracting depressive features, the task that aims at establishing a suitable dataset from online social media to predict depression based on extracted features is actually intricate. And there is a lack of machine learning methodology in these researches to automate the proceeding of classifying depression from non-depression.
 \\
 \medskip
-\subsection{Research Of Classifying Depression On Social Media}
+\subsection{Researches Of Classifying Depression}
 From various online contents of depressive symptoms and non-depression indicators, it is possible to use machine learning techniques to develop automatic detection systems for major depressive disorders. Unusual actions and uncommon patterns of interaction \cite{Wongkoblap} in social networks can be classified into cases or non-cases of depression through existing learning algorithms,  such as Support Vector Machine algorithm, Naive Bayes method and Random Forest technique.
 \\
 
@@ -233,10 +232,7 @@ Despite an increasing number of studies investigating depression using social me
 \goodbreak
 % =================================================================Research Problem
 \section{Research Problem}
-This research aims to design an effective classification method for automatically detecting depressive risk of users in health data and is also able to potentially expend the model to be implemented in the real environment of social networks. 
-\\
-
-In order to clearly describe the research, the research objective is defined:\\\\
+This research aims to design an effective classification method for automatically detecting depressed cases in healthcare dataset and also to provide a solid fundation for future preliminary screening of major depressive disorder on social networks. In order to clearly describe the research, the research objective is defined:\\\\
 \textbf{Definition 1} \textit{Let $\mathbb{S}$ be a set of user properties to present an effective user profile for depression, a user property s $\in$ $\mathbb{S}$ is a tuple $s := \langle p_{1}, p_{2}, p_{3}$, $\cdots p_{n} \rangle$, where
 \begin{itemize}
   \item p is a visualisation or instance of an user property;
@@ -267,7 +263,7 @@ This research aims to discover an effective classification model $\mathbb{M}$ wh
 	$\mathbb{U}$ $\xRightarrow{\mathbb{M}}$ $\mathbb{V}$  or  $\mathbb{M}$($\mathbb{U}$) = $\mathbb{V}$ \\
 \end{center}
 
-Generally, we can label the users into two classes: depression users and group away of depression. We naturally employ machine learning technique for classification to seek an effective solution. And the binary classification is seen as a supervised learning because the objective is to use machine learning to automatically classify participants into two labelled categories of depression and depression-less.
+Generally, we can label the cases waiting for detection into two classes: depression instances and non-depressed examples. We naturally employ machine learning technique for classification to seek an effective solution. And the binary classification is seen as a supervised learning because the objective is to use machine learning to automatically classify participants into two labelled categories of depression and non-depression.
 \\
 \bigskip
 \goodbreak
@@ -275,7 +271,6 @@ Generally, we can label the users into two classes: depression users and group a
 % =================================================================Framework
 \section{Framework}
 The Framework is the theoretical structure of research study to describe and explain all level models and classification methods. It comprises several modules that establish a completely detailed structure of research study. Implementation of the Framework is the procedure of research experiment. And it explains how the research problem is analysed and in which content the research problem is solved. 
-\\
 
 \subsection{Conceptual Design}
 In this study, the framework consists of three modules:
@@ -294,7 +289,7 @@ Psychological knowledge module learns the knowledge how to group health informat
 \\
 \medskip
 
-\subsection{Psychological Knowledge Base}
+\subsection{Psychological Knowledge}
 Kroenke et, al. \cite{Kroenke} discovered that there was a strong association between increasing depression severity screen scores and worsening functionality on all 6 categories: mental, social, role, pain, physical and general functions. These 6 categories were directly interpreted 5 items of mental health diagnostic criteria in Mental Health Inventory (MHI-5) and additionally mental disorder symptoms as mental category. The research illustrated graphically the relationship between increasing PHQ-9 scores of depression and worsening functional categories (see Fig.~\ref{fig2}). 
 \begin{figure}[h]
 \includegraphics[width=1\textwidth]{phq-9.png}
@@ -333,7 +328,8 @@ In this research, we use the dataset that was directly collected from national h
 
 Data cleaning and transformation is prior in the whole procedure of data preparation because all data should be computer readable and not redundant. And data types in the dataset are justified in order to make each other compatible and comparative. The normalisation is also necessary to uniform the scale condition in various questions. Whilst data preprocessing is implemented, psychological domain knowledge in functional diagnostic criteria is applied in the reconstruction of data structure. According to Definition 4, we can lower the dimension of data set by reducing the number of tables. All tables need to be reconstructed into only six tables referred by six categories of depression diagnostic criteria in functionality (see Fig.~\ref{fig3}).
 \begin{figure}[h]
-\includegraphics[width=1\textwidth]{restructure.png}
+\hspace{2cm}
+\includegraphics[width=0.6\textwidth]{restructure.png}
 \caption{Data Restructure based on Psychological Knowledge Base} \label{fig3}
 \end{figure}
 They may involve different number of questions but they all have the same participants. Furthermore, those six tables can be rejoin into one big table due to same row index of them. By instant consideration of those tables, each table forms a new dataset where participants are cases and questions are features. We can therefore define the new datasets after data pre-processing as below:\\
@@ -391,12 +387,10 @@ where
 \end{itemize}
 
 In this ensemble method, the driving principle is to build a couple of estimators independently and then to average their predictions. The combined estimator is usually better than any of the single base estimator because instances' variance is moderated.
-\\
-\smallskip
 
 \subsubsection{Algorithm}
 Given a well-preprocessed dataset of m examples and n features $\mathbb{D}$ = $\displaystyle \big\{ (x_{1}, x_{2}, ... , x_{n}, y ), x_{i} \in R^{m}, y \in {\{0, 1\}}^{m}  \big\}$, we can generate a suitable ensemble model $\mathbb{M}_{e} $ to present a mapping of $\big\{ x_{1}, x_{2}, ... , x_{n} \big\}$ to $\big\{ y \big\}$ by applying $h$ various types of baseline model $M_{i}$:\\
-\IncMargin{1em}
+\IncMargin{2em}
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
 \Input{Dataset $\mathbb{D}$ = $\displaystyle \big\{ (x_{1}, x_{2}, ... , x_{n}, y ), x_{i} \in R^{m}, y \in {\{0, 1\}}^{m}  \big\}$}
@@ -406,29 +400,30 @@ Set the training set as $\mathbb{R} = \big\{ (x_{1}, x_{2}, ... , x_{n} ), x_{i}
 \For{$i\leftarrow 1$ \KwTo $h$}{
 	\emph{/* validate baseline model */ }\\
 	Do training $M_{i}$ on the training set $\mathbb{R}$ \;
-	Get the performance $E_{i}$ while validating the training result on $\mathbb{S}$ \;
+	Get the performance $E_{i}$ while validating training result on $\mathbb{S}$ \;
 }
 Calculate $w_{i} = \frac{1 - E_{i} }{\sum_{k = 1}^{h} (1 - E_{k}) }$; /* calculate performance weightings */\\
 Obtain the ensemble model $\mathbb{M}_{e} = \sum_{g = 1}^{h} w_{i} M_{i} $\;
 \caption{Ensemble Modelling}\label{ensemble}
-\end{algorithm}\DecMargin{1em}
+\end{algorithm}\DecMargin{2em}
 
 
 \subsubsection{Baseline Classification Technique}
-Our ensemble classification method involves several baseline supervised classification models. Supervised classification is one of most frequently applications in predictive data mining. We have concentrated on selecting intricate supervised learning algorithms within diverse advantages. The goal of each classification method is to build a concise model to achieve the best possible prediction accuracy. However, each classification method has diverse computing algorithm. There are several most important supervised machine learning techniques \cite{Kotsiantis}:
+Our ensemble classification method involves several baseline supervised classification models. Supervised classification is one of most frequently applications in predictive data mining. We have concentrated on selecting intricate supervised learning algorithms within diverse advantages. The goal of each classification method is to build a concise model to achieve the best possible prediction accuracy. However, each classification method has diverse computing algorithm. There are several most important supervised machine learning techniques \cite{Kotsiantis}:\\
 \begin{enumerate}[label=\alph*)]
 	\item Logic based algorithm: The algorithms use logic or rules to make a decision of selecting proper features during the learning. Decision tree method adopts this algorithm.
 	\item Perceptron-based techniques: The algorithms are based on the notion of perceptron to construct a pattern like layers of neutrons to learn different paths in the classification. Neutral network is its well-known representer.
 	\item Statistical learning algorithms: The algorithm uses statistical approaches to provide a probability that an instance belongs in each class. Under this category of classification algorithms, one can find Naive Bayesian network and k-Nearest Neighbour technique.
-	\item Support vector machines: Support Vector Machine is the newest supervised machine learning technique \cite{Kotsiantis}. In classic, it uses a hyperplane to separate two data classes and the margin created by the separating hyperplane indicates how the success of classification is. 
+	\item Support vector machines: Support Vector Machine is the newest supervised machine learning technique \cite{Kotsiantis}. In classic, it uses a hyperplane to separate two data classes and the margin created by the separating hyperplane indicates how the success of classification is. \\
 \end{enumerate}
+
 We propose to involve one method of each type in order to present sufficient algorithms in the limited number of sub-models. We thereby select four techniques for baseline models: Decision Tree method, Artificial Neutral Network technique, k-Nearest Neighbour method and Support Vector Machine algorithm.
 \\
 
 \textbf{Decision Tree (DT):\\}
 Decision trees are logic trees that classify instances by evaluating them based on attributes. Each internal node in a decision tree represents evaluating an attribute in an instance, each branch represents the outcome of evaluation and each leaf node represents a class label. Instances are classified starting at the root node and stop at one leaf node after computing all attributes on the path. Decision tree algorithm is the easiest algorithm and capable of classifying huge datasets \cite{Somvanshi}.
 It is simple to understand and interpret. Kotsiantis et, al. \cite{Kotsiantis}addressed that one of the most useful characteristics of decision trees is their comprehensibility, which makes users can easily understand why a decision tree classifies an instance as a specific class label. And decision tree method can make a decision even with little hard data. Somvanshi et, al. \cite{Somvanshi} believed that decision tree algorithm can process the data which contains the missing values and errors. Their research showed that decision tree is able to work very good in the presence of redundant attributes. Likewise, a disadvantage of decision tree method is well-known. The algorithm is unstable that a small change in the data may change the overall look of decision tree. However, decision tree algorithm is still one of the most useful and powerful algorithm in supervised learning. 
-\\
+\\\\\\
 
 \textbf{Artificial Neutral Network (ANN)\\}
 Artificial neutral network is a biologically inspired algorithm to simulate the manner of nerve cells in the brain. According to the book of Kumar \cite{Kumar}, ANN is made up of elements named as artificial neurons; the neurons are organised in network to simulate the anatomy of brain by a standard processing whose output is calculated by multiplying its input by a weight vector; they are aggregated into layers and layers are aggregated into the network to form highly interconnected processing structures; whilst the input layer doesn't process information, it simply sends the inputs, modified by a weight, to each of the neurons in the next layer; and the next layer does the processing which can be a hidden layer or the output layer in a single layer design. ANNs are usually more able to easily provide incremental learning than decision trees as having a good multiple layers architecture. Fei and Li \cite{Fei} discovered that ANN are widely used in medical data mining methodology, and the combination of ANNs and some other algorithms will be able to achieve a better results in medical diagnosis and prediction. Likewise, ANN contains some weaknesses, including "poor general application of the architecture, inaccurate analysis for various indicators of the network and uncontrollable time of machine learning" \cite{Fei}. Kotsiantis et, al. \cite{Kotsiantis}concluded that the most striking disadvantage of ANN is lack of ability to answer how the output in a specific way being effectively communicated. Generally, it is a problem to properly determining the size of the hidden layer. The underestimated neutrons in hidden layer can lead to poor approximation, while "excessive nodes can result in overfitting and eventually make the search for the global optimum more difficult" \cite{Kotsiantis}. In spite of its several disadvantages,  ANN is still a good competitor for other learning algorithms, which has been used on a variety of intricate problems including computer vision, speech recognition, recommendation filtering even medical diagnosis \cite{Somvanshi}\cite{Kumar}.
@@ -444,14 +439,14 @@ Support Vector Machine algorithm is the newest classification technique among th
 
 Meanwhile, Choudhary and Gianey \cite{Choudhary} stated that every learning algorithm differs according to area of application and no algorithm is more powerful than the other in all scenarios. They concluded that the choice of a suitable algorithm depends on the type of problem and the given data, and the accuracy can be improved by using two or more algorithms together. We therefore comprise above four algorithms into ensemble model for this study.
 \\
+\\
+\\
 
 \bigskip
 \goodbreak
 % =================================================================Experiment
 \section{Experiment}
 We employ an ensemble supervised learning experiment to classify depressive users from a rare health survey dataset $\mathbb{H}$. We follow psychological knowledge to reduce the dimension of dataset by split dataset into sub-sets. It will not only benefit the processing of classification but also provide a great opportunity to compare the performance of overall dataset and subsets for support of further solution on the real condition with less features.
-\\
-\medskip
 
 \subsection{Experiment Design}
 In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocessing on survey data $\mathbb{H}$; next, we aggregate all features of $\mathbb{D}_{overall}$ into 6 health-related functional classes and follow the same procedure to divide $\mathbb{D}_{overall}$ into 6 sub-sets $\mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$ and $\mathbb{D}_{general}$; and we train dataset $\mathbb{D}_{overall}$ by four baseline models (DT, ANN, KNN, SVM) to obtain the relevant performances; then we build the ensemble model $\mathbb{M}_{e}$ by calculating the performance weight $w_{i}$ of each baseline model $M_{i} $; furthermore, we train all 6 sub-datasets by the ensemble classifier $\mathbb{M}_{e}$; and the final step is to use k-fold cross validation algorithm to value the complete predictive performance. The overall look of all experiment proceedings is illustrated in Fig.~\ref{fig4}. 
@@ -460,9 +455,11 @@ In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocess
 \caption{The overall look of experiment proceedings} \label{fig4}
 \end{figure}
 \\
+\\
 
-From the proceeding details of classification, we can define the algorithm of whole experiment as below: \\
-\IncMargin{1em}
+
+From the proceeding details of classification, we can define the algorithm of whole experiment as below: \\\\\\
+\IncMargin{2em}
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
 \Input{a rare health survey dataset $\mathbb{H}$}
@@ -478,10 +475,12 @@ Supervised learning on $\mathbb{D}_{overall}$ for ensemble model $\mathbb{M}_{e}
 	Validate its predictive performance\;
 }
 \caption{Experiment Design}\label{experiment}
-\end{algorithm}\DecMargin{1em}
+\end{algorithm}\DecMargin{2em}
 
+\bigskip
+\bigskip
 The ensemble classification can be expressed in algorithm as well: Given a well-preprocessed dataset of m examples and n features $\mathbb{D}$ = $\displaystyle \big\{ (x_{1}, x_{2}, ... , x_{n}, y ), x_{i} \in R^{m}, y \in {\{0, 1\}}^{m}  \big\}$, we can obtain the ensemble classifier $\mathbb{F}_{e}$ = $w_{svm} \cdot f_{svm}$ + $w_{nb} \cdot f_{nb}$ + $w_{knn} \cdot f_{knn}$ + $w_{dt} \cdot f_{dt}$ by applying supervised learning on dataset $\mathbb{D}$:\\
-\IncMargin{1em}
+\IncMargin{2em}
 \begin{algorithm}[H]
 \SetKwFunction{Median}{Median}
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
@@ -502,17 +501,17 @@ Divide dataset $\mathbb{D}$ into k portions, each portion has $\frac{m}{k}$ exam
 	Calculate a float predictive value $y_{e}$ = $w_{svm} \cdot y_{svm}^{p}$ + $w_{nb} \cdot y_{nb}^{p}$ + $w_{knn} \cdot y_{knn}^{p}$ +$w_{dt} \cdot y_{dt}^{p}$ \;
 	\emph{/* sensitivity */}\\
 	\eIf{$y_{e} > 0.5$}{
-		$y_{e} = 1$\;
+		$y_{e} = 1$ \emph{/* non-depression */}
 	}{
-		$y_{e} = 0$\;
+		$y_{e} = 0$ \emph{/* depression */}
 	}
-	Test $y_{e}$ on the testing set $\mathbb{S}$ and report predictive performance $p_{k}$ \;
+	Test $y_{e}$ on testing set $\mathbb{S}$ and report predictive performance $p_{k}$ \;
 }
 \emph{/* 5-fold cross validation */}\\
 Validate the predictive performance by calculating $\displaystyle p_{e} = \frac{\sum_{k=1}^{5} p_{k}}{5}$ \;
-Generate the optimised ensemble classifier $\mathbb{F}_{e}$ = Median($\mathbb{F}_{1}, \mathbb{F}_{2}, \mathbb{F}_{3}, \mathbb{F}_{4}, \mathbb{F}_{5}$)
+Generate the optimised ensemble classifier \hspace{6cm} $\mathbb{F}_{e}$ = Median($\mathbb{F}_{1}, \mathbb{F}_{2}, \mathbb{F}_{3}, \mathbb{F}_{4}, \mathbb{F}_{5}$)
 \caption{Ensemble Classification Procedure}\label{classification}
-\end{algorithm}\DecMargin{1em}
+\end{algorithm}\DecMargin{2em}
 \medskip
 
 \subsection{Dataset}
@@ -550,8 +549,6 @@ After data preprocessing, we has an overall dataset that involves 5398 participa
 
 \subsection{Baseline Models}
 Many machine learning packages and tools are accessible to implement common classification algorithms. Scikit-learn library from Python is one of the most well-designed machine learning package. It provides simple and efficient tools for data mining and data analysis. And it nearly contains all supervised learning methods for both binary and multi-class classification. We thereby choose Scikit-learn Python package to implement four baseline models.
-\\
-\smallskip
 
 \subsubsection{Kernel and Parameters}
 How to select suitable kernel and parameters is common task for classification but it is also complex for specific examples. We only balance the settings of baseline models instead searching a perfect for the parameter because it is uncertain if the settings could maximum the performance in utter instances. And the predictive performance is expected being improved by ensemble classification. Therefore, we employ common values for kernel and parameters in four sub-models:\\
@@ -582,18 +579,17 @@ How to select suitable kernel and parameters is common task for classification b
 		 the contribution of neighbours is treated equal so the weights between neighbours is set as "uniform"; 
 		 the algorithm used to compute the nearest neighbours is set as \"auto\" because the number of features is varied in overall dataset and sub-datasets;
 		 the size of leaf is default as 30 which may affect the speed of construction and query; 
-		 the default metric is Euclidean due to standard metric configuration.\\
+		 the default metric is Euclidean due to standard metric configuration.\\\\
 	\end{description}
 	
 	\textbf{Support Vector Machine}: 
 	\begin{description} 
 		 \item \hspace{0.5cm} A popular Radial Basis Function (RBF) kernel is used in SVM sets; 
 		  the parameter \"C\" that trades off misclassification of training examples against simplicity of the decision surface is set as 1; 
-		  the parameter \"gamma\" defines how much influence a single training example has is set as "0.1". \\
+		  the parameter \"gamma\" defines how much influence a single training example has is set as "0.1". 
 	\end{description}
 
 Moreover, all four base models are configured for binary classification and their predictive performances are weighted in both labelled classes. 
-\\
 \medskip
 %
 %
@@ -603,7 +599,7 @@ The predictive performance of each base classifier in our model is evaluated by 
 \item let the number of cases where the classifier correctly predicts P as \textbf{ true positive (TP)}
 \item let the number of cases where the classifier correctly predicts N as \textbf{true negative (TN)}
 \item let the number of cases where the classifier incorrectly predicts P as \textbf{false positive (FP)}
-\item let the number of cases where the classifier incorrectly predicts N as \textbf{false negative (FN)}\\
+\item let the number of cases where the classifier incorrectly predicts N as \textbf{false negative (FN)}
 \end{enumerate}
 
 And four following terminologies are hence defined as below:
@@ -630,8 +626,8 @@ Referred to normalisation factor $E$ in equation (1), F1 score need to be normal
 % =================================================================Results and Discussion
 \section{Results and Discussions}
 \subsection{Experimental Results}
-By comparing the performances of four base models (illustrated in table. 1), Decision tree algorithm has the highest accuracy and F1 measure. SVM technique has a similar performance as decision tree algorithm but only a bit lagging in precision. ANN method performs more advantageous in precision score and KNN method operates more fitting in recall measure. Almost F1 scores and recall measures are significant in correlation ( $\geq$ 95\%). However, baseline models perform less satisfied in accuracy and precision. \\
-\begin{table}[h]
+By comparing the performances of four base models (illustrated in table. 1), Decision tree algorithm has the highest accuracy and F1 measure. SVM technique has a similar performance as decision tree algorithm but only a bit lagging in precision. ANN method performs more advantageous in precision score and KNN method operates more fitting in recall measure. Almost F1 scores and recall measures are significant in correlation ( $\geq$ 95\%). However, baseline models perform less satisfied in accuracy and precision. 
+\begin{table}[ht]
 \begin{tabular}{|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
@@ -648,14 +644,13 @@ By comparing the performances of four base models (illustrated in table. 1), Dec
 \caption{Performances of sub-models in the overall dataset}
 \label{submodels}
 \end{table}
-\\
 
 \subsubsection{Performance of Ensemble Classifier}
 We use F1 measure for the main indicator of model's performance. According to equation (1) and (2), we can calculate the weight for each base model (see at table 2.) and further generate the complete form of ensemble classifier:
 \begin{equation}
 \mathbb{F}_{k} = 0.228 \cdot f_{svm} + 0.283 \cdot f_{nb} + 0.266 \cdot f_{knn} + 0.223 \cdot f_{dt}
 \end{equation}
-\begin{table}[h]
+\begin{table}[ht]
 \begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
@@ -672,7 +667,6 @@ We use F1 measure for the main indicator of model's performance. According to eq
 \caption{Calculation of weights for sub-models}
 \label{weight}
 \end{table}
-\\
 
 We use F1 score and accuracy measure as the main predication indicators of the ensemble classification. As features and specificity of the overall dataset and each sub-datasets varied, the divided performances are expected (see table.3). Unsurprisingly, ensemble classifier performs better in the overall dataset and mental sub-set. Performances in other sub-sets is compromised in this experiment but is still comparable to other machine learning methodologies \cite{Fatima}\cite{Hassan}\cite{Peng}\cite{Reece}. As DT performs best (0.925 in Accuracy) in the sub-models and ensemble model has a overall Accuracy of 0.954, the improvement $I$ for detecting depression in ensemble classifier is calculated as below (let percentage of depressed instances as $N_{0}$):\\
 \begin{equation}\label{reio}
@@ -680,7 +674,7 @@ We use F1 score and accuracy measure as the main predication indicators of the e
 \end{equation}
 Therefore, the proposed ensemble approach increases the predictive performance by 30.3\% for distinguishing depression from non-depressed participants.
 
-\begin{table}[h]
+\begin{table}[ht]
 \begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
@@ -704,13 +698,11 @@ Therefore, the proposed ensemble approach increases the predictive performance b
 \label{subsets}
 \end{table}
 
-\smallskip
-
 \subsubsection{The Depressive Prediction}
 F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0. F1 measure equally considers both precision and recall in the performance measurement. By the comparison of F1 measures in both different algorithms and datasets (see table. 4), ensemble method has a better F1 score than other baseline algorithms. The overall dataset and mental subset enable to be distinguished from other datasets due to a higher level of F1 measures.
-\begin{table}[h]
-\begin{adjustwidth}{-1cm}{}
-\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\begin{table}[ht]
+\begin{adjustwidth}{-1.5cm}{}
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{2cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
@@ -729,12 +721,9 @@ F1 score is a weighted harmonic mean of precision and recall such that the best 
 \label{F1}
 \end{adjustwidth}
 \end{table}
-\\
-
-Accuracy is the fraction of predictions our model got right. It indicates the number of correct predictions made in all occurrences of both labels. 
-\begin{table}[h]
-\begin{adjustwidth}{-1cm}{}
-\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\begin{table}[ht]
+\begin{adjustwidth}{-1.5cm}{}
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{2cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
@@ -753,12 +742,9 @@ Accuracy is the fraction of predictions our model got right. It indicates the nu
 \label{Accuracy}
 \end{adjustwidth}
 \end{table}
-\\
-
-Precision is the ability of a classifier not to label an instance positive that is actually negative. It measures how effective to diagnose person's psychological health.
-\begin{table}[h]
-\begin{adjustwidth}{-1cm}{}
-\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\begin{table}[ht]
+\begin{adjustwidth}{-1.5cm}{}
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{2cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
@@ -777,15 +763,9 @@ Precision is the ability of a classifier not to label an instance positive that 
 \label{Precision}
 \end{adjustwidth}
 \end{table}
-\\
-
-For the performances of precision, ensemble classifier has the best precision in each dataset and it surprisedly performs better in metal sub-dataset than in the overall dataset. It may approve that features for metal disorder symptoms is more depression-related than other features in other categories because non-criteria items in depression scale decreased specificity of performance \cite{Zimmerman}.
-\\
-
-Recall is the ability of a classifier to find all positive instances. It measures how many healthy people are correctly identified. For ensemble classifier, nearly no person with depression is diagnosed into the health group.
-\begin{table}[h]
-\begin{adjustwidth}{-1cm}{}
-\begin{tabular}{|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\begin{table}[ht]
+\begin{adjustwidth}{-1.5cm}{}
+\begin{tabular}{|C{2cm}|C{1.5cm}|C{2cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{2cm}|}
 \hline
 \rowcolor[HTML]{FFFFC7} 
 {\color[HTML]{333333} \textbf{Models}} & {\color[HTML]{333333} \textbf{Overall (mean)}} & {\color[HTML]{333333} \textbf{Physical (mean)}} & {\color[HTML]{333333} \textbf{Role (mean)}} &{\color[HTML]{333333} \textbf{Social (mean)}} & {\color[HTML]{333333} \textbf{Mental (mean)}} & {\color[HTML]{333333} \textbf{Pain (mean)}} & {\color[HTML]{333333} \textbf{General (mean)}} \\ \hline
@@ -804,9 +784,17 @@ Recall is the ability of a classifier to find all positive instances. It measure
 \label{Recall}
 \end{adjustwidth}
 \end{table}
-\\
 
-The recall performances of ensemble classifier is about 1 in the overall dataset and all sub-datasets. According to the definition of recall measure  $ Recall = \frac{TP}{TP + FN} $, it means that only when false negative measurement (FN) is 0, recall measure is equal to 1. In our experiment, FN presents the number of depressed users who were incorrectly identified as non-depressed. As FN is zero, it indicates that no depressed instances in the experiment has been mistakenly classified. The coverage in correct classification of depressed participants is perfect, only slightly larger than the results of psychological screening ( illustrated in Fig.~\ref{fig5} ). Let the predicted precision as $Precision_{p}$ and percentage of non-depressed instances as $N_{1}$, the overall prediction $p_{overall}$ of depressed instances is calculated as below:\\
+Accuracy is the fraction of predictions our model got right. It indicates the number of correct predictions made in all occurrences of both labels (see table. 5). In our experiment, it presents all corrected prediction based on the result of PHQ-9 metal screen inventory.
+
+Precision is the ability of a classifier not to label an instance positive that is actually negative. It measures how effective to diagnose person's psychological health. For the performances of precision (see table. 6), ensemble classifier has the best precision in each dataset and it surprisedly performs better in metal sub-dataset than in the overall dataset. It may approve that features for metal disorder symptoms is more depression-related than other features in other categories because non-criteria items in depression scale decreased specificity of performance \cite{Zimmerman}.
+
+Recall is the ability of a classifier to find all positive instances. It measures how many healthy people are correctly identified. For ensemble classifier, nearly no person with depression is diagnosed into the health group because almost of all recall measures are equal to 1 (see table. 7).
+
+\subsection{Discussions}
+Ensemble classifier is obviously superior than baseline models as performing advantageous at F1 measure, Accuracy, Precision and Recall (see table. 4. 5. 6. 7.). It leads not only in the test of overall dataset but also all experiment in sub-datasets. It triumphantly gathers different predictions of baseline models and combine them into a better prediction. It is more stable and robust than any involved baseline algorithm. And this experiment uses random under-sampling technique with ensemble method to leverage the class imbalance problem where non-depression instances is about 10 times large as depressed instances. The propose ensemble method has significantly improve predictive performance by 30.3\% with class imbalance. It enables to promote diversity among baseline models and convert that specificity into the performance. The ensemble method is very simple, closing to bagging and major voting ensemble methods. Other boost ensemble methods are also suggested to improve the prediction performance further like the EUSBoost method \cite{Sagi}. \\
+
+By analysis of the performance in recall measure (see table. 7), the preferred ensemble method covers all depressed cases in PHQ-9 screening measurement where no depressed instance has been mistakenly labelled as non-depression. The recall performances of ensemble classifier is about 1 in the overall dataset and all sub-datasets. According to the definition of recall measure  $ Recall = \frac{TP}{TP + FN} $, it means that only when false negative measurement (FN) is 0, recall measure is equal to 1. In our experiment, FN presents the number of depressed users who were incorrectly identified as non-depressed. As FN is zero, it indicates that no depressed instances in the experiment has been mistakenly classified. The coverage in correct classification of depressed participants is perfect, only slightly larger than the results of psychological screening ( illustrated in Fig.~\ref{fig5} ). Let the predicted precision as $Precision_{p}$ and percentage of non-depressed instances as $N_{1}$, the overall prediction $p_{overall}$ of depressed instances is calculated as below:\\
 \begin{equation}\label{reio}
 	p_{overall} = 1 - (Precision_{p} \cdot N_{1})= (1 -  0.956 \cdot 90.44\%) \cdot 100\% = 13.54\%
 \end{equation}
@@ -815,29 +803,18 @@ The recall performances of ensemble classifier is about 1 in the overall dataset
 \includegraphics[width=1\textwidth]{coverage.png}
 \caption{Coverage in correct classification of depression} \label{fig5}
 \end{figure}
-\medskip
+The coverage (see fig. 5) of depression cases is slightly larger than the real situation of mental health inventory. However, it is absolutely acceptable for large sampling that there is no missing of any depression case and only about 4\% of total cases have been incorrectly labelled as depression in the prediction. The proposed ensemble method is perfect for preliminary screening of major depressive disorder in order to provide limited cases for further clinical diagnosis while without missing any potential depression case. 
+\\
 
-\subsection{Discussions}
-\paragraph{performance of ensemble is great}
-Ensemble classifier is obviously superior than baseline models as performing advantageous at F1 measure, Accuracy, Precision and Recall (see table. 4. 5. 6. 7.). It leads not only in the test of overall dataset but also all experiment in sub-datasets. It triumphantly gathers different predictions of baseline models and combine them into a better prediction. It is more stable and robust than any involved baseline algorithm. And this experiment uses random under-sampling technique with ensemble method to leverage the class imbalance problem where non-depression instances is about 10 times large as depressed instances. The propose ensemble method has significantly improve predictive performance by 30.3\% with class imbalance. It enables to promote diversity among baseline models and convert that specificity into the performance. The ensemble method is very simple, closing to bagging and major voting ensemble methods. Other boost ensemble methods are also suggested to improve the prediction performance further like the EUSBoost method \cite{Sagi}. 
-%
-\paragraph{the coverage of depression is greate}
-By analysis of the performance in Recall measure (see table. 7), the preferred ensemble method covers all depressed cases in PHQ-9 screening measurement where no depressed instance has been mistakenly labelled as non-depression. The coverage (see fig. 5) of depression cases is slightly larger than the real situation of mental health inventory. However, it is absolutely acceptable for large sampling that there is no missing of depression case and only about 4\% of total cases have been incorrectly labelled as depression in the prediction. The proposed ensemble method is perfect for preliminary screening of major depressive disorder in order to provide limited cases for further clinical diagnosis while without missing any potential depression case. 
-%
-%
-%
-%
-%
-\paragraph{enlarge the area for collecting data, more features}
-
-
-\bigskip
-\goodbreak
-
+In comparison with the predictions in the different sub-datasets (see table. 3), ensemble classifier performs the best in the overall dataset and has a similar accuracy in mental subset. The importance of diagnostic criteria in mental symptoms has been manifested that mental criteria are certainly the major features for identifying depression. Meanwhile, both accuracy and F1 measures for predicting depression in physical, social and role are equal to the predictive performance in general subset. However, general subset (70 features) has much more features than physical (7 features), social (6 features) and role (9 features) three subsets. It means that there are a lot of features in general subset occurred without enough specificity for classifying depressed and non-depression labels. Partial of general functional features hence are useless in the detection of depression. Correspondingly, features in physical, social and role functional subsets present more correlational in the classification. Weak depression indicator is not only helpless in the classification, but also incline the overall predictive accuracy. Therefore, it is extremely critical for depression diagnostic approaches to select a limited number of suitable features to distinguish depressed cases from a wide range. From the result of this research, we suggest an algorithm for feature selection which first involves as more mental symptoms as possible according to depression diagnostic criteria and pluses no more than 50\% features in health criteria in physical, role and social functionality. This algorithm ensures the majority of features consisted by metal diagnostic criteria and mixes partial health criteria to avoid the scenario that temporary mental status change occurs by sudden events like losing close relatives. It simulates the proceedings that psychologist did in the standard clinical interview. 
+\\
+\pagebreak
 % =================================================================Future Work and Conclusion
 \section{Conclusion And Future Work}
+This work presented a binary ensemble system which is able to preliminarily distinguish depressive cases from a wide range of health data without the missing identification of any potential depressed case. In the experimental evaluation on NCHS dataset, only 4\% cases were mistakenly classified into depressed class and no depressed case has been detected incorrectly. The ensemble classifier on the whole dataset has a high F1 measure as 0.976 comparing to PHQ-9 depression screen inventory, 95.4\% and 95.6\% for Accuracy and Precision, respectively. It also demonstrated that the ensemble system is stable and robust for detecting depression on a partial of dataset. Moving forward, this research can help in preliminary screening of depressive cases from a large number of potential cases before formal clinical diagnosis. It is able to save huge cost in the psychological healthcare. It provides a much more efficient way to screen more people than traditional technologies and has a similar accuracy and coverage as current mental scale inventory. However, the reliability and sensitivity of this ensemble system need to be tested next on more datasets and text mining on social network platforms. In the conclusion, the presented work clearly illustrated the predictive capability of the proposed ensemble system to efficiently distinguish depressive instances from a board span of healthcare occasions.
+\\
 
-
+As future work, there are several future research directions of detecting depression that need to be carefully analysed for applying our ensemble system. One trend is to utilise rich online social media sources to extract features on the classification. It certainly will help improve the reliability and sensitivity of ensemble system. It hence will be our next work on the schedule.  Another interesting research direction is to examine images and brain EEG signals for mental clinic purpose. Deep learning has gained more momentum in such areas. Current ensemble system involves four supervised learning algorithms, however it will not suit for deep learning. In order to detect depression in intricate circumstance, deep learning technologies like DNN will integrate to increase the performance of ensemble system in future. As a major issue of automate depression detection, we will also consider how to simulate the proceeding of clinic diagnosis to improve the actions of effectively selecting mental diagnostic features. 
 
 \goodbreak
 % =================================================================reference
