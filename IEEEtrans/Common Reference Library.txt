@@ -1,0 +1,689 @@
+﻿@article{Andrea,
+   author = {Andrea, Sarah B. and Siegel, Sarah A. R. and Teo, Alan R.},
+   title = {Social Support and Health Service Use in Depressed Adults: Findings From the National Health and Nutrition Examination Survey},
+   journal = {General Hospital Psychiatry},
+   volume = {39},
+   pages = {73-79},
+   abstract = {ObjectiveWe investigated the relationship between social support and health service use among men and women with depression. MethodsParticipants were 1379 adults with symptoms of depression (Patient Health Questionnaire-9 score ≥5) in the National Health and Nutrition Examination Survey. Using the framework of the Andersen Behavioral Model of Health Services Use, multivariable regression models used social support, stratified by depression severity, to estimate association with utilization of mental health and nonmental health services. Partial F-tests examined a priori interactions between social support and gender. ResultsAmong those with adequate social support, odds of seeing a nonmental health provider were much higher when depression was moderate [Odds Ratio (OR): 2.6 (1.3–5.3)] or severe [OR: 3.2 (1.2–8.7)], compared to those lacking social support. Conversely, odds of mental health service use were 60% lower among those with moderate depression [OR: 0.4 (0.2–1.0)] when social support was adequate as opposed to inadequate. Social support was unrelated to service use when depression was mild. Gender moderated the relationship between social support and health service use among individuals with severe depression. ConclusionsSocial support has opposite associations with mental and nonmental health service use among adults with clinically significant depression. This association is largely attributable to the effect of male gender on the relationship between social support and health service use.},
+   keywords = {Depression
+Social Support
+Health Service Use
+NHANES
+Gender},
+   ISSN = {0163-8343},
+   DOI = {10.1016/j.genhosppsych.2015.11.009},
+   year = {2016},
+   type = {Journal Article}
+}
+
+@inproceedings{Choudhary,
+   author = {Choudhary, R. and Gianey, H. K.},
+   title = {Comprehensive Review On Supervised Machine Learning Algorithms},
+   booktitle = {2017 International Conference on Machine Learning and Data Science (MLDS)},
+   pages = {37-43},
+   abstract = {Machine learning is an area of computer science in which the computer predicts the next task to perform by analyzing the data provided to it. The data accessed by the computer can be in the form of digitized training sets or via interaction with the environment. The algorithms of machine learning are constructed in such a way as to learn and make predictions from the data unlike the static programming algorithms that need explicit human instruction. There have been different supervised and unsupervised techniques proposed in order to solve problems, such as, Rule-based techniques, Logic-based techniques, Instance-based techniques, stochastic techniques. The primary objective of our paper is to provide a general comparison among various state-of-the-art supervised machine learning algorithms.},
+   keywords = {learning (artificial intelligence)
+different supervised techniques
+unsupervised techniques
+stochastic techniques
+comprehensive review
+supervised machine learning algorithms
+computer science
+digitized training sets
+static programming algorithms
+explicit human instruction
+rule-based techniques
+logic-based techniques
+Entropy
+Classification algorithms
+Prediction algorithms
+Decision trees
+Machine learning algorithms
+Standards
+Vegetation
+Machine learning
+instance-based techniques},
+   DOI = {10.1109/MLDS.2017.11},
+   type = {Conference Proceedings}
+}
+
+@article{Clark,
+   author = {Clark, Matthew M. and Bradley, Karleah L. and Jenkins, Sarah M. and Mettler, Emily A. and Larson, Brent G. and Preston, Heather R. and Liesinger, Juliette T. and Werneburg, Brooke L. and Hagen, Philip T. and Harris, Ann M. and Riley, Beth A. and Olsen, Kerry D. and Vickers Douglas, Kristin S.},
+   title = {The Effectiveness of Wellness Coaching for Improving Quality of Life},
+   journal = {Mayo Clinic Proceedings},
+   volume = {89},
+   number = {11},
+   pages = {1537-1544},
+   ISSN = {00256196},
+   DOI = {10.1016/j.mayocp.2014.04.028},
+   year = {2014},
+   type = {Journal Article}
+}
+
+@article{DeChoudhury,
+   author = {De Choudhury, Munmun and Counts, Scott and Horvitz, Eric},
+   title = {Social media as a measurement tool of depression in populations},
+   pages = {47-56},
+   DOI = {10.1145/2464464.2464480},
+   url = {https://dl.acm.org/citation.cfm?doid=2464464.2464480},
+   year = {2013},
+   type = {Journal Article}
+}
+
+@article{Fatima,
+   author = {Fatima, Iram and Mukhtar, Hamid and Ahmad, Hafiz Farooq and Rajpoot, Kashif},
+   title = {Analysis of user-generated content from online social communities to characterise and predict depression degree},
+   journal = {Journal of Information Science},
+   volume = {44},
+   number = {5},
+   pages = {683-695},
+   abstract = {The identification of a mental disorder at its early stages is a challenging task because it requires clinical interventions that may not be feasible in many cases. Social media such as online communities and blog posts have shown some promising features to help detect and characterise mental disorder at an early stage. In this work, we make use of user-generated content to identify depression and further characterise its degree of severity. We used the user-generated post contents and its associated mood tag to understand and differentiate the linguistic style and sentiments of the user content. We applied machine learning and statistical analysis methods to discriminate the depressive posts and communities from non-depressive ones. The depression degree of a depressed post is identified using variations of valence values based on the mood tag. The proposed methodology achieved 90%, 95% and 92% accuracy for the classification of depressive posts, depressive communities and depression degree, respectively.},
+   keywords = {Depression classification,depression degree identification,mental health,moods and emotions,online communities},
+   DOI = {10.1177/0165551517740835},
+   url = {http://journals.sagepub.com/doi/abs/10.1177/0165551517740835},
+   year = {2018},
+   type = {Journal Article}
+}
+
+@article{Fei,
+   author = {Fei, Yang and Li, Wei-qin},
+   title = {Improve artificial neural network for medical analysis, diagnosis and prediction},
+   journal = {Journal of Critical Care},
+   volume = {40},
+   pages = {293},
+   ISSN = {0883-9441},
+   DOI = {https://doi.org/10.1016/j.jcrc.2017.06.012},
+   url = {http://www.sciencedirect.com/science/article/pii/S0883944117308468},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Gonzalez-Saenz,
+   author = {Gonzalez-Saenz de Tejada, M. and Bilbao, A. and Baré, M. and Briones, E. and Sarasqueta, C. and Quintana, J. M. and Escobar, A. and Baré, M.},
+   title = {Association of social support, functional status, and psychological variables with changes in health-related quality of life outcomes in patients with colorectal cancer},
+   journal = {Psycho-Oncology},
+   volume = {25},
+   number = {8},
+   pages = {891-897},
+   note = {Psycho-Oncology
+Source Information: Aug2016, Vol. 25 Issue 8, p891; Subject Term: COLON cancer patients -- Health; Subject Term: SOCIAL support; Subject Term: QUALITY of life; Subject Term: DISTRESS (Psychology) -- Prevention; Subject Term: OUTCOME assessment (Medical care); Subject Term: MENTAL health of cancer patients; Subject Term: ANXIETY; Subject Term: ANXIETY -- Prevention; Subject Term: PREVENTION of mental depression; Subject Term: QUALITY of life -- Psychological aspects; Subject Term: ANXIETY -- Psychological aspects; Subject Term: MENTAL depression -- Psychological aspects; Subject Term: RECTUM tumors -- Psychological aspects; Subject Term: COLON tumors -- Psychological aspects; Subject Term: HEALTH education; Subject Term: QUESTIONNAIRES; Subject Term: TIME; Subject Term: BARTHEL Index; Subject Term: ; Geographic Subject: SPAIN; Geographic Subject: ; Number of Pages: 7p; ; Document Type: journal article;},
+   abstract = {<bold>Background: </bold>The aim of this study was to explore the association of social support received, and functional and psychological status of colorectal cancer patients before surgery with changes in health-related quality of life (HRQoL) outcomes measured by EORTC QLQ-C30 at 1-year post-intervention.<bold>Methods: </bold>Consecutive patients that were because of undergo therapeutic surgery for the first time for colon or rectum cancer in nine hospitals in Spain were eligible for the study. Patients completed questionnaires before surgery and 12 months afterwards: one HRQoL instrument, the EORTC QLQ-C30; a social network and social support questionnaire, the Duke-UNC Functional Social Support Questionnaire; the Hospital Anxiety and Depression Scale, to assess anxiety and depression; and the Barthel Index, to assess functional status; as well as questions about sociodemographic information. General linear models were built to explore the association of social support, functional status, and psychological variables with changes in HRQoL 12 months after intervention.<bold>Results: </bold>A total of 972 patients with colorectal cancer took part in the study. Patients' functional status, social support, and anxiety and depression were associated with changes in at least one HRQoL domain. The higher functional status, and the higher social support, the more they improved in HRQoL domains. Regarding anxiety and depression, the more anxiety and depression patients have at baseline, less they improve in HRQoL domains.<bold>Conclusions: </bold>Patients with colorectal cancer who have more social support and no psychological distress may have better results in HRQoL domains at 1 year after surgery. Copyright © 2015 John Wiley & Sons, Ltd. [ABSTRACT FROM AUTHOR]
+Copyright of Psycho-Oncology is the property of John Wiley & Sons, Inc. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)},
+   keywords = {COLON cancer patients -- Health
+SOCIAL support
+QUALITY of life
+DISTRESS (Psychology) -- Prevention
+OUTCOME assessment (Medical care)
+MENTAL health of cancer patients
+ANXIETY
+ANXIETY -- Prevention
+PREVENTION of mental depression
+QUALITY of life -- Psychological aspects
+ANXIETY -- Psychological aspects
+MENTAL depression -- Psychological aspects
+RECTUM tumors -- Psychological aspects
+COLON tumors -- Psychological aspects
+HEALTH education
+QUESTIONNAIRES
+TIME
+BARTHEL Index
+SPAIN},
+   ISSN = {10579249},
+   DOI = {10.1002/pon.4022},
+   url = {http://ezproxy.usq.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=pbh&AN=117000366&site=ehost-live},
+   year = {2016},
+   type = {Journal Article}
+}
+
+@misc{Hassan,
+   author = {Hassan, Anees Ul and Hussain, Jamil and Hussain, Musarrat and Sadiq, Muhammad and Lee, Sungyoung},
+   title = {Sentiment analysis of social networking sites (SNS) data using machine learning approach for the measurement of depression},
+   publisher = {IEEE},
+   volume = {2017-},
+   pages = {138-140},
+   abstract = {The advent of different social networking sites has enabled anyone to easily create, express, and share their ideas, thoughts, opinions, and feelings about anything with millions of other people around the world. With the advancement of technology, mini computers and smartphones have come to human pockets and now it is very easy to share your idea about anything on social media platforms like Facebook, twitter, Wikipedia, LinkedIn, Google&#x002B;, Instagram etc. Due to the tremendous growth in population and communication technologies during the last decade, use of social networks is on the rise and they are being used for many different purposes. One such service for which their use may be explored is an analysis of users post to diagnosis depression. In this paper, we present how to find the depression level of a person by observing and extracting emotions from the text, using emotion theories, machine learning techniques, and natural language processing techniques on different social media platforms.},
+   keywords = {Support Vector Machines
+Social Network Services
+Feature Extraction
+Entropy
+Sentiment Analysis
+Machine Learning Algorithms
+Speech
+Sentiment Analysis
+Social Networking Sites (Sns)
+Depression Measurements
+Bioengineering
+Communication, Networking and Broadcast Technologies
+Components, Circuits, Devices and Systems
+Computing and Processing
+Fields, Waves and Electromagnetics
+Power, Energy and Industry Applications
+Signal Processing and Analysis
+Transportation},
+   ISBN = {9781509040322},
+   DOI = {10.1109/ICTC.2017.8190959},
+   year = {2017},
+   type = {Generic}
+}
+
+@article{Huerta-Ramirez,
+   author = {Huerta-Ramírez, Raúl and Bertsch, Jordan and Cabello, María and Roca, Miquel and Haro, Josep Maria and Ayuso-Mateos, José Luis},
+   title = {Diagnosis delay in first episodes of major depression: A study of primary care patients in Spain},
+   journal = {Journal of Affective Disorders},
+   volume = {150},
+   number = {3},
+   pages = {1247-1250},
+   keywords = {Major depression
+Diagnosis delay
+Primary care},
+   ISSN = {0165-0327},
+   DOI = {https://doi.org/10.1016/j.jad.2013.06.009},
+   url = {http://www.sciencedirect.com/science/article/pii/S0165032713004862},
+   year = {2013},
+   type = {Journal Article}
+}
+
+@article{Kotsiantis,
+   author = {Kotsiantis, S. B. and Zaharakis, I. D. and Pintelas, P. E.},
+   title = {Machine learning: a review of classification and combining techniques},
+   journal = {Artificial Intelligence Review},
+   volume = {26},
+   number = {3},
+   pages = {159-190},
+   abstract = {Supervised classification is one of the tasks most frequently carried out by so-called Intelligent Systems. Thus, a large number of techniques have been developed based on Artificial Intelligence (Logic-based techniques, Perceptron-based techniques) and Statistics (Bayesian Networks, Instance-based techniques). The goal of supervised learning is to build a concise model of the distribution of class labels in terms of predictor features. The resulting classifier is then used to assign class labels to the testing instances where the values of the predictor features are known, but the value of the class label is unknown. This paper describes various classification algorithms and the recent attempt for improving classification accuracy—ensembles of classifiers.},
+   ISSN = {1573-7462},
+   DOI = {10.1007/s10462-007-9052-3},
+   url = {https://doi.org/10.1007/s10462-007-9052-3},
+   year = {2006},
+   type = {Journal Article}
+}
+
+@article{Kroenke,
+   author = {Kroenke, K. and Spitzer, R. L. and Williams, J. B.},
+   title = {The PHQ-9: validity of a brief depression severity measure},
+   journal = {J Gen Intern Med},
+   volume = {16},
+   number = {9},
+   pages = {606-13},
+   note = {Kroenke, K
+Spitzer, R L
+Williams, J B
+eng
+Research Support, Non-U.S. Gov't
+Validation Studies
+2001/09/15 10:00
+J Gen Intern Med. 2001 Sep;16(9):606-13.},
+   abstract = {OBJECTIVE: While considerable attention has focused on improving the detection of depression, assessment of severity is also important in guiding treatment decisions. Therefore, we examined the validity of a brief, new measure of depression severity. MEASUREMENTS: The Patient Health Questionnaire (PHQ) is a self-administered version of the PRIME-MD diagnostic instrument for common mental disorders. The PHQ-9 is the depression module, which scores each of the 9 DSM-IV criteria as "0" (not at all) to "3" (nearly every day). The PHQ-9 was completed by 6,000 patients in 8 primary care clinics and 7 obstetrics-gynecology clinics. Construct validity was assessed using the 20-item Short-Form General Health Survey, self-reported sick days and clinic visits, and symptom-related difficulty. Criterion validity was assessed against an independent structured mental health professional (MHP) interview in a sample of 580 patients. RESULTS: As PHQ-9 depression severity increased, there was a substantial decrease in functional status on all 6 SF-20 subscales. Also, symptom-related difficulty, sick days, and health care utilization increased. Using the MHP reinterview as the criterion standard, a PHQ-9 score > or =10 had a sensitivity of 88% and a specificity of 88% for major depression. PHQ-9 scores of 5, 10, 15, and 20 represented mild, moderate, moderately severe, and severe depression, respectively. Results were similar in the primary care and obstetrics-gynecology samples. CONCLUSION: In addition to making criteria-based diagnoses of depressive disorders, the PHQ-9 is also a reliable and valid measure of depression severity. These characteristics plus its brevity make the PHQ-9 a useful clinical and research tool.},
+   keywords = {Adult
+Depression/*diagnosis
+Female
+Humans
+Male
+Middle Aged
+Psychological Tests
+Reproducibility of Results
+*Severity of Illness Index
+*Surveys and Questionnaires},
+   ISSN = {0884-8734 (Print)
+0884-8734 (Linking)},
+   url = {https://www.ncbi.nlm.nih.gov/pubmed/11556941
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/pdf/jgi_01114.pdf},
+   year = {2001},
+   type = {Journal Article}
+}
+
+@book{Kumar,
+   author = {Kumar, Rajesh},
+   title = {Fundamental of artificial neural network and fuzzy logic},
+   publisher = {University Science Press, An Imprint of Laxmi Publications Pvt. Ltd.},
+   address = {New Delhi, India},
+   series = {Fundamentals of artificial neural network and fuzzy logic},
+   abstract = {This book has been written to solve engineering problems like process control, modelling communication, pattern recognition, speech recognition, etc. It is intended to be an introduction to the subject of artificial neural network and fuzzy logic systems for readers at the junior or senior levels, as well as scientists and engineers. -- Edited summary from book.},
+   keywords = {Fuzzy logic
+Neural networks (Computer science)
+Electronic books},
+   year = {2010},
+   type = {Book}
+}
+
+@inproceedings{Limsetto,
+   author = {Limsetto, Nachai and Waiyamai, Kitsana},
+   title = {Handling Concept Drift via Ensemble and Class Distribution Estimation Technique},
+   series = {Advanced Data Mining and Applications},
+   publisher = {Springer Berlin Heidelberg},
+   pages = {13-26},
+   abstract = {In real world settings there is situation where class distribution of data may change after classifier is built resulting in performance degradation of classifier. Attempts to solve this problem from previous Class Distribution Estimation method (CDE method) yield quite interesting performance however we notice there is some flaw since CDE method still have some bias toward train data thus we decide to improve them with ensemble method. Our Class Distribution Estimation-Ensemble (CDE-EM) methods estimate class distribution from many models instead of one resulting in less bias than previous method. All methods are evaluated using accuracy on set of benchmark UCI data sets. Experimental results demonstrate that our methods yield better performance if class distribution of test data is different from train data.},
+   ISBN = {978-3-642-25856-5},
+   type = {Conference Proceedings}
+}
+
+@incollection{Lu,
+   author = {Lu, Y. and Cheung, Y. M. and Tang, Y. Y.},
+   title = {Hybrid sampling with bagging for class imbalance learning},
+   editor = {Wang, R. and Bailey, J. and Washio, T. and Huang, J. Z. and Khan, L. and Dobbie, G.},
+   publisher = {Springer Verlag},
+   volume = {9651},
+   pages = {14-26},
+   note = {Cited By :5
+Export Date: 28 October 2018
+Correspondence Address: Cheung, Y.-M.; Department of Computer Science, Hong Kong Baptist UniversityChina; email: ymc@comp.hkbu.edu.hk
+Funding details: HKBU, HKBU, Hong Kong Baptist University
+Funding details: FRG2/14-15/075, HKBU, Hong Kong Baptist University
+Funding details: 61272366, NSFC, National Natural Science Foundation of China
+Funding text: This work was supported by the Faculty Research Grants of Hong Kong Baptist University (HKBU): FRG2/14-15/075, and by the National Natural Science Foundation of China under Grant Number: 61272366},
+   abstract = {For class imbalance problem, the integration of sampling and ensemble methods has shown great success among various methods. Nevertheless, as the representatives of sampling methods, undersampling and oversampling cannot outperform each other. That is, undersampling fits some data sets while oversampling fits some other. Besides, the sampling rate also significantly influences the performance of a classifier, while existing methods usually adopt full sampling rate to produce balanced training set. In this paper, we propose a new algorithm that utilizes a new hybrid scheme of undersampling and oversampling with sampling rate selection to preprocess the data in each ensemble iteration. Bagging is adopted as the ensemble framework because the sampling rate selection can benefit from the Out-Of-Bag estimate in bagging. The proposed method features both of undersampling and oversampling, and the specifically selected sampling rate for each data set. The experiments are conducted on 26 data sets from the UCI data repository, in which the proposed method in comparison with the existing counterparts is evaluated by three evaluation metrics. Experiments show that, combined with bagging, the proposed hybrid sampling method significantly outperforms the other state-of-the-art bagging-based methods for class imbalance problem. Meanwhile, the superiority of sampling rate selection is also demonstrated. © Springer International Publishing Switzerland 2016.},
+   keywords = {Class imbalance learning
+Ensemble method
+Hybrid sampling
+Sampling method
+Classification (of information)
+Data mining
+Digital signal processing
+Class imbalance problems
+Data repositories
+Ensemble methods
+Evaluation metrics
+State of the art
+Under-sampling
+Iterative methods},
+   ISBN = {03029743 (ISSN); 9783319317526 (ISBN)},
+   DOI = {10.1007/978-3-319-31753-3_2},
+   url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84963994580&doi=10.1007%2f978-3-319-31753-3_2&partnerID=40&md5=c4e52d673e51d1db80beff81cf56e44c},
+   year = {2016},
+   type = {Serial}
+}
+
+@article{Merikangas,
+   author = {Merikangas, Alison and Mendola, Pauline and Pastor, Patricia and Reuben, Cynthia and Cleary, Sean},
+   title = {The association between major depressive disorder and obesity in US adolescents: results from the 2001–2004 National Health and Nutrition Examination Survey},
+   journal = {Journal of Behavioral Medicine},
+   volume = {35},
+   number = {2},
+   pages = {149-154},
+   abstract = {The association between major depressive disorder (MDD) and obesity was assessed in 4,150 US adolescents aged 12–19 years from the 2001–2004 National Health and Nutrition Examination Survey. Weight and height were measured by health professionals and MDD was based on a structured diagnostic interview. The prevalence of MDD in the past year among US adolescents was 3.2% and 16.8% of US adolescents were obese. After adjustment for sex, age, race/ethnicity and poverty, MDD was not significantly associated with obesity among adolescents overall (adjusted odds ratio (adjOR) = 1.6, 95% confidence interval (CI) = 0.9–2.9), but an increased odds of obesity was observed among males (adjOR = 2.7, 95% CI = 1.1–7.1) and non-Hispanic blacks (adjOR = 3.1, 95% CI = 1.1–8.3) with MDD. Future research on strategies that might reduce the risk of obesity in males and non-Hispanic black adolescents with MDD may be warranted.},
+   keywords = {Obesity
+Overweight
+Depression
+Adolescence
+Epidemiology
+NHANES},
+   ISSN = {0160-7715},
+   DOI = {10.1007/s10865-011-9340-x},
+   year = {2012},
+   type = {Journal Article}
+}
+
+@article{Mowery,
+   author = {Mowery, Danielle and Smith, Hilary and Cheney, Tyler and Stoddard, Greg and Coppersmith, Glen and Bryan, Craig and Conway, Mike},
+   title = {Understanding Depressive Symptoms and Psychosocial Stressors on Twitter: A Corpus-Based Study},
+   journal = {Journal of Medical Internet Research},
+   volume = {19},
+   number = {2},
+   ISSN = {1438-8871},
+   DOI = {10.2196/jmir.6895},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Nguyen,
+   author = {Nguyen, Brenda and Weiss, Paul and Beydoun, Hind and Kancherla, Vijaya},
+   title = {Association between blood folate concentrations and depression in reproductive aged U.S. women, NHANES (2011–2012)},
+   journal = {Journal of Affective Disorders},
+   volume = {223},
+   pages = {209-217},
+   abstract = {BackgroundBlood folate concentrations have been linked to an increased risk of depression in adults. Depression is particularly pronounced among women; however, the association between folate concentration and depression is not well-examined among women of reproductive age. The purpose of our study was to assess the association between low serum and red blood cell folate concentration and the risk of moderate to severe depression among non-pregnant women of reproductive age in the United States (U.S.). MethodsWe used data from nationally representative, population-based U.S. National Health and Nutrition Examination Survey (NHANES) (2011–2012) examining non-pregnant women of reproductive age (20–44 years). We compared serum and red blood cell (RBC) folate concentrations between women with and without self-reported depression based on Patient Health Questionnaire-9 (PHQ-9) scores, and examined the association between folate concentrations and depression using linear and logistic regression analysis. ResultsA total of 16.7% of eligible women in our study reported to have moderate to severe depression. The median serum folate concentrations for women with and without depression were 17.8ng/ml and 17.2ng/ml, respectively (P = <0.01). There was no statistical difference in median RBC folate concentrations between women with and without depression (P = 0.2). Serum folate concentration was weakly associated with an increased risk of moderate to severe depression among non-pregnant women of reproductive age, after adjusting for important demographic and life-style factors (aOR: 1.11; 95% CI: 1.01, 1.22). There was no interaction with race and ethnicity. LimitationsCross-sectional design. ConclusionsFolate concentrations in the blood may partly explain the increased risk of moderate to severe depression among non-pregnant women of reproductive age in the U.S. Robust prospective studies are needed to confirm our findings. •About 17% of participants were categorized to have moderate to severe depression.•Serum and red blood cell folate concentration was positively associated with depression.•There was no effect-modification in the main association due to race and ethnicity.},
+   keywords = {Depression
+Dietary Supplementation
+Folate
+Health Survey
+Women
+NHANES},
+   ISSN = {0165-0327},
+   DOI = {10.1016/j.jad.2017.07.019},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Ophir,
+   author = {Ophir, Yaakov and Asterhan, Christa S. C. and Schwarz, Baruch B.},
+   title = {Unfolding the notes from the walls: Adolescents’ depression manifestations on Facebook},
+   journal = {Computers in Human Behavior},
+   volume = {72},
+   pages = {96-107},
+   abstract = {Little is known about the manifestation of teenage depression on Social Network Sites (SNS) in general, and in adolescents’ Facebook status updates in particular. ObjectiveIn this study, we compare the traditional ‘offline’ clinical picture of depression with its online manifestations and explore unique features of online depression that are less dominant ‘offline’. MethodWe collected 190 Facebook status updates of adolescents-at-risk (14–18 yrs), who receive psychosocial treatment. Ten licensed psychologists rated the extent to which a status update contained references to depression (α = 0.96). ResultsBased on both theory-driven as well as bottom-up approaches, a coding scheme was developed, resulting in a total of 13 features that significantly differentiated between ‘depressive status updates’ and ‘non-depressive status updates’. Detailed descriptions and examples of these features are offered. Furthermore, a multiple regression analysis revealed four status update features that predicted status update depression scores: (1) DSM-5 depressive symptoms (including emotional and behavioral, but not somatic symptoms); (2) cognitive distortions; (3) poetic-dramatic form of verbal content; and (4) attitudes toward others. ConclusionsWe discuss the findings and highlight unique features of online depression manifestation, which will ultimately contribute to early (and perhaps even automatic) detection of adolescents’ depression from their online SNS activities. •Manifestations of adolescents’ depression on Social Network Sites (SNS) are described.•Depression was rated by mental health experts in 190 Facebook status updates of adolescents.•13 features differentiated depressive from non-depressive status updates.•Top-down significant predictors of depression were: DSM-5 symptoms and cognitive distortions.•Bottom-up predictors of depression were poetic-dramatic style and attitudes toward others.},
+   keywords = {Adolescents
+Depression
+Social Media
+Detection
+Social Networks},
+   ISSN = {0747-5632},
+   DOI = {10.1016/j.chb.2017.02.013},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Ostir,
+   author = {Ostir, G. V. and Berges, I. M. and Ottenbacher, A. and Ottenbacher, K. J.},
+   title = {Patterns of change in depression after stroke},
+   journal = {J Am Geriatr Soc},
+   volume = {59},
+   number = {2},
+   pages = {314-20},
+   note = {Ostir, Glenn V
+Berges, Ivonne-M
+Ottenbacher, Allison
+Ottenbacher, Kenneth J
+eng
+K01 HD046682/HD/NICHD NIH HHS/
+R01 AG024806-02/AG/NIA NIH HHS/
+K01-HD046682/HD/NICHD NIH HHS/
+R01 AG031178-02/AG/NIA NIH HHS/
+R01-AG024806/AG/NIA NIH HHS/
+R01 AG024806-05/AG/NIA NIH HHS/
+R01 AG024806/AG/NIA NIH HHS/
+R03-HDO05821-01/PHS HHS/
+R01 AG031178/AG/NIA NIH HHS/
+K01 HD046682-05/HD/NICHD NIH HHS/
+R03 HD058216-02/HD/NICHD NIH HHS/
+R01 AG031178-04/AG/NIA NIH HHS/
+Comparative Study
+Multicenter Study
+Research Support, N.I.H., Extramural
+J Am Geriatr Soc. 2011 Feb;59(2):314-20. doi: 10.1111/j.1532-5415.2010.03266.x. Epub 2011 Jan 28.},
+   abstract = {OBJECTIVES: To provide estimates of change in depressive symptoms and determine how changes in depressive symptom influence recovery of functional status. DESIGN: Prospective cohort study. SETTING: Eleven inpatient medical rehabilitation facilities located across the United States. PARTICIPANTS: Five hundred forty-four persons with a first-time stroke. MEASUREMENTS: General linear regression model estimates assessed associations between depressive symptom change and functional status 3 and 12 months after discharge. RESULTS: The majority of persons with stroke were aged 75 and older, white, female, and married. The most prevalent stroke type was ischemic. For participants without depression at discharge, those who reported fewer depressive symptoms 12 months after stroke than before had an adjusted functional status score of 108.2, whereas those with more symptoms had an adjusted functional status score of 104.6. For participants who were depressed at discharge, those who reported fewer depressive symptoms 12 months after stroke than before had an adjusted functional status score of 100.3, whereas those with more symptoms had an adjusted functional status score of 88.0. CONCLUSION: Tracking depressive symptom change in the hospital and after discharge is clinically relevant and is an important component of patient care and recovery of functional status.},
+   keywords = {*Activities of Daily Living
+Aged
+Depression/diagnosis/epidemiology/*etiology
+Diagnosis, Differential
+Disease Progression
+Female
+Follow-Up Studies
+Geriatric Assessment/methods
+Health Status
+Humans
+Male
+Prevalence
+Prognosis
+Prospective Studies
+*Recovery of Function
+Stroke/*complications
+Stroke Rehabilitation
+United States/epidemiology},
+   ISSN = {1532-5415 (Electronic)
+0002-8614 (Linking)},
+   DOI = {10.1111/j.1532-5415.2010.03266.x},
+   url = {https://www.ncbi.nlm.nih.gov/pubmed/21275930},
+   year = {2011},
+   type = {Journal Article}
+}
+
+@article{Peng,
+   author = {Peng, Zhichao and Hu, Qinghua and Dang, Jianwu},
+   title = {Multi-kernel SVM based depression recognition using social media data},
+   journal = {International Journal of Machine Learning and Cybernetics},
+   ISSN = {1868-8071},
+   DOI = {10.1007/s13042-017-0697-1},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Reece,
+   author = {Reece, Andrew G. and Danforth, Christopher M.},
+   title = {Instagram photos reveal predictive markers of depression},
+   journal = {EPJ Data Science},
+   volume = {6},
+   number = {1},
+   pages = {15},
+   abstract = {Using Instagram data from 166 individuals, we applied machine learning tools to successfully identify markers of depression. Statistical features were computationally extracted from 43,950 participant Instagram photos, using color analysis, metadata components, and algorithmic face detection. Resulting models outperformed general practitioners’ average unassisted diagnostic success rate for depression. These results held even when the analysis was restricted to posts made before depressed individuals were first diagnosed. Human ratings of photo attributes (happy, sad, etc.) were weaker predictors of depression, and were uncorrelated with computationally-generated features. These results suggest new avenues for early screening and detection of mental illness.},
+   ISSN = {2193-1127},
+   DOI = {10.1140/epjds/s13688-017-0110-z},
+   url = {https://doi.org/10.1140/epjds/s13688-017-0110-z
+https://epjdatascience.springeropen.com/track/pdf/10.1140/epjds/s13688-017-0110-z},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Rokach,
+   author = {Rokach, Lior},
+   title = {Ensemble-based classifiers},
+   journal = {Artificial Intelligence Review},
+   volume = {33},
+   number = {1},
+   pages = {1-39},
+   abstract = {The idea of ensemble methodology is to build a predictive model by integrating multiple models. It is well-known that ensemble methods can be used for improving prediction performance. Researchers from various disciplines such as statistics and AI considered the use of ensemble methodology. This paper, review existing ensemble techniques and can be served as a tutorial for practitioners who are interested in building ensemble based systems.},
+   ISSN = {1573-7462},
+   DOI = {10.1007/s10462-009-9124-7},
+   url = {https://doi.org/10.1007/s10462-009-9124-7},
+   year = {2010},
+   type = {Journal Article}
+}
+
+@article{Sagi,
+   author = {Sagi, Omer and Rokach, Lior},
+   title = {Ensemble learning: A survey},
+   journal = {Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+   volume = {8},
+   number = {4},
+   pages = {e1249},
+   abstract = {Ensemble methods are considered the state-of-the art solution for many machine learning challenges. Such methods improve the predictive performance of a single model by training multiple models and combining their predictions. This paper introduce the concept of ensemble learning, reviews traditional, novel and state-of-the-art ensemble methods and discusses current challenges and trends in the field. This article is categorized under: Algorithmic Development > Model Combining Technologies > Machine Learning Technologies > Classification},
+   DOI = {doi:10.1002/widm.1249},
+   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1249},
+   year = {2018},
+   type = {Journal Article}
+}
+
+@article{Sakado,
+   author = {Sakado, K. and Sato, T. and Uehara, T. and Sato, S. and Kameda, K.},
+   title = {Discriminant validity of the inventory to diagnose depression, lifetime version},
+   journal = {Acta Psychiatrica Scandinavica},
+   volume = {93},
+   number = {4},
+   pages = {257-260},
+   abstract = {Sakado K, Sato T, Uehara T, Sato S, Kameda K. Discriminant validity of the inventory to diagnose depression, lifetime version. Scand 1996: 93: 257–260. © Munksgaard 1996. We examined the discriminant validity of the Inventory to Diagnose Depression, lifetime version (IDDL), that is, a self‐report instrument designed to diagnose a lifetime history of major depressive disorder. Remitted patients with major depression (MD), remitted patients with anxiety disorders (ADS) and controls completed the IDDL. The IDDL results were then compared in the three contrasts: MD vs. ADs + controls, MD vs. ADS, and MD vs. controls. The agreement between the IDDL and clinical diagnoses was high in each of the three contrasts, and the IDDL total score in the MD group was the highest among the three groups and distinguished from the ADS group or controls. However, the IDDL occasionally diagnosed subjects with a lifetime history of ADS as having a lifetime history of MD.},
+   keywords = {Questionnaire
+Validity
+Major Depression
+Anxiety Disorder},
+   ISSN = {0001-690X},
+   DOI = {10.1111/j.1600-0447.1996.tb10644.x},
+   year = {1996},
+   type = {Journal Article}
+}
+
+@inproceedings{Serpen,
+   author = {Serpen, G. and Pathical, S.},
+   title = {Classification in High-Dimensional Feature Spaces: Random Subsample Ensemble},
+   booktitle = {2009 International Conference on Machine Learning and Applications},
+   pages = {740-745},
+   keywords = {data analysis
+feature extraction
+learning (artificial intelligence)
+pattern classification
+random subsample ensemble
+machine learning ensembles
+high dimensional feature spaces
+lower dimensional feature subspaces
+classification subtask domain
+base learner
+ensemble machine-learner context
+benchmark machine learners
+data sets
+algorithm scalability
+data sparsity
+information loss
+dimensionality curse
+Space technology
+Machine learning algorithms
+Machine learning
+Scalability
+Computational complexity
+Principal component analysis
+Application software
+Performance evaluation
+Computational efficiency
+Computer science
+curse of dimensionality
+ensemble classification
+high dimensional feature space
+random subspace},
+   DOI = {10.1109/ICMLA.2009.26},
+   type = {Conference Proceedings}
+}
+
+@inproceedings{Somvanshi,
+   author = {Somvanshi, M. and Chavan, P.},
+   title = {A review of machine learning techniques using decision tree and support vector machine},
+   booktitle = {2016 International Conference on Computing Communication Control and automation (ICCUBEA)},
+   pages = {1-7},
+   keywords = {data mining
+decision trees
+learning (artificial intelligence)
+pattern classification
+support vector machines
+machine learning
+decision tree
+support vector machine
+data mining classification
+artificial intelligence
+discrete data
+SVM
+Classification algorithms
+Machine learning algorithms
+Databases
+Supervised learning
+classification
+id3
+kernel},
+   DOI = {10.1109/ICCUBEA.2016.7860040},
+   type = {Conference Proceedings}
+}
+
+@article{Tedders,
+   author = {Tedders, Stuart H. and Fokong, Kunuwo D. and McKenzie, Lindsey E. and Wesley, Cholrelia and Yu, Lili and Zhang, Jian},
+   title = {Low cholesterol is associated with depression among US household population},
+   journal = {Journal of Affective Disorders},
+   volume = {135},
+   number = {1-3},
+   pages = {115-121},
+   abstract = {ObjectiveSerum cholesterol was reported to be associated with depressed mood, but the studies conducted among household population are rare. MethodsWe used the data of 4115 men and 4275 women aged 18 or older, who completed a depression screening interview and had blood collected as a part of the National Health and Nutrition Examination Survey, 2005–2008. The serum concentrations of total cholesterol, high-density lipoprotein cholesterol (HDL-C), and low-density lipoprotein cholesterol (LDL-C) were gender-specifically categorized into lower, intermediate, and upper quartiles. Depression was measured using the Patient Health Questionnaire, a 9-item screening instrument asking about the frequency of depression symptoms over the past 2weeks. ResultsAfter adjustment for socio-demographics and behavioral risks, a U-shaped association was detected between severe depression and LDL-C among men. The odds ratios (ORs) of severe depression were 5.13 (95% CI=1.74–15.09), 1 (reference) and 2.28 (1.07–4.86) respectively for the men with lower (<169mg/dL), intermediate (169–221mg/dL), and upper quartile (≥222mg/dL) LDL-C. Among women, lower HDL-C was significantly associated with an elevated odds of severe depression [OR=2.96 (1.59–5.52)] compared with upper quartile of HDL-C, the association diminished after adjustment for covariates [OR=1.24 (0.66–2.32)]. No clear pattern of association between cholesterol and moderate depression was observed from either men or women. LimitationThe inherent limitation of cross-sectional design prevented the authors from investigating causality. ConclusionsA U-shaped association was identified between LDL-C and severe depression among men. Further studies are necessary to explore the biological mechanism and identify the clinical implication among populations vulnerable to psychiatric disorders.},
+   keywords = {Serum Cholesterol
+Depression
+Household Population
+NHANES},
+   ISSN = {0165-0327},
+   DOI = {10.1016/j.jad.2011.06.045},
+   year = {2011},
+   type = {Journal Article}
+}
+
+@article{Tsugawa,
+   author = {Tsugawa, Sho and Kikuchi, Yusuke and Kishino, Fumio and Nakajima, Kosuke and Itoh, Yuichi and Ohsaki, Hiroyuki},
+   title = {Recognizing Depression from Twitter Activity},
+   pages = {3187-3196},
+   DOI = {10.1145/2702123.2702280},
+   url = {https://dl.acm.org/citation.cfm?doid=2702123.2702280},
+   year = {2015},
+   type = {Journal Article}
+}
+
+@article{Ubani,
+   author = {Ubani, Chinedu C. and Zhang, Jian},
+   title = {The role of adiposity in the relationship between serum leptin and severe major depressive episode},
+   journal = {Psychiatry Research},
+   volume = {228},
+   number = {3},
+   pages = {866-870},
+   abstract = {AbstractTo assess the role that adiposity plays in the association between leptin and major depressive episode (MDE), we analyzed the data of 1046 men and 1359 women aged 20–39 years, who completed an interview and had blood collected as a part of the National Health and Nutrition Examination Survey (NHANES) between 1991 and 1994. Waist-hip ratio (WHR) was used as an indicator of adiposity. MDE was assessed with the Diagnostic Interview Schedule. For normal-WHR women, the prevalence of MDE was reversely associated with leptin levels, 13.7(4.4)%, 12.2(4.0)% and 2.3(1.8)% respectively for lower, interquartile, and upper quartile. For abnormal-WHR women, the prevalence of MDE was positively associated with leptin, 6.1(2.3)%, 9.1(2.4)% and 20.0 (3.8) respectively for the three leptin levels. Compared to women with lower quartile of leptin, the odds ratio of MDE for women with upper quartile was 0.09 (0.01–0.98) for normal-WHR women but 4.35 (1.55–12.2) for abnormal-WHR women. No moderating effects were observed among men. Using BMI in place of WHR revealed similar findings. The association between MDE and leptin is moderated by adiposity. High leptin levels are associated with low odds of MDE among women with normal adiposity but high odds among women with abnormal adiposity. •The association between depression and leptin is moderated by adiposity among women.•Leptin deficiency associates with increased odds of depression among women with normal adiposity.•Leptin resistance associates with elevated odds of depression among women with abnormal adiposity.•Functionality rather circulating level of leptin is of clinical implications for depression development among women.•No moderating effects were observed among men.},
+   keywords = {BMI
+CDC
+Ci
+Mde
+NHANES
+Whr
+OR
+Se
+Dis
+Pir
+Depression
+NHANES
+Serum Leptin
+National Survey
+Obesity
+Overweight
+Adiposity},
+   ISSN = {0165-1781},
+   DOI = {10.1016/j.psychres.2015.05.009},
+   year = {2015},
+   type = {Journal Article}
+}
+
+@article{Wongkoblap,
+   author = {Wongkoblap, A. and Vadillo, M. A. and Curcin, V.},
+   title = {Researching Mental Health Disorders in the Era of Social Media: Systematic Review},
+   journal = {J Med Internet Res},
+   volume = {19},
+   number = {6},
+   pages = {e228},
+   note = {Wongkoblap, Akkapon
+Vadillo, Miguel A
+Curcin, Vasa
+eng
+Review
+Canada
+J Med Internet Res. 2017 Jun 29;19(6):e228. doi: 10.2196/jmir.7215.},
+   abstract = {BACKGROUND: Mental illness is quickly becoming one of the most prevalent public health problems worldwide. Social network platforms, where users can express their emotions, feelings, and thoughts, are a valuable source of data for researching mental health, and techniques based on machine learning are increasingly used for this purpose. OBJECTIVE: The objective of this review was to explore the scope and limits of cutting-edge techniques that researchers are using for predictive analytics in mental health and to review associated issues, such as ethical concerns, in this area of research. METHODS: We performed a systematic literature review in March 2017, using keywords to search articles on data mining of social network data in the context of common mental health disorders, published between 2010 and March 8, 2017 in medical and computer science journals. RESULTS: The initial search returned a total of 5386 articles. Following a careful analysis of the titles, abstracts, and main texts, we selected 48 articles for review. We coded the articles according to key characteristics, techniques used for data collection, data preprocessing, feature extraction, feature selection, model construction, and model verification. The most common analytical method was text analysis, with several studies using different flavors of image analysis and social interaction graph analysis. CONCLUSIONS: Despite an increasing number of studies investigating mental health issues using social network data, some common problems persist. Assembling large, high-quality datasets of social media users with mental disorder is problematic, not only due to biases associated with the collection methods, but also with regard to managing consent and selecting appropriate analytics techniques.},
+   keywords = {Humans
+Mental Disorders/*diagnosis
+Social Media/*utilization
+*Social Networking
+anxiety
+artificial intelligence
+depression
+infodemiology
+machine learning
+mental disorders
+mental health
+public health informatics
+social networking},
+   ISSN = {1438-8871 (Electronic)
+1438-8871 (Linking)},
+   DOI = {10.2196/jmir.7215},
+   url = {https://www.ncbi.nlm.nih.gov/pubmed/28663166},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@article{Zimmerman,
+   author = {Zimmerman, Mark and Coryell, William},
+   title = {The Inventory to Diagnose Depression (IDD): A self-report scale to diagnose major depressive disorder},
+   journal = {Journal of Consulting and Clinical Psychology},
+   volume = {55},
+   number = {1},
+   pages = {55-59},
+   note = {U Iowa Coll of Medicine, Iowa City. Other Publishers: American Association for Applied Psychology; Dentan Printing Company; Science Press Printing Company. Release Date: 20060710. Publication Type: Journal (0100), Peer Reviewed Journal (0110). Format Covered: Print. Document Type: Journal Article. Language: English. Major Descriptor: Depression (Emotion); Inventories; Psychodiagnosis; Self-Report; Test Reliability. Minor Descriptor: Psychodiagnostic Interview; Test Validity. Classification: Clinical Psychological Testing (2224); Psychological Disorders (3210). Population: Human (10). Age Group: Adulthood (18 yrs & older) (300). Methodology: Empirical Study. References Available: Y. Page Count: 5. Issue Publication Date: Feb, 1987. Publication History: Revised Date: Apr 23, 1986; First Submitted Date: Jan 14, 1986. Copyright Statement: American Psychological Association. 1987.},
+   abstract = {The Inventory to Diagnose Depression (IDD) is a 22-item self-report scale designed to diagnose major depressive disorder (MDD) according to Diagnostic and Statistical Manual of Mental Disorders (DSM-III; American Psychiatric Association, 1980) criteria. Three hundred ninety-eight relatives of psychiatric patients and normal controls completed the IDD and were interviewed with the Diagnostic Interview Scale (DIS). The point prevalence of MDD was nearly identical according to the IDD (3.0%) and the DIS (2.8%). Moreover, we found good concordance between the two methods of diagnosing MDD. (24 ref) (PsycINFO Database Record (c) 2016 APA, all rights reserved)},
+   keywords = {reliability of self report Inventory to Diagnose Depression & concordance of results with Diagnostic Interview Scale method
+diagnosis of major depressive disorder
+relatives of schizophrenic & psychotic depression patients
+Adult
+Depressive Disorder
+Female
+Humans
+Male
+Psychological Tests
+Psychometrics
+Depression (Emotion)
+Inventories
+Psychodiagnosis
+Self-Report
+Test Reliability
+Psychodiagnostic Interview
+Test Validity},
+   ISSN = {0022-006X
+1939-2117},
+   DOI = {10.1037/0022-006X.55.1.55},
+   url = {http://ezproxy.usq.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=pdh&AN=1987-14494-001&site=ehost-live},
+   year = {1987},
+   type = {Journal Article}
+}
+
