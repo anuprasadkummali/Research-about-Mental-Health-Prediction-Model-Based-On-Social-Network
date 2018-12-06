@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  30 NOV 2018 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  6 DEC 2018 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -121,16 +121,49 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.09> not available
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2001/04/09 non-zero parskip adjustments
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \sffamily \footnotesize #1}\\{\normalfont \sffamily \footnotesize #2}\par
+ \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEf
+igurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \sffamily \footnotes
+ize {#1.}\nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbo
+x {\normalfont \sffamily \footnotesize {#1.}\nobreakspace }\parbox [t]{\hsize }
+{\normalfont \sffamily \footnotesize \noindent \unhbox \@tempboxa #2}\else \hbo
+x to\hsize {\normalfont \sffamily \footnotesize \box \@tempboxa \hfil }\fi \fi 
+.
+\c@ContinuedFloat=\count95
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -145,8 +178,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen126
-\Gin@req@width=\dimen127
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -158,7 +191,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count95
+\c@AlgoLine=\count96
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -167,7 +200,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count96
+\c@checkoddpage=\count97
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -183,12 +216,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip50
 \algomargin=\skip51
 \skipalgocfslide=\skip52
-\algowidth=\dimen128
-\inoutsize=\dimen129
-\inoutindent=\dimen130
-\interspacetitleruled=\dimen131
-\interspacealgoruled=\dimen132
-\interspacetitleboxruled=\dimen133
+\algowidth=\dimen135
+\inoutsize=\dimen136
+\inoutindent=\dimen137
+\interspacetitleruled=\dimen138
+\interspacealgoruled=\dimen139
+\interspacetitleboxruled=\dimen140
 \algocf@ruledwidth=\skip53
 \algocf@inoutbox=\box28
 \algocf@inputbox=\box29
@@ -205,9 +238,9 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip60
 \algotitleheightruledefault=\skip61
 \algotitleheightrule=\skip62
-\c@algocfline=\count97
-\c@algocfproc=\count98
-\c@algocf=\count99
+\c@algocfline=\count98
+\c@algocfproc=\count99
+\c@algocf=\count100
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
 )
@@ -227,46 +260,46 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen134
+\ex@=\dimen141
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen135
+\pmbraise@=\dimen142
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count100
+\inf@bad=\count101
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count101
-\leftroot@=\count102
+\uproot@=\count102
+\leftroot@=\count103
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count103
-\DOTSCASE@=\count104
+\classnum@=\count104
+\DOTSCASE@=\count105
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box36
 \strutbox@=\box37
-\big@size=\dimen136
+\big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count105
-\c@MaxMatrixCols=\count106
+\macc@depth=\count106
+\c@MaxMatrixCols=\count107
 \dotsspace@=\muskip11
-\c@parentequation=\count107
-\dspbrk@lvl=\count108
+\c@parentequation=\count108
+\dspbrk@lvl=\count109
 \tag@help=\toks20
-\row@=\count109
-\column@=\count110
-\maxfields@=\count111
+\row@=\count110
+\column@=\count111
+\maxfields@=\count112
 \andhelp@=\toks21
-\eqnshift@=\dimen137
-\alignsep@=\dimen138
-\tagshift@=\dimen139
-\tagwidth@=\dimen140
-\totwidth@=\dimen141
-\lineht@=\dimen142
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
 \@envbody=\toks22
 \multlinegap=\skip64
 \multlinetaggap=\skip65
@@ -279,15 +312,15 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count112
-\calc@Bcount=\count113
-\calc@Adimen=\dimen143
-\calc@Bdimen=\dimen144
+\calc@Acount=\count113
+\calc@Bcount=\count114
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
 \calc@Askip=\skip66
 \calc@Bskip=\skip67
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count114
+\calc@Ccount=\count115
 \calc@Cskip=\skip68
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -297,43 +330,43 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count115
-\l_MT_multwidth_dim=\dimen145
+\g_MT_multlinerow_int=\count116
+\l_MT_multwidth_dim=\dimen152
 \origjot=\skip69
-\l_MT_shortvdotswithinadjustabove_dim=\dimen146
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen147
-\l_MT_above_intertext_sep=\dimen148
-\l_MT_below_intertext_sep=\dimen149
-\l_MT_above_shortintertext_sep=\dimen150
-\l_MT_below_shortintertext_sep=\dimen151
+\l_MT_shortvdotswithinadjustabove_dim=\dimen153
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen154
+\l_MT_above_intertext_sep=\dimen155
+\l_MT_below_intertext_sep=\dimen156
+\l_MT_above_shortintertext_sep=\dimen157
+\l_MT_below_shortintertext_sep=\dimen158
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip70
-\enit@outerparindent=\dimen152
+\enit@outerparindent=\dimen159
 \enit@toks=\toks24
 \enit@inbox=\box38
-\enitdp@description=\count116
+\enitdp@description=\count117
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen153
-\lightrulewidth=\dimen154
-\cmidrulewidth=\dimen155
-\belowrulesep=\dimen156
-\belowbottomsep=\dimen157
-\aboverulesep=\dimen158
-\abovetopsep=\dimen159
-\cmidrulesep=\dimen160
-\cmidrulekern=\dimen161
-\defaultaddspace=\dimen162
-\@cmidla=\count117
-\@cmidlb=\count118
-\@aboverulesep=\dimen163
-\@belowrulesep=\dimen164
-\@thisruleclass=\count119
-\@lastruleclass=\count120
-\@thisrulewidth=\dimen165
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count118
+\@cmidlb=\count119
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count120
+\@lastruleclass=\count121
+\@thisrulewidth=\dimen172
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -348,9 +381,9 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen166
+\col@sep=\dimen173
 \ar@mcellbox=\box39
-\extrarowheight=\dimen167
+\extrarowheight=\dimen174
 \NC@list=\toks25
 \extratabsurround=\skip71
 \backup@length=\skip72
@@ -359,7 +392,7 @@ Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \everycr=\toks26
 \minrowclearance=\skip73
 )
-\rownum=\count121
+\rownum=\count122
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -372,8 +405,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count122
-\cp@tempcnt=\count123
+\c@cp@cntr=\count123
+\cp@tempcnt=\count124
 LaTeX Info: Redefining \checkoddpage on input line 59.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
@@ -388,7 +421,7 @@ LaTeX Warning: Label `reio' multiply defined.
 LaTeX Warning: Label `reio' multiply defined.
 
 
-LaTeX Warning: Label `reio' multiply defined.
+LaTeX Warning: Label `weight' multiply defined.
 
 
 LaTeX Warning: Label `reio' multiply defined.
@@ -396,32 +429,34 @@ LaTeX Warning: Label `reio' multiply defined.
 )
 \openout1 = `journal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 -- Lines per column: 61 (exact).
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen168
+\scratchcounter=\count125
+\scratchdimen=\dimen175
 \scratchbox=\box41
-\nofMPsegments=\count125
-\nofMParguments=\count126
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen169
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen176
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -479,207 +514,159 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 159.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 138.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 159.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 138.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 159.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 15
-9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 159.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 138.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 13
+8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 138.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 159.
+LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+pzd on input line 159.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 138.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 159.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 138.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 187.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 166.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 187.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 225.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 166.
 
-Underfull \hbox (badness 7595) in paragraph at lines 226--227
-\OT1/ppl/m/n/9.53561 In the do-main of psy-chol-ogy, re-searchers cre-ated
+Underfull \hbox (badness 1742) in paragraph at lines 205--206
+\OT1/ppl/m/n/9.53561 to train crowd-sourc-ing Twit-ter posts to de-ter-mine if
  []
 
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 229
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 206
 .
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 1400) in paragraph at lines 245--246
-\OT1/ppl/m/n/9.53561 By the judge-ment of ten psy-cho-log-i-cal ex-perts, three
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 232
+.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 224--232
 
  []
 
 [2]
-Underfull \hbox (badness 1742) in paragraph at lines 254--255
-\OT1/ppl/m/n/9.53561 to train crowd-sourc-ing Twit-ter posts to de-ter-mine if
- []
-
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 282
-.
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--282
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-<concepts.png, id=27, 591.20876pt x 497.86pt>
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 267.
+<concepts.png, id=24, 591.20876pt x 497.86pt>
 File: concepts.png Graphic file (type png)
 <use concepts.png>
-Package pdftex.def Info: concepts.png  used on input line 324.
-(pdftex.def)             Requested size: 517.935pt x 436.16579pt.
+Package pdftex.def Info: concepts.png  used on input line 278.
+(pdftex.def)             Requested size: 258.9675pt x 218.07909pt.
 
-Overfull \hbox (264.99pt too wide) in paragraph at lines 324--325
-[][] 
+Overfull \hbox (6.0225pt too wide) in paragraph at lines 278--279
+ [][] 
  []
 
-[4 <./concepts.png>]
-<phq-9.png, id=35, 940.51375pt x 496.85625pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<phq-9.png, id=26, 940.51375pt x 496.85625pt>
 File: phq-9.png Graphic file (type png)
 <use phq-9.png>
-Package pdftex.def Info: phq-9.png  used on input line 333.
-(pdftex.def)             Requested size: 517.935pt x 273.61293pt.
+Package pdftex.def Info: phq-9.png  used on input line 289.
+(pdftex.def)             Requested size: 258.9675pt x 136.80646pt.
 
-Overfull \hbox (264.99pt too wide) in paragraph at lines 333--334
+Overfull \hbox (6.0225pt too wide) in paragraph at lines 289--290
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--351
+[3 <./concepts.png> <./phq-9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 \OT1/ppl/b/n/9.53561 Definition 4 \OT1/ppl/m/n/9.53561 Let new re-designed $\U/
 msb/m/n/9.53561 U$ \OT1/ppl/m/n/9.53561 =
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--351
-\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 u[]; u[]; u[]; u[]; u[]; u[]\OMS/cmsy/m/n/10
- i$\OT1/ppl/m/n/9.53561 , ev-ery
- []
-
-[5 <./phq-9.png>]
-<restructure.png, id=40, 5392.145pt x 4645.355pt>
+<restructure.png, id=34, 5392.145pt x 4645.355pt>
 File: restructure.png Graphic file (type png)
 <use restructure.png>
-Package pdftex.def Info: restructure.png  used on input line 365.
-(pdftex.def)             Requested size: 310.76414pt x 267.72252pt.
-
-Overfull \hbox (116.72719pt too wide) in paragraph at lines 364--366
-[]  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-
- []
-
-[6 <./restructure.png>]
+Package pdftex.def Info: restructure.png  used on input line 324.
+(pdftex.def)             Requested size: 181.2804pt x 156.15375pt.
+[4 <./restructure.png>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 390.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 351.
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 416--417
+Underfull \hbox (badness 3815) in paragraph at lines 378--379
 \OT1/ppl/m/n/9.53561 Our en-sem-ble clas-si-fi-ca-tion method in-volves sev-era
 l
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 416--417
+Underfull \hbox (badness 5050) in paragraph at lines 378--379
 \OT1/ppl/m/n/9.53561 base-line su-per-vised clas-si-fi-ca-tion mod-els. Su-per-
 vised
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
-
- []
-
-[7]
-Underfull \vbox (badness 2426) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <6.62196> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 449.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
-<experiment.png, id=53, 843.15pt x 516.93124pt>
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 397.
+<experiment.png, id=43, 843.15pt x 516.93124pt>
 File: experiment.png Graphic file (type png)
 <use experiment.png>
-Package pdftex.def Info: experiment.png  used on input line 472.
-(pdftex.def)             Requested size: 517.935pt x 317.55193pt.
-
-Overfull \hbox (264.99pt too wide) in paragraph at lines 472--473
-[][] 
- []
-
+Package pdftex.def Info: experiment.png  used on input line 418.
+(pdftex.def)             Requested size: 207.17084pt x 127.01604pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 485.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 433.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9.53561> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 485.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 433.
 LaTeX Font Info:    Font shape `OMS/ppl/m/it' in size <9.53561> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 492.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 440.
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--494
+Underfull \hbox (badness 10000) in paragraph at lines 424--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--494
+Underfull \hbox (badness 10000) in paragraph at lines 424--442
 
  []
 
@@ -689,165 +676,51 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./experiment.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[6] [7 <./experiment.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
+ []
+
+[8]
+Underfull \hbox (badness 2142) in paragraph at lines 639--640
+\OT1/ppl/m/n/9.53561 al-go-rithm. And this ex-per-i-ment uses ran-dom under-
+ []
+
+
+Underfull \hbox (badness 6364) in paragraph at lines 639--640
+\OT1/ppl/m/n/9.53561 the class im-bal-ance prob-lem where non-depression
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--566
-
- []
-
-
-Underfull \hbox (badness 2990) in paragraph at lines 570--577
-\OT1/ppl/m/n/9.53561 while do-ing con-ver-gence; the seed is ran-domly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 570--577
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--586
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--586
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 600--601
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
-
- []
-
-
-Overfull \hbox (93.98248pt too wide) in paragraph at lines 637--650
-[][] 
- []
-
-
-Overfull \hbox (138.48802pt too wide) in paragraph at lines 660--673
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-
- []
-
-
-Overfull \hbox (28.01865pt too wide) detected at line 680
-\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = [] = [] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/
-10 100% = 30\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3%
- []
-
-
-Overfull \hbox (138.48802pt too wide) in paragraph at lines 684--703
-[][] 
- []
-
-
-Overfull \hbox (188.08795pt too wide) in paragraph at lines 711--726
-[][] 
- []
-
-
-Overfull \hbox (188.08795pt too wide) in paragraph at lines 732--747
-[][] 
- []
-
-
-Overfull \hbox (188.08795pt too wide) in paragraph at lines 753--768
-[][] 
- []
-
-
-Overfull \hbox (188.08795pt too wide) in paragraph at lines 774--789
-[][] 
- []
-
-[12]
-Underfull \hbox (badness 3039) in paragraph at lines 801--802
-\OT1/ppl/m/n/9.53561 mod-els as per-form-ing ad-van-ta-geous at F1 mea-sure,
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 801--802
-\OT1/ppl/m/n/9.53561 im-prove pre-dic-tive per-for-mance by 30.3% with class
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--802
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--804
-
- []
-
-
-Overfull \hbox (36.91428pt too wide) detected at line 806
-\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 = 1 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (
-\OML/cmm/m/it/10 Precision[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 N[]\OT1/cmr/
-m/n/10 ) = (1 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
-m/n/10 956 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 90\OML/cmm/m/it/10 :\OT1/cmr/m/
-n/10 44%) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 100% = 13\OML/cmm/m/it/10 :\OT1/
-cmr/m/n/10 54%
- []
-
-<coverage.png, id=71, 551.05875pt x 349.305pt>
+<coverage.png, id=59, 551.05875pt x 349.305pt>
 File: coverage.png Graphic file (type png)
 <use coverage.png>
-Package pdftex.def Info: coverage.png  used on input line 809.
-(pdftex.def)             Requested size: 517.935pt x 328.3414pt.
+Package pdftex.def Info: coverage.png  used on input line 647.
+(pdftex.def)             Requested size: 258.9675pt x 164.15738pt.
 
-Overfull \hbox (264.99pt too wide) in paragraph at lines 809--810
+Overfull \hbox (6.0225pt too wide) in paragraph at lines 647--648
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] (./journal.bbl
+[9] (./journal.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 36--54
 \OT1/ppl/m/n/8.03 / / search . ebscohost . com / login . aspx ? direct = true \
 OMS/cmsy/m/n/8 n \OT1/ppl/m/n/8.03 &db = pdh \OMS/cmsy/m/n/8 n
  []
 
-[14 <./coverage.png>]
+[10 <./coverage.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--89
 \OT1/ppl/m/n/8.03 / / www . ncbi . nlm . nih . gov / pubmed / 11556941https : /
  / www . ncbi .
@@ -877,19 +750,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--211
 pl/m/n/8.03 &doi = 10 . 1007 % 2f978-[]3-[]319-[]31753-[]3 \OMS/cmsy/m/n/8 n
  []
 
-[15]) [16] (./journal.aux)
+[11]) [12
+
+] (./journal.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5888 strings out of 492649
- 90979 string characters out of 6129621
- 238906 words of memory out of 5000000
- 9636 multiletter control sequences out of 15000+600000
+ 6937 strings out of 492649
+ 110160 string characters out of 6129621
+ 242233 words of memory out of 5000000
+ 10679 multiletter control sequences out of 15000+600000
  59954 words of font info for 140 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,16n,35p,2126b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,16n,39p,2010b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
@@ -913,10 +788,10 @@ s/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 alatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/zapfding/uzdr.
 pfb>
-Output written on journal.pdf (16 pages, 1805811 bytes).
+Output written on journal.pdf (12 pages, 1462173 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 143 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

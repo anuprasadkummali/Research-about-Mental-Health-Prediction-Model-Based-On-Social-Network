@@ -1,0 +1,961 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  7 NOV 2018 01:57
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**paper.tex
+(./paper.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./llncs.cls
+Document Class: llncs 2018/03/10 v2.20 
+ LaTeX document class for Lecture Notes in Computer Science
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
+\c@tracingmulticols=\count88
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count89
+\c@collectmore=\count90
+\doublecol@number=\count91
+\multicoltolerance=\count92
+\multicolpretolerance=\count93
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count94
+\c@finalcolumnbadness=\count95
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count96
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+Package: aliascnt 2016/05/16 v1.4 Alias counters (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/carlisle/remreset.sty))
+\c@chapter=\count97
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
+\tocchpnum=\dimen112
+\tocsecnum=\dimen113
+\tocsectotal=\dimen114
+\tocsubsecnum=\dimen115
+\tocsubsectotal=\dimen116
+\tocsubsubsecnum=\dimen117
+\tocsubsubsectotal=\dimen118
+\tocparanum=\dimen119
+\tocparatotal=\dimen120
+\tocsubparanum=\dimen121
+\@tempcntc=\count98
+\fnindent=\dimen122
+\c@@inst=\count99
+\c@@auth=\count100
+\c@auco=\count101
+\instindent=\dimen123
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count102
+\c@case=\count103
+\c@conjecture=\count104
+\c@corollary=\count105
+\c@definition=\count106
+\c@example=\count107
+\c@exercise=\count108
+\c@lemma=\count109
+\c@note=\count110
+\c@problem=\count111
+\c@property=\count112
+\c@proposition=\count113
+\c@question=\count114
+\c@solution=\count115
+\c@remark=\count116
+\headlineindent=\dimen124
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count117
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip45
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count118
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip46
+\skiplinenumber=\skip47
+\skiprule=\skip48
+\skiphlne=\skip49
+\skiptext=\skip50
+\skiplength=\skip51
+\algomargin=\skip52
+\skipalgocfslide=\skip53
+\algowidth=\dimen127
+\inoutsize=\dimen128
+\inoutindent=\dimen129
+\interspacetitleruled=\dimen130
+\interspacealgoruled=\dimen131
+\interspacetitleboxruled=\dimen132
+\algocf@ruledwidth=\skip54
+\algocf@inoutbox=\box54
+\algocf@inputbox=\box55
+\AlCapSkip=\skip55
+\AlCapHSkip=\skip56
+\algoskipindent=\skip57
+\algocf@nlbox=\box56
+\algocf@hangingbox=\box57
+\algocf@untilbox=\box58
+\algocf@skipuntil=\skip58
+\algocf@capbox=\box59
+\algocf@lcaptionbox=\skip59
+\algoheightruledefault=\skip60
+\algoheightrule=\skip61
+\algotitleheightruledefault=\skip62
+\algotitleheightrule=\skip63
+\c@algocfline=\count119
+\c@algocfproc=\count120
+\c@algocf=\count121
+\algocf@algoframe=\box60
+\algocf@algobox=\box61
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip64
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen133
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen134
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count122
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count123
+\leftroot@=\count124
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count125
+\DOTSCASE@=\count126
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box62
+\strutbox@=\box63
+\big@size=\dimen135
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count127
+\c@MaxMatrixCols=\count128
+\dotsspace@=\muskip10
+\c@parentequation=\count129
+\dspbrk@lvl=\count130
+\tag@help=\toks23
+\row@=\count131
+\column@=\count132
+\maxfields@=\count133
+\andhelp@=\toks24
+\eqnshift@=\dimen136
+\alignsep@=\dimen137
+\tagshift@=\dimen138
+\tagwidth@=\dimen139
+\totwidth@=\dimen140
+\lineht@=\dimen141
+\@envbody=\toks25
+\multlinegap=\skip65
+\multlinetaggap=\skip66
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count134
+\calc@Bcount=\count135
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count136
+\calc@Cskip=\skip69
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count137
+\l_MT_multwidth_dim=\dimen144
+\origjot=\skip70
+\l_MT_shortvdotswithinadjustabove_dim=\dimen145
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen146
+\l_MT_above_intertext_sep=\dimen147
+\l_MT_below_intertext_sep=\dimen148
+\l_MT_above_shortintertext_sep=\dimen149
+\l_MT_below_shortintertext_sep=\dimen150
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip71
+\enit@outerparindent=\dimen151
+\enit@toks=\toks27
+\enit@inbox=\box64
+\enitdp@description=\count138
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen152
+\lightrulewidth=\dimen153
+\cmidrulewidth=\dimen154
+\belowrulesep=\dimen155
+\belowbottomsep=\dimen156
+\aboverulesep=\dimen157
+\abovetopsep=\dimen158
+\cmidrulesep=\dimen159
+\cmidrulekern=\dimen160
+\defaultaddspace=\dimen161
+\@cmidla=\count139
+\@cmidlb=\count140
+\@aboverulesep=\dimen162
+\@belowrulesep=\dimen163
+\@thisruleclass=\count141
+\@lastruleclass=\count142
+\@thisrulewidth=\dimen164
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box65
+\extrarowheight=\dimen166
+\NC@list=\toks28
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box66
+)
+\everycr=\toks29
+\minrowclearance=\skip74
+)
+\rownum=\count143
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (./paper.aux
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+
+LaTeX Warning: Label `reio' multiply defined.
+
+)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count144
+\scratchdimen=\dimen167
+\scratchbox=\box67
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen168
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks31
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 36.
+
+LaTeX Font Info:    No file OMScmtt.fd. on input line 36.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 36.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+[3] [4] [5]
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (5.37708pt too wide) in paragraph at lines 160--168
+\OT1/cmr/m/n/10 doesn't suit for clas-si-fi-ca-tion. While learn-ing from re-la
+ted psy-cho-log-i-cal re-searches,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[7]
+<concepts.png, id=43, 591.20876pt x 497.86pt>
+File: concepts.png Graphic file (type png)
+<use concepts.png>
+Package pdftex.def Info: concepts.png  used on input line 197.
+(pdftex.def)             Requested size: 347.12354pt x 292.32185pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<phq-9.png, id=45, 940.51375pt x 496.85625pt>
+File: phq-9.png Graphic file (type png)
+<use phq-9.png>
+Package pdftex.def Info: phq-9.png  used on input line 209.
+(pdftex.def)             Requested size: 347.12354pt x 183.37904pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./concepts.png>] [10 <./phq-9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
+
+ []
+
+
+Overfull \hbox (21.93227pt too wide) in paragraph at lines 224--228
+\OT1/cmr/bx/n/10 Definition 4 \OT1/cmr/m/n/10 Let new re-designed $\U/msb/m/n/1
+0 U$ \OT1/cmr/m/n/10 = $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 u[]; u[]; u[]; u[]; 
+u[]; u[]\OMS/cmsy/m/n/10 i$\OT1/cmr/m/n/10 ,
+ []
+
+<restructure.png, id=57, 5392.145pt x 4645.355pt>
+File: restructure.png Graphic file (type png)
+<use restructure.png>
+Package pdftex.def Info: restructure.png  used on input line 244.
+(pdftex.def)             Requested size: 347.12354pt x 298.98161pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--251
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12 <./restructure.png>] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
+
+ []
+
+[16]
+Overfull \hbox (48.17479pt too wide) in paragraph at lines 337--353
+ [] \OT1/cmr/m/n/10 Given a well-preprocessed dataset of m ex-am-ples and n fea
+-tures $\U/msb/m/n/10 D$ \OT1/cmr/m/n/10 = $[](\OML/cmm/m/it/10 x[]; x[]; :::; 
+x[]; y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2
+ []
+
+[17]
+<experiment.png, id=86, 843.15pt x 516.93124pt>
+File: experiment.png Graphic file (type png)
+<use experiment.png>
+Package pdftex.def Info: experiment.png  used on input line 372.
+(pdftex.def)             Requested size: 347.12354pt x 212.81871pt.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 386.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 393.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./experiment.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20]
+Overfull \hbox (0.48807pt too wide) in paragraph at lines 444--448
+[]\OT1/cmr/m/n/10 Based on the in-te-grated PHQ-9 screen mea-sure-ment, we can 
+es-tab-lish ground-
+ []
+
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+
+Overfull \hbox (6.23808pt too wide) in paragraph at lines 495--496
+[]\OT1/cmr/m/n/10 the al-go-rithm used to com-pute the near-est neigh-bours is 
+set as ^^?auto[]because
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
+ []
+
+[24]
+Overfull \hbox (7.50943pt too wide) in paragraph at lines 576--589
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+[25]
+Overfull \hbox (7.50943pt too wide) in paragraph at lines 602--621
+[][] 
+ []
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 632--647
+[][] 
+ []
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 655--670
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 678--693
+[][] 
+ []
+
+[26]
+Overfull \hbox (34.53568pt too wide) in paragraph at lines 705--720
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--727
+
+ []
+
+[27]
+<coverage.png, id=120, 696.6025pt x 351.3125pt>
+File: coverage.png Graphic file (type png)
+<use coverage.png>
+Package pdftex.def Info: coverage.png  used on input line 732.
+(pdftex.def)             Requested size: 347.12354pt x 175.06078pt.
+ [28 <./coverage.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 870.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 805--870
+\OT1/cmr/m/n/9 Ma-chine Learn-ing Al-go-rithms', in Ed-i-tor (Ed.)[](Eds.): `Bo
+ok Com-pre-hen-sive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 805--870
+\OT1/cmr/m/n/9 3 Clark, M.M., Bradley, K.L., Jenk-ins, S.M., Met-tler, E.A., La
+r-son, B.G.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 805--870
+\OT1/cmr/m/n/9 12 Ku-mar, R.: `Fun-da-men-tal of ar-ti-fi-cial neu-ral net-work
+ and fuzzy logic'
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 805--870
+\OT1/cmr/m/n/9 18 Ophir, Y., Aster-han, C.S.C., and Schwarz, B.B.: `Un-fold-ing
+ the notes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 805--870
+\OT1/cmr/m/n/9 21 Reece, A.G., and Dan-forth, C.M.: `In-sta-gram pho-tos re-vea
+l pre-dic-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 805--870
+\OT1/cmr/m/n/9 27 Ted-ders, S.H., Fokong, K.D., McKen-zie, L.E., Wes-ley, C., Y
+u, L., and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--870
+
+ []
+
+[32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+[34] (./paper.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5111 strings out of 492649
+ 73384 string characters out of 6129621
+ 197571 words of memory out of 5000000
+ 8886 multiletter control sequences out of 15000+600000
+ 14474 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,15n,35p,2102b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on paper.pdf (34 pages, 1887521 bytes).
+PDF statistics:
+ 217 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
