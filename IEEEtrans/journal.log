@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  6 DEC 2018 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  10 DEC 2018 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,89 +514,79 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 138.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 139.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 139.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 13
-8.
-LaTeX Font Info:    Try loading font information for U+msa on input line 138.
+9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 139.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 138.
+LaTeX Font Info:    Try loading font information for U+msb on input line 139.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+pzd on input line 138.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 139.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 138.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 166.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 167.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 166.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 167.
 
-Underfull \hbox (badness 1742) in paragraph at lines 205--206
+Underfull \hbox (badness 1742) in paragraph at lines 206--207
 \OT1/ppl/m/n/9.53561 to train crowd-sourc-ing Twit-ter posts to de-ter-mine if
  []
 
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 206
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 207
 .
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 232
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 233
 .
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--232
+Underfull \hbox (badness 10000) in paragraph at lines 225--233
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 268.
 <concepts.png, id=24, 591.20876pt x 497.86pt>
 File: concepts.png Graphic file (type png)
 <use concepts.png>
-Package pdftex.def Info: concepts.png  used on input line 278.
-(pdftex.def)             Requested size: 258.9675pt x 218.07909pt.
-
-Overfull \hbox (6.0225pt too wide) in paragraph at lines 278--279
- [][] 
- []
-
+Package pdftex.def Info: concepts.png  used on input line 279.
+(pdftex.def)             Requested size: 181.2804pt x 152.65613pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <phq-9.png, id=26, 940.51375pt x 496.85625pt>
 File: phq-9.png Graphic file (type png)
 <use phq-9.png>
-Package pdftex.def Info: phq-9.png  used on input line 289.
-(pdftex.def)             Requested size: 258.9675pt x 136.80646pt.
-
-Overfull \hbox (6.0225pt too wide) in paragraph at lines 289--290
-[][] 
- []
-
+Package pdftex.def Info: phq-9.png  used on input line 291.
+(pdftex.def)             Requested size: 207.17084pt x 109.44518pt.
 [3 <./concepts.png> <./phq-9.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 304--307
+Underfull \hbox (badness 10000) in paragraph at lines 306--309
 \OT1/ppl/b/n/9.53561 Definition 4 \OT1/ppl/m/n/9.53561 Let new re-designed $\U/
 msb/m/n/9.53561 U$ \OT1/ppl/m/n/9.53561 =
  []
@@ -604,71 +594,64 @@ msb/m/n/9.53561 U$ \OT1/ppl/m/n/9.53561 =
 <restructure.png, id=34, 5392.145pt x 4645.355pt>
 File: restructure.png Graphic file (type png)
 <use restructure.png>
-Package pdftex.def Info: restructure.png  used on input line 324.
+Package pdftex.def Info: restructure.png  used on input line 326.
 (pdftex.def)             Requested size: 181.2804pt x 156.15375pt.
 [4 <./restructure.png>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 351.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 353.
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 360--362
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 362--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 380--381
 \OT1/ppl/m/n/9.53561 Our en-sem-ble clas-si-fi-ca-tion method in-volves sev-era
 l
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 378--379
+Underfull \hbox (badness 5050) in paragraph at lines 380--381
 \OT1/ppl/m/n/9.53561 base-line su-per-vised clas-si-fi-ca-tion mod-els. Su-per-
 vised
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
+[5]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <6.62196> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 397.
-<experiment.png, id=43, 843.15pt x 516.93124pt>
-File: experiment.png Graphic file (type png)
-<use experiment.png>
-Package pdftex.def Info: experiment.png  used on input line 418.
-(pdftex.def)             Requested size: 207.17084pt x 127.01604pt.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 399.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 433.
+<experiment.png, id=43, 843.15pt x 516.93124pt>
+File: experiment.png Graphic file (type png)
+<use experiment.png>
+Package pdftex.def Info: experiment.png  used on input line 420.
+(pdftex.def)             Requested size: 207.17084pt x 127.01604pt.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 435.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9.53561> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 433.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 435.
 LaTeX Font Info:    Font shape `OMS/ppl/m/it' in size <9.53561> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 440.
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--442
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--442
-
- []
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 442.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -676,24 +659,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7 <./experiment.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+[6 <./experiment.png>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
 [8]
-Underfull \hbox (badness 2142) in paragraph at lines 639--640
+Underfull \hbox (badness 2142) in paragraph at lines 641--642
 \OT1/ppl/m/n/9.53561 al-go-rithm. And this ex-per-i-ment uses ran-dom under-
  []
 
 
-Underfull \hbox (badness 6364) in paragraph at lines 639--640
+Underfull \hbox (badness 6364) in paragraph at lines 641--642
 \OT1/ppl/m/n/9.53561 the class im-bal-ance prob-lem where non-depression
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
-
  []
 
 
@@ -701,58 +679,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
+
+ []
+
 <coverage.png, id=59, 551.05875pt x 349.305pt>
 File: coverage.png Graphic file (type png)
 <use coverage.png>
-Package pdftex.def Info: coverage.png  used on input line 647.
+Package pdftex.def Info: coverage.png  used on input line 649.
 (pdftex.def)             Requested size: 258.9675pt x 164.15738pt.
 
-Overfull \hbox (6.0225pt too wide) in paragraph at lines 647--648
+Overfull \hbox (6.0225pt too wide) in paragraph at lines 649--650
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9] (./journal.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 36--54
+[9 <./coverage.png>] (./journal.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
 \OT1/ppl/m/n/8.03 / / search . ebscohost . com / login . aspx ? direct = true \
 OMS/cmsy/m/n/8 n \OT1/ppl/m/n/8.03 &db = pdh \OMS/cmsy/m/n/8 n
  []
 
-[10 <./coverage.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 81--89
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--77
 \OT1/ppl/m/n/8.03 / / www . ncbi . nlm . nih . gov / pubmed / 11556941https : /
  / www . ncbi .
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
 \OT1/ppl/m/n/8.03 https : / / doi . org / 10 . 1140 / epjds / s13688-[]017-[]01
 10-[]zhttps :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
 \OT1/ppl/m/n/8.03 / / epjdatascience . springeropen . com / track / pdf / 10 . 
 1140 / epjds /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--179
+Underfull \hbox (badness 10000) in paragraph at lines 140--149
 \OT1/ppl/m/n/8.03 / / search . ebscohost . com / login . aspx ? direct = true \
 OMS/cmsy/m/n/8 n \OT1/ppl/m/n/8.03 &db = pbh \OMS/cmsy/m/n/8 n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--211
-\OT1/ppl/m/n/8.03 uri ? eid = 2-[]s2 . 0-[]84963994580 \OMS/cmsy/m/n/8 n \OT1/p
-pl/m/n/8.03 &doi = 10 . 1007 % 2f978-[]3-[]319-[]31753-[]3 \OMS/cmsy/m/n/8 n
+Underfull \hbox (badness 10000) in paragraph at lines 167--173
+\OT1/ppl/m/n/8.03 2-[]s2 . 0-[]84963994580 \OMS/cmsy/m/n/8 n \OT1/ppl/m/n/8.03 
+&doi = 10 . 1007 % 2f978-[]3-[]319-[]31753-[]3 \OMS/cmsy/m/n/8 n []\OT1/ppl/m/n
+/8.03 2 \OMS/cmsy/m/n/8 n
  []
 
-[11]) [12
-
-] (./journal.aux)
+) [11] (./journal.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -760,7 +739,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6937 strings out of 492649
  110160 string characters out of 6129621
- 242233 words of memory out of 5000000
+ 237341 words of memory out of 5000000
  10679 multiletter control sequences out of 15000+600000
  59954 words of font info for 140 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -788,10 +767,10 @@ s/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 alatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/zapfding/uzdr.
 pfb>
-Output written on journal.pdf (12 pages, 1462173 bytes).
+Output written on journal.pdf (11 pages, 1458172 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

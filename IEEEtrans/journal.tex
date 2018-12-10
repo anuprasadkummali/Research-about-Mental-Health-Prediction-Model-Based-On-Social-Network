@@ -75,6 +75,7 @@
 
 \author{Oliver~Chi,~\IEEEmembership{Member,~IEEE,}
         Xiaohui~Tao,~\IEEEmembership{Fellow,~OSA,}% <-this % stops a space
+        
 \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell was with the Department
 of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
 GA, 30332.\protect\\
@@ -275,7 +276,7 @@ The conceptual design of the framework is illustrated in Fig.~\ref{fig1}.
 \begin{figure}[h]
 \centering
 \captionsetup{justification=centering}
-\includegraphics[width=0.5\textwidth]{concepts.png}
+\includegraphics[width=0.35\textwidth]{concepts.png}
 \caption{Conceptual Framework} \label{fig1}
 \end{figure}
 %
@@ -286,7 +287,8 @@ Psychological knowledge module learns the knowledge how to group health informat
 \subsection{Psychological Knowledge}
 Kroenke et, al. \cite{Kroenke} discovered that there was a strong association between increasing depression severity screen scores and worsening functionality on all 6 categories: mental, social, role, pain, physical and general functions. These 6 categories were directly interpreted 5 items of mental health diagnostic criteria in Mental Health Inventory (MHI-5) and additionally mental disorder symptoms as mental category. The research illustrated graphically the relationship between increasing PHQ-9 scores of depression and worsening functional categories (see Fig.~\ref{fig2}). 
 \begin{figure}[h]
-\includegraphics[width=0.5\textwidth]{phq-9.png}
+\centering
+\includegraphics[width=0.4\textwidth]{phq-9.png}
 \caption{The relationship between depression severity and personal health-related functionalities\cite{Kroenke}} \label{fig2}
 \end{figure}
 
@@ -413,7 +415,7 @@ Obtain the ensemble model $\mathbb{M}_{e} = \sum_{g = 1}^{h} w_{i} M_{i} $\;
 \section{Experiment}
 We employ an ensemble supervised learning experiment to classify depressive users from a rare health survey dataset $\mathbb{H}$. We follow psychological knowledge to reduce the dimension of dataset by split dataset into sub-sets. It will not only benefit the processing of classification but also provide a great opportunity to compare the performance of overall dataset and subsets for support of further solution on the real condition with less features.
 \subsection{Experiment Design}
-In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocessing on survey data $\mathbb{H}$; next, we aggregate all features of $\mathbb{D}_{overall}$ into 6 health-related functional classes and follow the same procedure to divide $\mathbb{D}_{overall}$ into 6 sub-sets $\mathbb{D}_{physical}$, $\mathbb{D}_{role}$, $\mathbb{D}_{mental}$, $\mathbb{D}_{social}$, $\mathbb{D}_{pain}$ and $\mathbb{D}_{general}$; and we train dataset $\mathbb{D}_{overall}$ by four baseline models (DT, ANN, KNN, SVM) to obtain the relevant performances; then we build the ensemble model $\mathbb{M}_{e}$ by calculating the performance weight $w_{i}$ of each baseline model $M_{i} $; furthermore, we train all 6 sub-datasets by the ensemble classifier $\mathbb{M}_{e}$; and the final step is to use k-fold cross validation algorithm to value the complete predictive performance. The overall look of all experiment proceedings is illustrated in Fig.~\ref{fig4}. 
+In experiment, we first obtain dataset $\mathbb{D}_{o}$ by data preprocessing on survey data $\mathbb{H}$; next, we aggregate all features of $\mathbb{D}_{o}$ into 6 health-related functional classes and follow the same procedure to divide $\mathbb{D}_{o}$ into 6 sub-sets $\mathbb{D}_{ph}$, $\mathbb{D}_{r}$, $\mathbb{D}_{m}$, $\mathbb{D}_{s}$, $\mathbb{D}_{pa}$ and $\mathbb{D}_{g}$; and we train dataset $\mathbb{D}_{o}$ by four baseline models (DT, ANN, KNN, SVM) to obtain the relevant performances; then we build the ensemble model $\mathbb{M}_{e}$ by calculating the performance weight $w_{i}$ of each baseline model $M_{i} $; furthermore, we train all 6 sub-datasets by the ensemble classifier $\mathbb{M}_{e}$; and the final step is to use k-fold cross validation algorithm to value the complete predictive performance. The overall look of all experiment proceedings is illustrated in Fig.~\ref{fig4}. 
 \begin{figure}[h]
 \includegraphics[width=0.4\textwidth]{experiment.png}
 \centering
@@ -421,7 +423,7 @@ In experiment, we first obtain dataset $\mathbb{D}_{overall}$ by data preprocess
 \caption{The overall look of experiment proceedings} \label{fig4}
 \end{figure}
 
-From the proceeding details of classification, we can define the algorithm of whole experiment as below: \\\\\\
+From the proceeding details of classification, we can define the algorithm of whole experiment as below (see Alg. 2): 
 \IncMargin{2em}
 \begin{algorithm}[h]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
@@ -540,7 +542,7 @@ The predictive performance of each base classifier in our model is evaluated by 
 \subsection{Experimental Results}
 F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0. F1 measure equally considers both precision and recall in the performance measurement. We use F1 measure for the main indicator of model's performance. According to equation (1) and (2), we can calculate the weight for each base model (see at table 2.) and further generate the complete form of ensemble classifier:
 \begin{equation}
-\mathbb{F}_{k} = 0.228 \cdot f_{svm} + 0.283 \cdot f_{nb} + 0.266 \cdot f_{knn} + 0.223 \cdot f_{dt}
+\mathbb{F}_{e} = 0.228 \cdot f_{svm} + 0.283 \cdot f_{nb} + 0.266 \cdot f_{knn} + 0.223 \cdot f_{dt}
 \end{equation}
 
 \begin{table}[ht]
@@ -650,221 +652,35 @@ By analysis of the performance in recall measure (see table. 7), the preferred e
 The coverage (see fig. 5) of depression cases is slightly larger than the real situation of mental health inventory. However, it is absolutely acceptable for large sampling that there is no missing of any depression case and only about 4\% of total cases have been incorrectly labelled as depression in the prediction. The proposed ensemble method is perfect for preliminary screening of major depressive disorder in order to provide limited cases for further clinical diagnosis while without missing any potential depression case. 
 
 In comparison with the predictions in the different sub-datasets (see table. 3), ensemble classifier performs the best in the overall dataset and has a similar accuracy in mental subset. The importance of diagnostic criteria in mental symptoms has been manifested that mental criteria are certainly the major features for identifying depression. Meanwhile, both accuracy and F1 measures for predicting depression in physical, social and role are equal to the predictive performance in general subset. However, general subset (70 features) has much more features than physical (7 features), social (6 features) and role (9 features) three subsets. It means that there are a lot of features in general subset occurred without enough specificity for classifying depressed and non-depression labels. Partial of general functional features hence are useless in the detection of depression. Correspondingly, features in physical, social and role functional subsets present more correlational in the classification. Weak depression indicator is not only helpless in the classification, but also incline the overall predictive accuracy. Therefore, it is extremely critical for depression diagnostic approaches to select a limited number of suitable features to distinguish depressed cases from a wide range. From the result of this research, we suggest an algorithm for feature selection which first involves as more mental symptoms as possible according to depression diagnostic criteria and pluses no more than 50\% features in health criteria in physical, role and social functionality. This algorithm ensures the majority of features consisted by metal diagnostic criteria and mixes partial health criteria to avoid the scenario that temporary mental status change occurs by sudden events like losing close relatives. It simulates the proceedings that psychologist did in the standard clinical interview. 
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
 %
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
 %
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that the IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-% However, the Computer Society has been known to put floats at the bottom.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
 %
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure*}
 %
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
-
-
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% the IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
-
-
-
-
+%x
 \section{Conclusion and Future Work}
 This work presented a binary ensemble system which is able to preliminarily distinguish depressive cases from a wide range of health data without the missing identification of any potential depressed case. In the experimental evaluation on NCHS dataset, only 4\% cases were mistakenly classified into depressed class and no depressed case has been detected incorrectly. The ensemble classifier on the whole dataset has a high F1 measure as 0.976 comparing to PHQ-9 depression screen inventory, 95.4\% and 95.6\% for Accuracy and Precision, respectively. It also demonstrated that the ensemble system is stable and robust for detecting depression on a partial of dataset. Moving forward, this research can help in preliminary screening of depressive cases from a large number of potential cases before formal clinical diagnosis. It is able to save huge cost in the psychological healthcare. It provides a much more efficient way to screen more people than traditional technologies and has a similar accuracy and coverage as current mental scale inventory. However, the reliability and sensitivity of this ensemble system need to be tested next on more datasets and text mining on social network platforms. In the conclusion, the presented work clearly illustrated the predictive capability of the proposed ensemble system to efficiently distinguish depressive instances from a board span of healthcare occasions.
 
 As future work, there are several future research directions of detecting depression that need to be carefully analysed for applying our ensemble system. One trend is to utilise rich online social media sources to extract features on the classification. It certainly will help improve the reliability and sensitivity of ensemble system. It hence will be our next work on the schedule.  Another interesting research direction is to examine images and brain EEG signals for mental clinic purpose. Deep learning has gained more momentum in such areas. Current ensemble system involves four supervised learning algorithms, however it will not suit for deep learning. In order to detect depression in intricate circumstance, deep learning technologies like DNN will integrate to increase the performance of ensemble system in future. As a major issue of automate depression detection, we will also consider how to simulate the proceeding of clinic diagnosis to improve the actions of effectively selecting mental diagnostic features. 
-
 %
 %
 %
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
-
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
-
-
-\appendices
-\section{}
-
-% use section* for acknowledgment
-\ifCLASSOPTIONcompsoc
-  % The Computer Society usually uses the plural form
-  \section*{Acknowledgments}
-\else
-  % regular IEEE prefers the singular form
-  \section*{Acknowledgment}
-\fi
-
-
-The authors would like to thank...
-
-
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
   \newpage
 \fi
 
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-
 \bibliographystyle{IEEEtran}
 \bibliography{ref}
-
-% biography section
-% 
-% If you have an EPS/PDF photo (graphicx package needed) extra braces are
-% needed around the contents of the optional argument to biography to prevent
-% the LaTeX parser from getting confused when it sees the complicated
-% \includegraphics command within an optional argument. (You could create
-% your own custom macro containing the \includegraphics command to make things
-% simpler here.)
-%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
-% or if you just want to reserve a space for a photo:
-
-\begin{IEEEbiography}{Michael Shell}
+%
+%
+%
+\begin{IEEEbiography}{Xiaohui Tao}
 Biography text here.
 \end{IEEEbiography}
-
-% if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
-
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
-
-% You can push biographies down or up by placing
-% a \vfill before or after them. The appropriate
-% use of \vfill depends on what kind of text is
-% on the last page and whether or not the columns
-% are being equalized.
-
-%\vfill
-
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
-
-
-
-% that's all folks
+%
+%
+%
 \end{document}
 
 
